@@ -32,6 +32,6 @@ public class Sticker {
     @Column(nullable = false)
     private String imageUrl;
 
-    @OneToOne
+    @ManyToOne
     private Event originEvent;
 }
