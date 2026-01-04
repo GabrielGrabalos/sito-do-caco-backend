@@ -16,7 +16,7 @@ public class Sticker {
         - `String name`
         - `String description`
         - `String imageUrl`
-        - `Event originEvent` (ManyToOne, Nullable)
+        - `Event originEvent` (OneToOne Nullable)
     */
 
     @Id
@@ -29,7 +29,9 @@ public class Sticker {
     @Column(length = 600)
     private String description;
 
+    @Column(nullable = false)
     private String imageUrl;
 
+    @OneToOne
     private Event originEvent;
 }

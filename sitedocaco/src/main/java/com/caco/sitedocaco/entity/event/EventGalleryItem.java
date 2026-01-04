@@ -26,6 +26,7 @@ public class EventGalleryItem {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
+    @ManyToOne
     Event event;
 
     private String mediaUrl;
