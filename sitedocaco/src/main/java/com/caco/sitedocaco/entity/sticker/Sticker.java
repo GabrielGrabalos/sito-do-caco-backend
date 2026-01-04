@@ -1,5 +1,6 @@
-package com.caco.sitedocaco.entity;
+package com.caco.sitedocaco.entity.sticker;
 
+import com.caco.sitedocaco.entity.event.Event;
 import jakarta.persistence.*;
 import lombok.Data;
 

@@ -1,5 +1,6 @@
-package com.caco.sitedocaco.entity;
+package com.caco.sitedocaco.entity.home;
 
+import com.caco.sitedocaco.entity.User;
 import jakarta.persistence.*;
 import lombok.Data;
 
