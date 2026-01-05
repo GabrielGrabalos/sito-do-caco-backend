@@ -1,5 +1,6 @@
 package com.caco.sitedocaco.entity;
 
+import com.caco.sitedocaco.entity.enums.Role;
 import jakarta.persistence.*;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
@@ -22,12 +23,6 @@ public class User {
         - `Role role` (Enum: `STUDENT`, `ADMIN`, `EDITOR`)
         - `LocalDateTime createdAt`
     */
-
-    enum Role {
-        STUDENT,
-        ADMIN,
-        EDITOR
-    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
