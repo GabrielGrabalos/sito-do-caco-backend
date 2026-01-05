@@ -1,6 +1,7 @@
 package com.caco.sitedocaco.security.oauth2;
 
 import com.caco.sitedocaco.entity.User;
+import com.caco.sitedocaco.entity.enums.Role;
 import com.caco.sitedocaco.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
@@ -27,9 +28,10 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
         String avatarUrl = oAuth2User.getAttribute("picture");
 
         // REGRA DE NEGÓCIO: Validação de Domínio
-        // if (!email.endsWith("@dominio.da.faculdade.br")) {
-        //    throw new OAuth2AuthenticationException("E-mail não pertence à organização.");
-        // }
+        assert email != null;
+        if (!email.endsWith("@dac.unicamp.br")) {
+            throw new OAuth2AuthenticationException("E-mail não pertence à organização.");
+        }
 
         // Salva ou atualiza o usuário
         Optional<User> userOptional = userRepository.findByEmail(email);
@@ -41,7 +43,7 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
         } else {
             user = new User();
             user.setEmail(email);
-            user.setName(name);
+            user.setUsername(name);
             user.setAvatarUrl(avatarUrl);
             user.setRole(Role.STUDENT); // Padrão
             user.setCreatedAt(LocalDateTime.now());
