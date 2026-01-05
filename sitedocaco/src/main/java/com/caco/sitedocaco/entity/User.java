@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
+import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.aot.generate.GeneratedMethod;
 
 import java.time.LocalDateTime;
@@ -18,7 +19,7 @@ public class User {
     * 1. **`User`**
         - `Long id` (PK, Identity)
         - `String email` (Unique, Not Null)
-        - `String name` (Not Null)
+        - `String username` (Not Null)
         - `String avatarUrl`
         - `Role role` (Enum: `STUDENT`, `ADMIN`, `EDITOR`)
         - `LocalDateTime createdAt`
@@ -39,6 +40,7 @@ public class User {
     @Enumerated(EnumType.STRING)
     private Role role = Role.STUDENT;
 
-    @Column(nullable = false)
+    @CreationTimestamp
+    @Column(updatable = false)
     private LocalDateTime createdAt;
 }
