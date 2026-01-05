@@ -3,6 +3,7 @@ package com.caco.sitedocaco.security.oauth2;
 import com.caco.sitedocaco.entity.User;
 import com.caco.sitedocaco.entity.enums.Role;
 import com.caco.sitedocaco.repository.UserRepository;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
@@ -20,8 +21,11 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
     private final UserRepository userRepository;
 
     @Override
+    @Transactional
     public OAuth2User loadUser(OAuth2UserRequest userRequest) throws OAuth2AuthenticationException {
         OAuth2User oAuth2User = super.loadUser(userRequest);
+
+        System.out.println(">>> CustomOAuth2UserService: Recebido do Google: " + oAuth2User.getAttributes()); // LOG DE DEBUG
 
         String email = oAuth2User.getAttribute("email");
         String name = oAuth2User.getAttribute("name");
@@ -36,10 +40,12 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
         // Salva ou atualiza o usuário
         Optional<User> userOptional = userRepository.findByEmail(email);
         User user;
+
+        // Atualiza se existir, senão cria novo
         if (userOptional.isPresent()) {
             user = userOptional.get();
-            user.setAvatarUrl(avatarUrl); // Atualiza foto se mudou
-            userRepository.save(user);
+            user.setAvatarUrl(avatarUrl);
+            user.setUsername(name);
         } else {
             user = new User();
             user.setEmail(email);
@@ -47,8 +53,9 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
             user.setAvatarUrl(avatarUrl);
             user.setRole(Role.STUDENT); // Padrão
             user.setCreatedAt(LocalDateTime.now());
-            userRepository.save(user);
         }
+
+        userRepository.save(user);
 
         return oAuth2User;
     }
