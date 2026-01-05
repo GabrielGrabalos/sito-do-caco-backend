@@ -1,0 +1,1447 @@
+project_info:
+  name: "src"
+  path: "/home/genazemildo/Documents/GitHub/sito-do-caco-backend/sitedocaco/src"
+  generatedAt: "2026-01-05T15:20:52.094852537"
+  totalFiles: 50
+  totalSize: 48128
+structure:
+  "main":
+    type: null
+    info: null
+    children:
+      "resources":
+        type: null
+        info: null
+        children:
+          "application.properties.example":
+            type: "file"
+            info:
+              "size": "543"
+              "last_modified": "2026-01-05T15:20:51.839964487"
+              "mime_type": "text/plain"
+              "extension": ".example"
+            children: null
+          "application.properties":
+            type: "file"
+            info:
+              "size": "1268"
+              "last_modified": "2026-01-05T15:20:51.878982761"
+              "mime_type": "text/x-java-properties"
+              "extension": ".properties"
+            children: null
+      "java":
+        type: null
+        info: null
+        children:
+          "com":
+            type: null
+            info: null
+            children:
+              "caco":
+                type: null
+                info: null
+                children:
+                  "sitedocaco":
+                    type: null
+                    info: null
+                    children:
+                      "SitedocacoApplication.java":
+                        type: "file"
+                        info:
+                          "size": "320"
+                          "last_modified": "2026-01-05T15:20:51.88669299"
+                          "mime_type": "text/x-java-source"
+                          "extension": ".java"
+                        children: null
+                      "config":
+                        type: null
+                        info: null
+                        children:
+                          "SecurityConfig.java":
+                            type: "file"
+                            info:
+                              "size": "4365"
+                              "last_modified": "2026-01-05T15:20:51.892432742"
+                              "mime_type": "text/x-java-source"
+                              "extension": ".java"
+                            children: null
+                      "entity":
+                        type: null
+                        info: null
+                        children:
+                          "User.java":
+                            type: "file"
+                            info:
+                              "size": "1106"
+                              "last_modified": "2026-01-05T15:20:51.89966409"
+                              "mime_type": "text/x-java-source"
+                              "extension": ".java"
+                            children: null
+                          "home":
+                            type: null
+                            info: null
+                            children:
+                              "Banner.java":
+                                type: "file"
+                                info:
+                                  "size": "591"
+                                  "last_modified": "2026-01-05T15:20:51.904505262"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "Warning.java":
+                                type: "file"
+                                info:
+                                  "size": "666"
+                                  "last_modified": "2026-01-05T15:20:51.909368602"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "News.java":
+                                type: "file"
+                                info:
+                                  "size": "1103"
+                                  "last_modified": "2026-01-05T15:20:51.913866851"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                          "event":
+                            type: null
+                            info: null
+                            children:
+                              "Event.java":
+                                type: "file"
+                                info:
+                                  "size": "1422"
+                                  "last_modified": "2026-01-05T15:20:51.919918253"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "EventGalleryItem.java":
+                                type: "file"
+                                info:
+                                  "size": "624"
+                                  "last_modified": "2026-01-05T15:20:51.925292612"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                          "manual":
+                            type: null
+                            info: null
+                            children:
+                              "ManualCategory.java":
+                                type: "file"
+                                info:
+                                  "size": "813"
+                                  "last_modified": "2026-01-05T15:20:51.932413376"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "ManualChapter.java":
+                                type: "file"
+                                info:
+                                  "size": "910"
+                                  "last_modified": "2026-01-05T15:20:51.937375868"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "ManualArticle.java":
+                                type: "file"
+                                info:
+                                  "size": "784"
+                                  "last_modified": "2026-01-05T15:20:51.941583572"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "ArticleFeedback.java":
+                                type: "file"
+                                info:
+                                  "size": "771"
+                                  "last_modified": "2026-01-05T15:20:51.946224399"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                          "exam":
+                            type: null
+                            info: null
+                            children:
+                              "Exam.java":
+                                type: "file"
+                                info:
+                                  "size": "779"
+                                  "last_modified": "2026-01-05T15:20:51.952990866"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "Subject.java":
+                                type: "file"
+                                info:
+                                  "size": "391"
+                                  "last_modified": "2026-01-05T15:20:51.956156818"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                          "sticker":
+                            type: null
+                            info: null
+                            children:
+                              "Sticker.java":
+                                type: "file"
+                                info:
+                                  "size": "720"
+                                  "last_modified": "2026-01-05T15:20:51.960517602"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "UserSticker.java":
+                                type: "file"
+                                info:
+                                  "size": "617"
+                                  "last_modified": "2026-01-05T15:20:51.965152421"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "RedemptionCode.java":
+                                type: "file"
+                                info:
+                                  "size": "617"
+                                  "last_modified": "2026-01-05T15:20:51.968288098"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                          "AnalyticsLog.java":
+                            type: "file"
+                            info:
+                              "size": "693"
+                              "last_modified": "2026-01-05T15:20:51.972716218"
+                              "mime_type": "text/x-java-source"
+                              "extension": ".java"
+                            children: null
+                          "store":
+                            type: null
+                            info: null
+                            children:
+                              "Product.java":
+                                type: "file"
+                                info:
+                                  "size": "1452"
+                                  "last_modified": "2026-01-05T15:20:51.976388408"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "ProductVariation.java":
+                                type: "file"
+                                info:
+                                  "size": "654"
+                                  "last_modified": "2026-01-05T15:20:51.979554664"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                          "enums":
+                            type: null
+                            info: null
+                            children:
+                              "Role.java":
+                                type: "file"
+                                info:
+                                  "size": "99"
+                                  "last_modified": "2026-01-05T15:20:51.98374227"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                      "security":
+                        type: null
+                        info: null
+                        children:
+                          "oauth2":
+                            type: null
+                            info: null
+                            children:
+                              "CustomOAuth2UserService.java":
+                                type: "file"
+                                info:
+                                  "size": "2609"
+                                  "last_modified": "2026-01-05T15:20:51.989231725"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "OAuth2LoginSuccessHandler.java":
+                                type: "file"
+                                info:
+                                  "size": "1960"
+                                  "last_modified": "2026-01-05T15:20:51.992911073"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "OAuth2LoginFailureHandler.java":
+                                type: "file"
+                                info:
+                                  "size": "2046"
+                                  "last_modified": "2026-01-05T15:20:51.996135562"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                          "jwt":
+                            type: null
+                            info: null
+                            children:
+                              "JwtService.java":
+                                type: "file"
+                                info:
+                                  "size": "1679"
+                                  "last_modified": "2026-01-05T15:20:52.001179085"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "JwtAuthenticationFilter.java":
+                                type: "file"
+                                info:
+                                  "size": "2721"
+                                  "last_modified": "2026-01-05T15:20:52.004513934"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "UserDetailsServiceImpl.java":
+                                type: "file"
+                                info:
+                                  "size": "1677"
+                                  "last_modified": "2026-01-05T15:20:52.007457052"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                      "repository":
+                        type: null
+                        info: null
+                        children:
+                          "UserRepository.java":
+                            type: "file"
+                            info:
+                              "size": "413"
+                              "last_modified": "2026-01-05T15:20:52.013060374"
+                              "mime_type": "text/x-java-source"
+                              "extension": ".java"
+                            children: null
+                          "BannerRepository.java":
+                            type: "file"
+                            info:
+                              "size": "473"
+                              "last_modified": "2026-01-05T15:20:52.016855986"
+                              "mime_type": "text/x-java-source"
+                              "extension": ".java"
+                            children: null
+                          "WarningRepository.java":
+                            type: "file"
+                            info:
+                              "size": "692"
+                              "last_modified": "2026-01-05T15:20:52.020282884"
+                              "mime_type": "text/x-java-source"
+                              "extension": ".java"
+                            children: null
+                          "NewsRepository.java":
+                            type: "file"
+                            info:
+                              "size": "994"
+                              "last_modified": "2026-01-05T15:20:52.023141921"
+                              "mime_type": "text/x-java-source"
+                              "extension": ".java"
+                            children: null
+                      "dto":
+                        type: null
+                        info: null
+                        children:
+                          "response":
+                            type: null
+                            info: null
+                            children:
+                              "UserResponseDTO.java":
+                                type: "file"
+                                info:
+                                  "size": "572"
+                                  "last_modified": "2026-01-05T15:20:52.027249908"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "ErrorResponseDTO.java":
+                                type: "file"
+                                info:
+                                  "size": "232"
+                                  "last_modified": "2026-01-05T15:20:52.030252587"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "BannerDTO.java":
+                                type: "file"
+                                info:
+                                  "size": "186"
+                                  "last_modified": "2026-01-05T15:20:52.033401087"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "WarningDTO.java":
+                                type: "file"
+                                info:
+                                  "size": "207"
+                                  "last_modified": "2026-01-05T15:20:52.03642923"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "NewsSummaryDTO.java":
+                                type: "file"
+                                info:
+                                  "size": "305"
+                                  "last_modified": "2026-01-05T15:20:52.039272129"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "DashboardDTO.java":
+                                type: "file"
+                                info:
+                                  "size": "207"
+                                  "last_modified": "2026-01-05T15:20:52.042041563"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                          "request":
+                            type: null
+                            info: null
+                            children:
+                              "UpdateProfileDTO.java":
+                                type: "file"
+                                info:
+                                  "size": "195"
+                                  "last_modified": "2026-01-05T15:20:52.045860076"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                      "service":
+                        type: null
+                        info: null
+                        children:
+                          "UserService.java":
+                            type: "file"
+                            info:
+                              "size": "1884"
+                              "last_modified": "2026-01-05T15:20:52.050786558"
+                              "mime_type": "text/x-java-source"
+                              "extension": ".java"
+                            children: null
+                          "BannerService.java":
+                            type: "file"
+                            info:
+                              "size": "758"
+                              "last_modified": "2026-01-05T15:20:52.053702118"
+                              "mime_type": "text/x-java-source"
+                              "extension": ".java"
+                            children: null
+                          "WarningService.java":
+                            type: "file"
+                            info:
+                              "size": "787"
+                              "last_modified": "2026-01-05T15:20:52.056516462"
+                              "mime_type": "text/x-java-source"
+                              "extension": ".java"
+                            children: null
+                          "NewsService.java":
+                            type: "file"
+                            info:
+                              "size": "679"
+                              "last_modified": "2026-01-05T15:20:52.059150645"
+                              "mime_type": "text/x-java-source"
+                              "extension": ".java"
+                            children: null
+                      "controller":
+                        type: null
+                        info: null
+                        children:
+                          "privateController":
+                            type: null
+                            info: null
+                            children:
+                              "UserController.java":
+                                type: "file"
+                                info:
+                                  "size": "895"
+                                  "last_modified": "2026-01-05T15:20:52.063396296"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                          "publicController":
+                            type: null
+                            info: null
+                            children:
+                              "HomeController.java":
+                                type: "file"
+                                info:
+                                  "size": "1682"
+                                  "last_modified": "2026-01-05T15:20:52.06725188"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                          "admin":
+                            type: null
+                            info: null
+                            children: {}
+                      "exception":
+                        type: null
+                        info: null
+                        children:
+                          "GlobalExceptionHandler.java":
+                            type: "file"
+                            info:
+                              "size": "2375"
+                              "last_modified": "2026-01-05T15:20:52.073055755"
+                              "mime_type": "text/x-java-source"
+                              "extension": ".java"
+                            children: null
+                          "ResourceNotFoundException.java":
+                            type: "file"
+                            info:
+                              "size": "192"
+                              "last_modified": "2026-01-05T15:20:52.075758895"
+                              "mime_type": "text/x-java-source"
+                              "extension": ".java"
+                            children: null
+                          "BusinessRuleException.java":
+                            type: "file"
+                            info:
+                              "size": "185"
+                              "last_modified": "2026-01-05T15:20:52.078423822"
+                              "mime_type": "text/x-java-source"
+                              "extension": ".java"
+                            children: null
+  "test":
+    type: null
+    info: null
+    children:
+      "java":
+        type: null
+        info: null
+        children:
+          "com":
+            type: null
+            info: null
+            children:
+              "caco":
+                type: null
+                info: null
+                children:
+                  "sitedocaco":
+                    type: null
+                    info: null
+                    children:
+                      "SitedocacoApplicationTests.java":
+                        type: "file"
+                        info:
+                          "size": "215"
+                          "last_modified": "2026-01-05T15:20:52.087086237"
+                          "mime_type": "text/x-java-source"
+                          "extension": ".java"
+                        children: null
+files:
+- path: "main/resources/application.properties.example"
+  content: "spring.application.name=sitedocaco\n\n# App:\napp.frontend.url=http://localhost:3000\n\
+    \n# Database\nspring.datasource.url=\nspring.datasource.username=\nspring.datasource.password=\n\
+    spring.jpa.hibernate.ddl-auto=update\nspring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver\n\
+    spring.jpa.show-sql=true\n\n# JWT\njwt.secret=\njwt.expiration=86400000\n\n# Email\n\
+    spring.mail.host=smtp.gmail.com\nspring.mail.port=587\n#spring.mail.username=\n\
+    #spring.mail.password=\nspring.mail.properties.mail.smtp.auth=true\nspring.mail.properties.mail.smtp.starttls.enable=true"
+  info:
+    "size": "543"
+    "last_modified": "2026-01-05T15:20:51.839964487"
+    "mime_type": "text/plain"
+    "extension": ".example"
+- path: "main/resources/application.properties"
+  content: "spring.application.name=sitedocaco\nserver.port=8080\n\n# App:\napp.frontend.url=http://localhost:3000\n\
+    \n# Database\nspring.datasource.url=jdbc:mysql://127.0.0.1:3306/sitedocaco_dev?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC\n\
+    spring.datasource.username=genazemildo\nspring.datasource.password=201190abC=M\n\
+    spring.jpa.hibernate.ddl-auto=update\nspring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver\n\
+    spring.jpa.show-sql=true\n\n# oAuth2:\n# === Configuração OAuth2 (Google) ===\n\
+    spring.security.oauth2.client.registration.google.client-id=1001582761088-ohb86q8gr6j8tpm6lc1dkkp2agjc390c.apps.googleusercontent.com\n\
+    spring.security.oauth2.client.registration.google.client-secret=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\n\
+    spring.security.oauth2.client.registration.google.scope=profile,email,address,phone\n\
+    spring.security.oauth2.client.registration.google.redirect-uri={baseUrl}/login/oauth2/code/{registrationId}\n\
+    spring.security.oauth2.client.registration.google.client-name=Site do CACo\n\n\
+    # JWT\njwt.secret=12345678901234567890123456789012\njwt.expiration=86400000\n\n\
+    # Email\nspring.mail.host=smtp.gmail.com\nspring.mail.port=587\n#spring.mail.username=\n\
+    #spring.mail.password=\nspring.mail.properties.mail.smtp.auth=true\nspring.mail.properties.mail.smtp.starttls.enable=true"
+  info:
+    "size": "1268"
+    "last_modified": "2026-01-05T15:20:51.878982761"
+    "mime_type": "text/x-java-properties"
+    "extension": ".properties"
+- path: "main/java/com/caco/sitedocaco/SitedocacoApplication.java"
+  content: "package com.caco.sitedocaco;\n\nimport org.springframework.boot.SpringApplication;\n\
+    import org.springframework.boot.autoconfigure.SpringBootApplication;\n\n@SpringBootApplication\n\
+    public class SitedocacoApplication {\n\n\tpublic static void main(String[] args)\
+    \ {\n\t\tSpringApplication.run(SitedocacoApplication.class, args);\n\t}\n\n}\n"
+  info:
+    "size": "320"
+    "last_modified": "2026-01-05T15:20:51.88669299"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/config/SecurityConfig.java"
+  content: "package com.caco.sitedocaco.config;\n\nimport com.caco.sitedocaco.security.jwt.JwtAuthenticationFilter;\n\
+    import com.caco.sitedocaco.security.oauth2.CustomOAuth2UserService;\nimport com.caco.sitedocaco.security.oauth2.OAuth2LoginFailureHandler;\n\
+    import com.caco.sitedocaco.security.oauth2.OAuth2LoginSuccessHandler;\nimport\
+    \ lombok.RequiredArgsConstructor;\nimport org.springframework.beans.factory.annotation.Value;\n\
+    import org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\n\
+    import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;\n\
+    import org.springframework.security.config.annotation.web.builders.HttpSecurity;\n\
+    import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\n\
+    import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;\n\
+    import org.springframework.security.config.http.SessionCreationPolicy;\nimport\
+    \ org.springframework.security.web.SecurityFilterChain;\nimport org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;\n\
+    import org.springframework.web.cors.CorsConfiguration;\nimport org.springframework.web.cors.CorsConfigurationSource;\n\
+    import org.springframework.web.cors.UrlBasedCorsConfigurationSource;\n\nimport\
+    \ java.util.List;\n\n@Configuration\n@EnableWebSecurity\n@EnableMethodSecurity\
+    \ // Permite usar @PreAuthorize nos controllers\n@RequiredArgsConstructor\npublic\
+    \ class SecurityConfig {\n\n    private final CustomOAuth2UserService customOAuth2UserService;\n\
+    \    private final OAuth2LoginSuccessHandler oAuth2LoginSuccessHandler;\n    private\
+    \ final OAuth2LoginFailureHandler oAuth2LoginFailureHandler;\n    private final\
+    \ JwtAuthenticationFilter jwtAuthenticationFilter;\n\n    // Frontend URL from\
+    \ application.properties:\n    @Value(\"${app.frontend.url}\")\n    private String\
+    \ frontendUrl;\n\n    @Bean\n    public SecurityFilterChain securityFilterChain(HttpSecurity\
+    \ http) throws Exception {\n        http\n                // 1. Desabilita CSRF\
+    \ (API Stateless não precisa)\n                .csrf(AbstractHttpConfigurer::disable)\n\
+    \n                // 2. Configura CORS (Para o React acessar)\n              \
+    \  .cors(cors -> cors.configurationSource(corsConfigurationSource()))\n\n    \
+    \            // 3. Define Sessão como Stateless (Não guarda JSESSIONID)\n    \
+    \            .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))\n\
+    \n                // 4. Regras de Autorização de URL\n                .authorizeHttpRequests(auth\
+    \ -> auth\n                        // Rotas Públicas\n                       \
+    \ .requestMatchers(\"/api/public/**\").permitAll()\n                        .requestMatchers(\"\
+    /swagger-ui/**\", \"/v3/api-docs/**\").permitAll() // Docs\n\n               \
+    \         // Rotas Admin\n                        .requestMatchers(\"/api/admin/**\"\
+    ).hasRole(\"ADMIN\")\n                        .anyRequest().authenticated()\n\
+    \                )\n\n                // 5. Configuração do Login com Google (OAuth2)\n\
+    \                .oauth2Login(oauth2 -> oauth2\n                        // Serviç\
+    o que processa o usuário vindo do Google\n                        .userInfoEndpoint(userInfo\
+    \ -> userInfo\n                                .userService(customOAuth2UserService)\n\
+    \                        )\n                        // Handler executado após\
+    \ login com sucesso (Gera JWT e redireciona)\n                        .successHandler(oAuth2LoginSuccessHandler)\n\
+    \                        .failureHandler(oAuth2LoginFailureHandler)\n        \
+    \        )\n\n                // 6. Adiciona o filtro JWT antes do filtro padrã\
+    o do Spring\n                .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);\n\
+    \n        return http.build();\n    }\n\n    @Bean\n    public CorsConfigurationSource\
+    \ corsConfigurationSource() {\n        CorsConfiguration configuration = new CorsConfiguration();\n\
+    \        configuration.setAllowedOrigins(List.of(frontendUrl));\n        configuration.setAllowedMethods(List.of(\"\
+    GET\", \"POST\", \"PUT\", \"DELETE\", \"OPTIONS\"));\n        configuration.setAllowedHeaders(List.of(\"\
+    Authorization\", \"Content-Type\"));\n        configuration.setAllowCredentials(true);\n\
+    \n        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();\n\
+    \        source.registerCorsConfiguration(\"/**\", configuration);\n        return\
+    \ source;\n    }\n}"
+  info:
+    "size": "4365"
+    "last_modified": "2026-01-05T15:20:51.892432742"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/entity/User.java"
+  content: "package com.caco.sitedocaco.entity;\n\nimport com.caco.sitedocaco.entity.enums.Role;\n\
+    import jakarta.persistence.*;\nimport jakarta.persistence.Id;\nimport jakarta.persistence.Table;\n\
+    import lombok.Data;\nimport org.hibernate.annotations.CreationTimestamp;\nimport\
+    \ org.springframework.aot.generate.GeneratedMethod;\n\nimport java.time.LocalDateTime;\n\
+    import java.util.UUID;\n\n@Entity\n@Data\n@Table\npublic class User {\n    /*\n\
+    \    * 1. **`User`**\n        - `Long id` (PK, Identity)\n        - `String email`\
+    \ (Unique, Not Null)\n        - `String username` (Not Null)\n        - `String\
+    \ avatarUrl`\n        - `Role role` (Enum: `STUDENT`, `ADMIN`, `EDITOR`)\n   \
+    \     - `LocalDateTime createdAt`\n    */\n\n    @Id\n    @GeneratedValue(strategy\
+    \ = GenerationType.UUID)\n    private UUID id;\n\n    @Column(unique = true, nullable\
+    \ = false)\n    private String email;\n\n    @Column(nullable = false, length\
+    \ = 100)\n    private String username;\n\n    private String avatarUrl;\n\n  \
+    \  @Enumerated(EnumType.STRING)\n    private Role role = Role.STUDENT;\n\n   \
+    \ @CreationTimestamp\n    @Column(updatable = false)\n    private LocalDateTime\
+    \ createdAt;\n}\n"
+  info:
+    "size": "1106"
+    "last_modified": "2026-01-05T15:20:51.89966409"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/entity/home/Banner.java"
+  content: "package com.caco.sitedocaco.entity.home;\n\nimport jakarta.persistence.*;\n\
+    import lombok.Data;\n\nimport java.util.UUID;\n\n@Table\n@Entity\n@Data\npublic\
+    \ class Banner {\n    /*\n    1. **`Banner`**\n        - `UUID id`\n        -\
+    \ `String title`\n        - `String imageUrl`\n        - `String targetLink`\n\
+    \        - `Integer displayOrder`\n        - `Boolean active`\n    * */\n\n  \
+    \  @Id\n    @GeneratedValue(strategy = GenerationType.UUID)\n    private UUID\
+    \ id;\n    private String title;\n    private String imageUrl;\n    private String\
+    \ targetLink;\n    private Integer displayOrder;\n    private Boolean active;\n\
+    }\n"
+  info:
+    "size": "591"
+    "last_modified": "2026-01-05T15:20:51.904505262"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/entity/home/Warning.java"
+  content: "package com.caco.sitedocaco.entity.home;\n\nimport jakarta.persistence.*;\n\
+    import lombok.Data;\n\nimport java.time.LocalDateTime;\nimport java.util.UUID;\n\
+    \n@Entity\n@Data\n@Table\npublic class Warning {\n    /*\n    2. `Warning` (Avisos)\n\
+    \        - `UUID id`\n        - `String markdownText`\n        - `LocalDateTime\
+    \ startsAt`\n        - `LocalDateTime expiresAt`\n    */\n\n    @Id\n    @GeneratedValue(strategy\
+    \ = GenerationType.UUID)\n    private UUID id;\n\n    @Column(columnDefinition\
+    \ = \"TEXT\", nullable = false)\n    private String markdownText;\n\n    @Column(nullable\
+    \ = false)\n    private LocalDateTime startsAt;\n\n    @Column(nullable = false)\n\
+    \    private LocalDateTime expiresAt;\n}\n"
+  info:
+    "size": "666"
+    "last_modified": "2026-01-05T15:20:51.909368602"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/entity/home/News.java"
+  content: "package com.caco.sitedocaco.entity.home;\n\nimport com.caco.sitedocaco.entity.User;\n\
+    import jakarta.persistence.*;\nimport lombok.AllArgsConstructor;\nimport lombok.Builder;\n\
+    import lombok.Data;\nimport lombok.NoArgsConstructor;\n\nimport java.time.LocalDateTime;\n\
+    import java.util.UUID;\n\n@Entity\n@Table\n@Data\n@Builder\n@NoArgsConstructor\n\
+    @AllArgsConstructor\npublic class News {\n    /*\n    3. **`News`**\n        -\
+    \ `UUID id`\n        - `String title`\n        - `String slug` (Unique, indexado)\n\
+    \        - `String summary` (Max 255 chars)\n        - `String content` (TEXT/CLOB\
+    \ - Markdown)\n        - `String coverImage`\n        - `User author` (ManyToOne)\n\
+    \        - `LocalDateTime publishDate`\n    */\n\n    @Id\n    @GeneratedValue(strategy\
+    \ = GenerationType.UUID)\n    private UUID id;\n\n    @Column(nullable = false)\n\
+    \    private String title;\n\n    @Column(nullable = false, unique = true)\n \
+    \   private String slug;\n\n    @Column(length = 255)\n    private String summary;\n\
+    \n    @Lob\n    private String content;\n\n    private String coverImage;\n\n\
+    \    @ManyToOne\n    private User author;\n\n    private LocalDateTime publishDate;\n\
+    }\n"
+  info:
+    "size": "1103"
+    "last_modified": "2026-01-05T15:20:51.913866851"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/entity/event/Event.java"
+  content: "package com.caco.sitedocaco.entity.event;\n\nimport jakarta.persistence.*;\n\
+    import lombok.Data;\n\nimport java.util.UUID;\n\n@Entity\n@Table\n@Data\npublic\
+    \ class Event {\n    /*\n    1. **`Event`**\n        - `UUID id`\n        - `String\
+    \ title`\n        - `String description` (Markdown)\n        - `LocalDateTime\
+    \ startDate`\n        - `LocalDateTime endDate`\n        - `String location`\n\
+    \        - `String coverImage`\n        - `EventType type` (Enum: `CACO`, `IC`,\
+    \ `FERIADO`)\n        - `EventImportance importance` (Enum: `MAJOR`, `MINOR`)\n\
+    \            - *Regra:* `MAJOR` = Tem página própria. `MINOR` = Só modal.\n  \
+    \      - `EventStatus status` (Enum: `SCHEDULED`, `HAPPENING`, `ENDED`)\n    */\n\
+    \n    public enum EventType {\n        CACO,\n        IC,\n        FERIADO\n \
+    \   }\n\n    public enum EventImportance {\n        MAJOR,\n        MINOR\n  \
+    \  }\n\n    public enum EventStatus {\n        SCHEDULED,\n        HAPPENING,\n\
+    \        ENDED\n    }\n\n    @Id\n    @GeneratedValue(strategy = GenerationType.UUID)\n\
+    \    private UUID id;\n\n    private String title;\n    @Lob\n    private String\
+    \ description;\n    private java.time.LocalDateTime startDate;\n    private java.time.LocalDateTime\
+    \ endDate;\n    private String location;\n    private String coverImage;\n\n \
+    \   @Enumerated(EnumType.STRING)\n    private EventType type;\n\n    @Enumerated(EnumType.STRING)\n\
+    \    private EventImportance importance;\n\n    @Enumerated(EnumType.STRING)\n\
+    \    private EventStatus status;\n}\n"
+  info:
+    "size": "1422"
+    "last_modified": "2026-01-05T15:20:51.919918253"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/entity/event/EventGalleryItem.java"
+  content: "package com.caco.sitedocaco.entity.event;\n\nimport jakarta.persistence.*;\n\
+    import lombok.Data;\n\nimport java.util.UUID;\n\n@Entity\n@Table\n@Data\npublic\
+    \ class EventGalleryItem {\n    /*\n    2. **`EventGalleryItem`**\n        - `UUID\
+    \ id`\n        - `Event event` (ManyToOne)\n        - `String mediaUrl`\n    \
+    \    - `MediaType type` (Enum: `IMAGE`, `VIDEO`)\n    */\n\n    public enum MediaType\
+    \ {\n        IMAGE,\n        VIDEO\n    }\n\n    @Id\n    @GeneratedValue(strategy\
+    \ = GenerationType.UUID)\n    private UUID id;\n\n    @ManyToOne\n    Event event;\n\
+    \n    private String mediaUrl;\n\n    @Enumerated(EnumType.STRING)\n    private\
+    \ MediaType type;\n}\n"
+  info:
+    "size": "624"
+    "last_modified": "2026-01-05T15:20:51.925292612"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/entity/manual/ManualCategory.java"
+  content: "package com.caco.sitedocaco.entity.manual;\n\nimport jakarta.persistence.*;\n\
+    import lombok.Data;\n\nimport java.util.List;\nimport java.util.UUID;\n\n@Entity\n\
+    @Table\n@Data\npublic class ManualCategory {\n    /*\n    1. **`ManualCategory`**\n\
+    \        - `UUID id`\n        - `String slug` (unique, URL-friendly)\n       \
+    \ - `String title`\n        - `Integer order`\n        - `List<ManualChapter>\
+    \ chapters` (OneToMany)\n    */\n\n    @Id\n    @GeneratedValue(strategy = GenerationType.UUID)\n\
+    \    private UUID id;\n\n    @Column(nullable = false, unique = true)\n    private\
+    \ String slug;\n\n    @Column(nullable = false)\n    private String title;\n\n\
+    \    @Column(name = \"category_order\")\n    private Integer order;\n\n    @OneToMany(mappedBy\
+    \ = \"category\", cascade = CascadeType.ALL, orphanRemoval = true)\n    private\
+    \ List<ManualChapter> chapters;\n}\n"
+  info:
+    "size": "813"
+    "last_modified": "2026-01-05T15:20:51.932413376"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/entity/manual/ManualChapter.java"
+  content: "package com.caco.sitedocaco.entity.manual;\n\nimport jakarta.persistence.*;\n\
+    import lombok.Data;\n\nimport java.util.List;\nimport java.util.UUID;\n\n@Entity\n\
+    @Table\n@Data\npublic class ManualChapter {\n    /*\n    2. **`ManualChapter`**\n\
+    \        - `UUID id`\n        - `String slug` (unique, URL-friendly)\n       \
+    \ - `String title`\n        - `Integer order`\n        - `ManualCategory category`\
+    \ (ManyToOne)\n        - `List<ManualArticle> articles` (OneToMany)\n    */\n\n\
+    \    @Id\n    @GeneratedValue(strategy = GenerationType.UUID)\n    private UUID\
+    \ id;\n\n    @Column(nullable = false, unique = true)\n    private String slug;\n\
+    \n    @Column(nullable = false)\n    private String title;\n\n    @Column(name\
+    \ = \"chapter_order\")\n    private Integer order;\n\n    @ManyToOne\n    private\
+    \ ManualCategory category;\n\n    @OneToMany(mappedBy = \"chapter\", cascade =\
+    \ CascadeType.ALL, orphanRemoval = true)\n    private List<ManualArticle> articles;\n\
+    }\n"
+  info:
+    "size": "910"
+    "last_modified": "2026-01-05T15:20:51.937375868"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/entity/manual/ManualArticle.java"
+  content: "package com.caco.sitedocaco.entity.manual;\n\nimport jakarta.persistence.*;\n\
+    import lombok.Data;\n\nimport java.util.UUID;\n\n@Entity\n@Table\n@Data\npublic\
+    \ class ManualArticle {\n    /*\n    3. **`ManualArticle`**\n        - `UUID id`\n\
+    \        - `String slug` (unique, URL-friendly)\n        - `String title`\n  \
+    \      - `String content` (TEXT - Markdown)\n        - `Integer order`\n     \
+    \   - `ManualChapter chapter` (ManyToOne)\n    */\n\n    @Id\n    @GeneratedValue(strategy\
+    \ = GenerationType.UUID)\n    private UUID id;\n\n    @Column(nullable = false,\
+    \ unique = true)\n    private String slug;\n\n    @Column(nullable = false)\n\
+    \    private String title;\n\n    @Lob\n    private String content;\n\n    @Column(name\
+    \ = \"article_order\")\n    private Integer order;\n\n    @ManyToOne\n    private\
+    \ ManualChapter chapter;\n}\n"
+  info:
+    "size": "784"
+    "last_modified": "2026-01-05T15:20:51.941583572"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/entity/manual/ArticleFeedback.java"
+  content: "package com.caco.sitedocaco.entity.manual;\n\nimport com.caco.sitedocaco.entity.User;\n\
+    import jakarta.persistence.*;\nimport lombok.Data;\n\nimport java.time.LocalDateTime;\n\
+    import java.util.UUID;\n\n@Entity\n@Table\n@Data\npublic class ArticleFeedback\
+    \ {\n    /*\n    4. **`ArticleFeedback`**\n        - `UUID id`\n        - `ManualArticle\
+    \ article` (ManyToOne)\n        - `User user` (ManyToOne, Nullable)\n        -\
+    \ `Boolean isHelpful`\n        - `String comment` (Nullable)\n        - `LocalDateTime\
+    \ postedAt`\n    */\n\n    @Id\n    @GeneratedValue(strategy = GenerationType.UUID)\n\
+    \    private UUID id;\n\n    @ManyToOne\n    private ManualArticle article;\n\n\
+    \    @ManyToOne\n    private User user;\n\n    private Boolean isHelpful;\n\n\
+    \    private String comment;\n\n    private LocalDateTime postedAt;\n}\n"
+  info:
+    "size": "771"
+    "last_modified": "2026-01-05T15:20:51.946224399"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/entity/exam/Exam.java"
+  content: "package com.caco.sitedocaco.entity.exam;\n\nimport jakarta.persistence.*;\n\
+    import lombok.Data;\n\nimport java.util.UUID;\n\n@Entity\n@Table\n@Data\npublic\
+    \ class Exam {\n    /*\n    1. **`Exam`**\n        - `UUID id`\n        - `Subject\
+    \ subject` (Disciplina, ManyToOne)\n        - `Integer year`\n        - `ExamType\
+    \ type` (Enum: `P1`, `P2`, `P3`, `EXAME`, `SUB`, `OUTROS`)\n        - `String\
+    \ fileUrl`\n    */\n\n    public enum ExamType {\n        P1,\n        P2,\n \
+    \       P3,\n        EXAME,\n        SUB,\n        OUTROS\n    }\n\n    @Id\n\
+    \    @GeneratedValue(strategy = GenerationType.UUID)\n    private UUID id;\n\n\
+    \    @ManyToOne\n    private Subject subject;\n\n    private Integer year;\n \
+    \   @Enumerated(EnumType.STRING)\n    private ExamType type;\n\n    @Column(nullable\
+    \ = false)\n    private String fileUrl;\n}\n"
+  info:
+    "size": "779"
+    "last_modified": "2026-01-05T15:20:51.952990866"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/entity/exam/Subject.java"
+  content: "package com.caco.sitedocaco.entity.exam;\n\nimport jakarta.persistence.*;\n\
+    import lombok.Data;\n\nimport java.util.UUID;\n\n@Entity\n@Table\n@Data\npublic\
+    \ class Subject {\n    /*\n    2. `Subject`\n        - `UUID id`\n        - `String\
+    \ name`\n    */\n\n    @Id\n    @GeneratedValue(strategy = GenerationType.UUID)\n\
+    \    private UUID id;\n\n    @Column(nullable = false, unique = true)\n    private\
+    \ String name;\n}\n"
+  info:
+    "size": "391"
+    "last_modified": "2026-01-05T15:20:51.956156818"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/entity/sticker/Sticker.java"
+  content: "package com.caco.sitedocaco.entity.sticker;\n\nimport com.caco.sitedocaco.entity.event.Event;\n\
+    import jakarta.persistence.*;\nimport lombok.Data;\n\nimport java.util.UUID;\n\
+    \n@Entity\n@Table\n@Data\npublic class Sticker {\n    /*\n    1. **`Sticker`**\n\
+    \        - `UUID id`\n        - `String name`\n        - `String description`\n\
+    \        - `String imageUrl`\n        - `Event originEvent` (OneToOne Nullable)\n\
+    \    */\n\n    @Id\n    @GeneratedValue(strategy = GenerationType.UUID)\n    private\
+    \ UUID id;\n\n    @Column(nullable = false, unique = true)\n    private String\
+    \ name;\n\n    @Column(length = 600)\n    private String description;\n\n    @Column(nullable\
+    \ = false)\n    private String imageUrl;\n\n    @ManyToOne\n    private Event\
+    \ originEvent;\n}\n"
+  info:
+    "size": "720"
+    "last_modified": "2026-01-05T15:20:51.960517602"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/entity/sticker/UserSticker.java"
+  content: "package com.caco.sitedocaco.entity.sticker;\n\nimport com.caco.sitedocaco.entity.User;\n\
+    import jakarta.persistence.*;\nimport lombok.Data;\n\nimport java.time.LocalDateTime;\n\
+    import java.util.UUID;\n\n@Data\n@Entity\n@Table\npublic class UserSticker {\n\
+    \    /*\n    1. **`UserSticker`**\n        - `UUID id`\n        - `User user`\
+    \ (ManyToOne)\n        - `Sticker sticker` (ManyToOne)\n        - `LocalDateTime\
+    \ obtainedAt`\n    */\n\n    @Id\n    @GeneratedValue(strategy = GenerationType.UUID)\n\
+    \    private UUID id;\n\n    @ManyToOne\n    private User user;\n\n    @ManyToOne\n\
+    \    private Sticker sticker;\n\n    private LocalDateTime obtainedAt;\n}\n"
+  info:
+    "size": "617"
+    "last_modified": "2026-01-05T15:20:51.965152421"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/entity/sticker/RedemptionCode.java"
+  content: "package com.caco.sitedocaco.entity.sticker;\n\nimport jakarta.persistence.*;\n\
+    import lombok.Data;\n\nimport java.time.LocalDateTime;\n\n@Data\n@Entity\n@Table\n\
+    public class RedemptionCode {\n    /*\n    2. **`RedemptionCode`**\n    - `String\
+    \ code` (PK, String aleatória de 8-12 chars)\n    - `Sticker sticker` (ManyToOne)\n\
+    \    - `Boolean isOneTimeUse`\n    - `Boolean isUsed`\n    - `LocalDateTime expiresAt`\
+    \ (Nullable)\n    */\n\n    @Id\n    @Column(length = 12)\n    private String\
+    \ code;\n\n    @ManyToOne\n    private Sticker sticker;\n\n    private Boolean\
+    \ isOneTimeUse;\n    private Boolean isUsed;\n    private LocalDateTime expiresAt;\n\
+    }\n"
+  info:
+    "size": "617"
+    "last_modified": "2026-01-05T15:20:51.968288098"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/entity/AnalyticsLog.java"
+  content: "package com.caco.sitedocaco.entity;\n\nimport jakarta.persistence.*;\n\
+    import lombok.Data;\n\nimport java.util.UUID;\n\n@Data\n@Entity\n@Table\npublic\
+    \ class AnalyticsLog {\n    /*\n    1. **`AnalyticsLog`**\n        - `UUID id`\n\
+    \        - `AnalyticsType type` (Enum: `VIEW_ARTICLE`, `VIEW_EVENT`, `SEARCH_QUERY`)\n\
+    \        - `String targetId` (Pode ser ID do artigo ou o termo buscado)\n    \
+    \    - `LocalDateTime timestamp`\n    */\n    public enum AnalyticsType {\n  \
+    \      VIEW_ARTICLE,\n        VIEW_EVENT,\n        SEARCH_QUERY\n    }\n\n   \
+    \ @Id\n    @GeneratedValue(strategy = GenerationType.UUID)\n    private UUID id;\n\
+    \n    @Enumerated(EnumType.STRING)\n    private AnalyticsType type;\n\n    private\
+    \ String targetId;\n}\n"
+  info:
+    "size": "693"
+    "last_modified": "2026-01-05T15:20:51.972716218"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/entity/store/Product.java"
+  content: "package com.caco.sitedocaco.entity.store;\n\nimport jakarta.persistence.*;\n\
+    import lombok.Data;\n\nimport java.util.UUID;\n\n@Data\n@Entity\n@Table\npublic\
+    \ class Product {\n    /*\n    1. **`Product`**\n        - `UUID id`\n       \
+    \ - `String name` (ex: \"Moletom do Curso 2026\")\n        - `String description`\
+    \ (Markdown)\n        - `Integer price` (em centavos, ex: 5999 para R$59,99)\n\
+    \        - `String coverImage`\n        - `List<String> galleryImages` (ElementCollection\
+    \ ou tabela separada)\n        - `ProductStatus status` (Enum: `AVAILABLE`, `OUT_OF_STOCK`,\
+    \ `PRE_ORDER`)\n        - `ProductCategory category` (Enum ou Entidade: `ROUPAS`,\
+    \ `CANECAS`, `ADESIVOS_FISICOS`, `OUTROS`)\n    */\n\n    public enum ProductStatus\
+    \ {\n        AVAILABLE,\n        OUT_OF_STOCK,\n        PRE_ORDER\n    }\n\n \
+    \   @Id\n    @GeneratedValue(strategy = GenerationType.UUID)\n    private UUID\
+    \ id;\n\n    @Column(nullable = false)\n    private String name;\n\n    @Column(columnDefinition\
+    \ = \"TEXT\")\n    private String description;\n\n    @Column(nullable = false)\n\
+    \    private java.math.BigDecimal price;\n\n    private String coverImage;\n\n\
+    \    @ElementCollection\n    @CollectionTable(name = \"product_gallery_images\"\
+    , joinColumns = @JoinColumn(name = \"product_id\"))\n    @Column(name = \"image_url\"\
+    )\n    private java.util.List<String> galleryImages;\n\n    @Enumerated(EnumType.STRING)\n\
+    \    @Column(nullable = false)\n    private ProductStatus status;\n\n    @Column(nullable\
+    \ = false)\n    private String category;\n}\n"
+  info:
+    "size": "1452"
+    "last_modified": "2026-01-05T15:20:51.976388408"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/entity/store/ProductVariation.java"
+  content: "package com.caco.sitedocaco.entity.store;\n\nimport jakarta.persistence.*;\n\
+    import lombok.Data;\n\n@Data\n@Entity\n@Table\npublic class ProductVariation {\n\
+    \    /*\n    2. **`ProductVariation`**\n        - `UUID id`\n        - `Product\
+    \ product` (ManyToOne)\n        - `String name` (ex: \"Tamanho P\", \"Tamanho\
+    \ G\")\n        - `Integer additionalPrice` (em centavos, ex: 5999 para R$59,99)\n\
+    \        - `Integer stockQuantity`\n    * */\n\n    @Id\n    @GeneratedValue(strategy\
+    \ = GenerationType.UUID)\n    private java.util.UUID id;\n\n    @ManyToOne\n \
+    \   private Product product;\n\n    private String name;\n\n    private Integer\
+    \ additionalPrice;\n\n    private Integer stockQuantity;\n}\n"
+  info:
+    "size": "654"
+    "last_modified": "2026-01-05T15:20:51.979554664"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/entity/enums/Role.java"
+  content: "package com.caco.sitedocaco.entity.enums;\n\npublic enum Role {\n    STUDENT,\n\
+    \    ADMIN,\n    EDITOR\n}\n"
+  info:
+    "size": "99"
+    "last_modified": "2026-01-05T15:20:51.98374227"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/security/oauth2/CustomOAuth2UserService.java"
+  content: "package com.caco.sitedocaco.security.oauth2;\n\nimport com.caco.sitedocaco.entity.User;\n\
+    import com.caco.sitedocaco.entity.enums.Role;\nimport com.caco.sitedocaco.repository.UserRepository;\n\
+    import jakarta.transaction.Transactional;\nimport lombok.RequiredArgsConstructor;\n\
+    import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;\n\
+    import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;\n\
+    import org.springframework.security.oauth2.core.OAuth2AuthenticationException;\n\
+    import org.springframework.security.oauth2.core.OAuth2Error;\nimport org.springframework.security.oauth2.core.user.OAuth2User;\n\
+    import org.springframework.stereotype.Service;\n\nimport java.time.LocalDateTime;\n\
+    import java.util.Optional;\n\n@Service\n@RequiredArgsConstructor\npublic class\
+    \ CustomOAuth2UserService extends DefaultOAuth2UserService {\n\n    private final\
+    \ UserRepository userRepository;\n\n    @Override\n    @Transactional\n    public\
+    \ OAuth2User loadUser(OAuth2UserRequest userRequest) throws OAuth2AuthenticationException\
+    \ {\n        OAuth2User oAuth2User = super.loadUser(userRequest);\n\n        System.out.println(\"\
+    >>> CustomOAuth2UserService: Recebido do Google: \" + oAuth2User.getAttributes());\
+    \ // LOG DE DEBUG\n\n        String email = oAuth2User.getAttribute(\"email\"\
+    );\n        String name = oAuth2User.getAttribute(\"name\");\n        String avatarUrl\
+    \ = oAuth2User.getAttribute(\"picture\");\n\n        // TODO: Descomentar para\
+    \ restringir acesso por domínio de e-mail\n        // REGRA DE NEGÓCIO: Validaç\
+    ão de Domínio\n        assert email != null;\n        if (!email.endsWith(\"@dac.unicamp.br\"\
+    )) {\n            OAuth2Error oauth2Error = new OAuth2Error(\n               \
+    \     \"invalid_domain\",\n                    \"O e-mail não pertence ao domí\
+    nio institucional permitido.\",\n                    null\n            );\n\n\
+    \            throw new OAuth2AuthenticationException(oauth2Error, oauth2Error.toString());\n\
+    \        }\n\n        // Salva ou atualiza o usuário\n        Optional<User> userOptional\
+    \ = userRepository.findByEmail(email);\n        User user;\n\n        // Atualiza\
+    \ se existir, senão cria novo\n        if (userOptional.isPresent()) {\n     \
+    \       user = userOptional.get();\n            user.setAvatarUrl(avatarUrl);\n\
+    \            user.setUsername(name);\n        } else {\n            user = new\
+    \ User();\n            user.setEmail(email);\n            user.setUsername(name);\n\
+    \            user.setAvatarUrl(avatarUrl);\n            user.setRole(Role.STUDENT);\
+    \ // Padrão\n            user.setCreatedAt(LocalDateTime.now());\n        }\n\n\
+    \        userRepository.save(user);\n\n        return oAuth2User;\n    }\n}"
+  info:
+    "size": "2609"
+    "last_modified": "2026-01-05T15:20:51.989231725"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/security/oauth2/OAuth2LoginSuccessHandler.java"
+  content: "package com.caco.sitedocaco.security.oauth2;\n\nimport com.caco.sitedocaco.entity.User;\n\
+    import com.caco.sitedocaco.repository.UserRepository;\nimport com.caco.sitedocaco.security.jwt.JwtService;\n\
+    import jakarta.servlet.http.HttpServletRequest;\nimport jakarta.servlet.http.HttpServletResponse;\n\
+    import lombok.RequiredArgsConstructor;\nimport org.springframework.beans.factory.annotation.Value;\n\
+    import org.springframework.security.core.Authentication;\nimport org.springframework.security.oauth2.core.user.OAuth2User;\n\
+    import org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler;\n\
+    import org.springframework.stereotype.Component;\nimport org.springframework.web.util.UriComponentsBuilder;\n\
+    \nimport java.io.IOException;\n\n@Component\n@RequiredArgsConstructor\npublic\
+    \ class OAuth2LoginSuccessHandler extends SimpleUrlAuthenticationSuccessHandler\
+    \ {\n\n    private final JwtService jwtService;\n    private final UserRepository\
+    \ userRepository;\n\n    @Value(\"${app.frontend.url:http://localhost:5173}\"\
+    )\n    private String frontendUrl;\n\n    @Override\n    public void onAuthenticationSuccess(HttpServletRequest\
+    \ request, HttpServletResponse response, Authentication authentication) throws\
+    \ IOException {\n        OAuth2User oAuth2User = (OAuth2User) authentication.getPrincipal();\n\
+    \        String email = oAuth2User.getAttribute(\"email\");\n\n        // Busca\
+    \ o usuário completo (com Role) para gerar o token\n        User user = userRepository.findByEmail(email)\n\
+    \                .orElseThrow(() -> new RuntimeException(\"Usuário não encontrado\
+    \ pós-login\"));\n\n        // Gera o token JWT\n        String token = jwtService.generateToken(user);\n\
+    \n        // Redireciona para o Front com o token na URL\n        String targetUrl\
+    \ = UriComponentsBuilder.fromUriString(frontendUrl + \"/auth/callback\")\n   \
+    \             .queryParam(\"token\", token)\n                .build().toUriString();\n\
+    \n        getRedirectStrategy().sendRedirect(request, response, targetUrl);\n\
+    \    }\n}"
+  info:
+    "size": "1960"
+    "last_modified": "2026-01-05T15:20:51.992911073"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/security/oauth2/OAuth2LoginFailureHandler.java"
+  content: "package com.caco.sitedocaco.security.oauth2;\n\nimport jakarta.servlet.ServletException;\n\
+    import jakarta.servlet.http.HttpServletRequest;\nimport jakarta.servlet.http.HttpServletResponse;\n\
+    import org.springframework.beans.factory.annotation.Value;\nimport org.springframework.security.core.AuthenticationException;\n\
+    import org.springframework.security.oauth2.core.OAuth2AuthenticationException;\n\
+    import org.springframework.security.oauth2.core.OAuth2Error;\nimport org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler;\n\
+    import org.springframework.stereotype.Component;\nimport org.springframework.web.util.UriComponentsBuilder;\n\
+    \nimport java.io.IOException;\n\n@Component\npublic class OAuth2LoginFailureHandler\
+    \ extends SimpleUrlAuthenticationFailureHandler {\n\n    @Value(\"${app.frontend.url}\"\
+    )\n    private String frontendUrl;\n\n    @Override\n    public void onAuthenticationFailure(HttpServletRequest\
+    \ request,\n                                        HttpServletResponse response,\n\
+    \                                        AuthenticationException exception) throws\
+    \ IOException, ServletException {\n\n        // Pega a mensagem de erro da exceç\
+    ão (ou define um código padrão)\n        // Se a exceção for \"invalid_domain\"\
+    , mandamos esse código.\n        String errorCode = \"generic_error\";\n\n   \
+    \     // 1. Verifica se a exceção é do tipo OAuth2 (que carrega nosso código personalizado)\n\
+    \        if (exception instanceof OAuth2AuthenticationException oauthEx) {\n \
+    \           OAuth2Error error = oauthEx.getError();\n\n            // 2. Lê o\
+    \ código que definimos no Service (\"invalid_domain\")\n            if (error\
+    \ != null) {\n                errorCode = error.getErrorCode();\n            }\n\
+    \        }\n\n        // Monta a URL: http://localhost:5173/login?error=invalid_domain\n\
+    \        String targetUrl = UriComponentsBuilder.fromUriString(frontendUrl + \"\
+    /login\")\n                .queryParam(\"error\", errorCode)\n               \
+    \ .build().toUriString();\n\n        getRedirectStrategy().sendRedirect(request,\
+    \ response, targetUrl);\n    }\n}"
+  info:
+    "size": "2046"
+    "last_modified": "2026-01-05T15:20:51.996135562"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/security/jwt/JwtService.java"
+  content: "package com.caco.sitedocaco.security.jwt;\n\nimport com.auth0.jwt.JWT;\n\
+    import com.auth0.jwt.algorithms.Algorithm;\nimport com.auth0.jwt.interfaces.DecodedJWT;\n\
+    import com.caco.sitedocaco.entity.User;\nimport org.springframework.beans.factory.annotation.Value;\n\
+    import org.springframework.stereotype.Service;\n\nimport java.time.Instant;\n\
+    import java.time.temporal.ChronoUnit;\n\n@Service\npublic class JwtService {\n\
+    \n    @Value(\"${jwt.secret}\")\n    private String secret;\n\n    @Value(\"${jwt.expiration}\"\
+    )\n    private long expiration;\n\n    // 1. Gerar Token (Login bem sucedido)\n\
+    \    public String generateToken(User user) {\n        return JWT.create()\n \
+    \               .withSubject(user.getEmail()) // Identificador principal\n   \
+    \             .withClaim(\"id\", user.getId().toString()) // Payload útil\n  \
+    \              .withClaim(\"role\", user.getRole().name()) // Payload útil para\
+    \ o Front\n                .withIssuedAt(Instant.now())\n                .withExpiresAt(Instant.now().plus(expiration,\
+    \ ChronoUnit.MILLIS))\n                .withIssuer(\"caco-api\")\n           \
+    \     .sign(Algorithm.HMAC256(secret));\n    }\n\n    // 2. Validar e Decodificar\
+    \ Token\n    public DecodedJWT validateToken(String token) {\n        try {\n\
+    \            return JWT.require(Algorithm.HMAC256(secret))\n                 \
+    \   .withIssuer(\"caco-api\")\n                    .build()\n                \
+    \    .verify(token);\n        } catch (Exception e) {\n            // Token invá\
+    lido ou expirado\n            return null;\n        }\n    }\n\n    // 3. Extrair\
+    \ E-mail (Subject)\n    public String extractUsername(String token) {\n      \
+    \  DecodedJWT jwt = validateToken(token);\n        return jwt != null ? jwt.getSubject()\
+    \ : null;\n    }\n}"
+  info:
+    "size": "1679"
+    "last_modified": "2026-01-05T15:20:52.001179085"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/security/jwt/JwtAuthenticationFilter.java"
+  content: "package com.caco.sitedocaco.security.jwt;\n\nimport jakarta.servlet.FilterChain;\n\
+    import jakarta.servlet.ServletException;\nimport jakarta.servlet.http.HttpServletRequest;\n\
+    import jakarta.servlet.http.HttpServletResponse;\nimport lombok.RequiredArgsConstructor;\n\
+    import org.jspecify.annotations.NonNull;\nimport org.springframework.security.authentication.UsernamePasswordAuthenticationToken;\n\
+    import org.springframework.security.core.context.SecurityContextHolder;\nimport\
+    \ org.springframework.security.core.userdetails.UserDetails;\nimport org.springframework.security.core.userdetails.UserDetailsService;\n\
+    import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;\n\
+    import org.springframework.stereotype.Component;\nimport org.springframework.web.filter.OncePerRequestFilter;\n\
+    \nimport java.io.IOException;\n\n@Component\n@RequiredArgsConstructor\npublic\
+    \ class JwtAuthenticationFilter extends OncePerRequestFilter {\n\n    private\
+    \ final JwtService jwtService;\n    private final UserDetailsService userDetailsService;\n\
+    \n    @Override\n    protected void doFilterInternal(\n            @NonNull HttpServletRequest\
+    \ request,\n            @NonNull HttpServletResponse response,\n            @NonNull\
+    \ FilterChain filterChain\n    ) throws ServletException, IOException {\n\n  \
+    \      final String authHeader = request.getHeader(\"Authorization\");\n     \
+    \   final String jwt;\n        final String userEmail;\n\n        if (authHeader\
+    \ == null || !authHeader.startsWith(\"Bearer \")) {\n            filterChain.doFilter(request,\
+    \ response);\n            return;\n        }\n\n        jwt = authHeader.substring(7);\n\
+    \n        // 1. Tenta extrair o email.\n        // Se o token for inválido ou\
+    \ expirado, isso retornará NULL (graças ao seu try-catch no JwtService).\n   \
+    \     userEmail = jwtService.extractUsername(jwt);\n\n        // 2. Se userEmail\
+    \ != null, o token é criptograficamente válido.\n        if (userEmail != null\
+    \ && SecurityContextHolder.getContext().getAuthentication() == null) {\n\n   \
+    \         // 3. Carrega o usuário do banco (para pegar as Roles e garantir que\
+    \ ele não foi deletado)\n            UserDetails userDetails = this.userDetailsService.loadUserByUsername(userEmail);\n\
+    \n            // 4. Autentica direto, pois já sabemos que o token é válido pelo\
+    \ passo 1\n            UsernamePasswordAuthenticationToken authToken = new UsernamePasswordAuthenticationToken(\n\
+    \                    userDetails,\n                    null,\n               \
+    \     userDetails.getAuthorities()\n            );\n\n            authToken.setDetails(new\
+    \ WebAuthenticationDetailsSource().buildDetails(request));\n            SecurityContextHolder.getContext().setAuthentication(authToken);\n\
+    \        }\n\n        filterChain.doFilter(request, response);\n    }\n}"
+  info:
+    "size": "2721"
+    "last_modified": "2026-01-05T15:20:52.004513934"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/security/jwt/UserDetailsServiceImpl.java"
+  content: "package com.caco.sitedocaco.security.jwt;\n\nimport com.caco.sitedocaco.entity.User;\n\
+    import com.caco.sitedocaco.repository.UserRepository;\nimport lombok.RequiredArgsConstructor;\n\
+    import org.jspecify.annotations.NonNull;\nimport org.springframework.security.core.authority.SimpleGrantedAuthority;\n\
+    import org.springframework.security.core.userdetails.UserDetails;\nimport org.springframework.security.core.userdetails.UserDetailsService;\n\
+    import org.springframework.security.core.userdetails.UsernameNotFoundException;\n\
+    import org.springframework.stereotype.Service; // <--- ESTA ANOTAÇÃO É CRUCIAL\n\
+    \nimport java.util.Collections;\n\n@Service // Sem isso, o Spring não encontra\
+    \ o Bean e dá o erro que você viu\n@RequiredArgsConstructor\npublic class UserDetailsServiceImpl\
+    \ implements UserDetailsService {\n\n    private final UserRepository userRepository;\n\
+    \n    @Override\n    public UserDetails loadUserByUsername(@NonNull String email)\
+    \ throws UsernameNotFoundException {\n        // Busca o usuário no banco pelo\
+    \ email\n        User user = userRepository.findByEmail(email)\n             \
+    \   .orElseThrow(() -> new UsernameNotFoundException(\"Usuário não encontrado:\
+    \ \" + email));\n\n        // Converte a Role do seu Enum (STUDENT) para o padrã\
+    o do Spring (ROLE_STUDENT)\n        SimpleGrantedAuthority authority = new SimpleGrantedAuthority(\"\
+    ROLE_\" + user.getRole().name());\n\n        // Retorna o objeto User padrão do\
+    \ Spring Security\n        return new org.springframework.security.core.userdetails.User(\n\
+    \                user.getEmail(),\n                \"\", // Senha vazia (pois\
+    \ usamos OAuth2/JWT, não senha local)\n                Collections.singletonList(authority)\n\
+    \        );\n    }\n}"
+  info:
+    "size": "1677"
+    "last_modified": "2026-01-05T15:20:52.007457052"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/repository/UserRepository.java"
+  content: "package com.caco.sitedocaco.repository;\n\nimport com.caco.sitedocaco.entity.User;\n\
+    import org.springframework.data.jpa.repository.JpaRepository;\nimport org.springframework.stereotype.Repository;\n\
+    \nimport java.util.Optional;\nimport java.util.UUID;\n\n@Repository\npublic interface\
+    \ UserRepository extends JpaRepository<User, UUID> {\n    Optional<User> findByEmail(String\
+    \ email);\n    boolean existsByEmail(String email);\n}"
+  info:
+    "size": "413"
+    "last_modified": "2026-01-05T15:20:52.013060374"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/repository/BannerRepository.java"
+  content: "package com.caco.sitedocaco.repository;\n\nimport com.caco.sitedocaco.entity.home.Banner;\n\
+    import org.springframework.data.jpa.repository.JpaRepository;\nimport org.springframework.stereotype.Repository;\n\
+    \nimport java.util.List;\nimport java.util.UUID;\n\n@Repository\npublic interface\
+    \ BannerRepository extends JpaRepository<Banner, UUID> {\n    // Busca apenas\
+    \ ativos, ordenados pela ordem de exibição definida no admin\n    List<Banner>\
+    \ findByActiveTrueOrderByDisplayOrderAsc();\n}"
+  info:
+    "size": "473"
+    "last_modified": "2026-01-05T15:20:52.016855986"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/repository/WarningRepository.java"
+  content: "package com.caco.sitedocaco.repository;\n\nimport com.caco.sitedocaco.entity.home.Warning;\n\
+    import org.springframework.data.jpa.repository.JpaRepository;\nimport org.springframework.data.jpa.repository.Query;\n\
+    import org.springframework.stereotype.Repository;\n\nimport java.time.LocalDateTime;\n\
+    import java.util.List;\nimport java.util.UUID;\n\n@Repository\npublic interface\
+    \ WarningRepository extends JpaRepository<Warning, UUID> {\n\n    // Regra: O\
+    \ aviso deve ter começado (startsAt <= agora) E não ter expirado (expiresAt >\
+    \ agora)\n    @Query(\"SELECT w FROM Warning w WHERE w.startsAt <= :now AND w.expiresAt\
+    \ > :now ORDER BY w.startsAt DESC\")\n    List<Warning> findActiveWarnings(LocalDateTime\
+    \ now);\n}"
+  info:
+    "size": "692"
+    "last_modified": "2026-01-05T15:20:52.020282884"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/repository/NewsRepository.java"
+  content: "package com.caco.sitedocaco.repository;\n\nimport com.caco.sitedocaco.dto.response.NewsSummaryDTO;\n\
+    import com.caco.sitedocaco.entity.home.News;\nimport org.springframework.data.domain.Page;\n\
+    import org.springframework.data.domain.Pageable;\nimport org.springframework.data.jpa.repository.JpaRepository;\n\
+    import org.springframework.data.jpa.repository.Query;\nimport org.springframework.stereotype.Repository;\n\
+    \nimport java.util.Optional;\nimport java.util.UUID;\n\n@Repository\npublic interface\
+    \ NewsRepository extends JpaRepository<News, UUID> {\n\n    Optional<News> findBySlug(String\
+    \ slug);\n\n    boolean existsBySlug(String slug);\n\n    // Optimized Query:\
+    \ Returns DTOs directly, skipping the heavy 'content' field\n    @Query(\"SELECT\
+    \ new com.caco.sitedocaco.dto.response.NewsSummaryDTO(\" +\n            \"n.id,\
+    \ n.title, n.slug, n.summary, n.coverImage, n.publishDate, n.author.username)\
+    \ \" +\n            \"FROM News n ORDER BY n.publishDate DESC\")\n    Page<NewsSummaryDTO>\
+    \ findAllSummaries(Pageable pageable);\n}"
+  info:
+    "size": "994"
+    "last_modified": "2026-01-05T15:20:52.023141921"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/response/UserResponseDTO.java"
+  content: "package com.caco.sitedocaco.dto.response;\n\nimport com.caco.sitedocaco.entity.User;\n\
+    import com.caco.sitedocaco.entity.enums.Role;\n\nimport java.util.UUID;\n\npublic\
+    \ record UserResponseDTO(\n        UUID id,\n        String name,\n        String\
+    \ email,\n        String avatarUrl,\n        Role role\n) {\n    public static\
+    \ UserResponseDTO fromEntity(User user) {\n        return new UserResponseDTO(\n\
+    \                user.getId(),\n                user.getUsername(),\n        \
+    \        user.getEmail(),\n                user.getAvatarUrl(),\n            \
+    \    user.getRole()\n        );\n    }\n}"
+  info:
+    "size": "572"
+    "last_modified": "2026-01-05T15:20:52.027249908"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/response/ErrorResponseDTO.java"
+  content: "package com.caco.sitedocaco.dto.response;\n\nimport java.time.LocalDateTime;\n\
+    \npublic record ErrorResponseDTO(\n        LocalDateTime timestamp,\n        int\
+    \ status,\n        String error,\n        String message,\n        String path\n\
+    ) {\n}"
+  info:
+    "size": "232"
+    "last_modified": "2026-01-05T15:20:52.030252587"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/response/BannerDTO.java"
+  content: "package com.caco.sitedocaco.dto.response;\n\nimport java.util.UUID;\n\n\
+    public record BannerDTO(\n        UUID id,\n        String title,\n        String\
+    \ imageUrl,\n        String targetLink\n) {}"
+  info:
+    "size": "186"
+    "last_modified": "2026-01-05T15:20:52.033401087"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/response/WarningDTO.java"
+  content: "package com.caco.sitedocaco.dto.response;\n\nimport java.time.LocalDateTime;\n\
+    import java.util.UUID;\n\npublic record WarningDTO(\n        UUID id,\n      \
+    \  String markdownText,\n        LocalDateTime expiresAt\n) {}"
+  info:
+    "size": "207"
+    "last_modified": "2026-01-05T15:20:52.03642923"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/response/NewsSummaryDTO.java"
+  content: "package com.caco.sitedocaco.dto.response;\n\nimport java.time.LocalDateTime;\n\
+    import java.util.UUID;\n\npublic record NewsSummaryDTO(\n        UUID id,\n  \
+    \      String title,\n        String slug,\n        String summary,\n        String\
+    \ coverImage,\n        LocalDateTime publishDate,\n        String authorName\n\
+    ) {}"
+  info:
+    "size": "305"
+    "last_modified": "2026-01-05T15:20:52.039272129"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/response/DashboardDTO.java"
+  content: "package com.caco.sitedocaco.dto.response;\n\nimport java.util.List;\n\n\
+    public record DashboardDTO(\n        List<BannerDTO> banners,\n        List<WarningDTO>\
+    \ warnings,\n        List<NewsSummaryDTO> latestNews\n) {}"
+  info:
+    "size": "207"
+    "last_modified": "2026-01-05T15:20:52.042041563"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/request/UpdateProfileDTO.java"
+  content: "package com.caco.sitedocaco.dto.request;\n\n// O usuário só pode atualizar\
+    \ nome e foto (email e role são fixos)\npublic record UpdateProfileDTO(\n    \
+    \    String name,\n        String avatarUrl\n) {}"
+  info:
+    "size": "195"
+    "last_modified": "2026-01-05T15:20:52.045860076"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/service/UserService.java"
+  content: "package com.caco.sitedocaco.service;\n\nimport com.caco.sitedocaco.dto.request.UpdateProfileDTO;\n\
+    import com.caco.sitedocaco.dto.response.UserResponseDTO;\nimport com.caco.sitedocaco.entity.User;\n\
+    import com.caco.sitedocaco.exception.ResourceNotFoundException;\nimport com.caco.sitedocaco.repository.UserRepository;\n\
+    import lombok.RequiredArgsConstructor;\nimport org.springframework.security.core.context.SecurityContextHolder;\n\
+    import org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\n\
+    \n@Service\n@RequiredArgsConstructor\npublic class UserService {\n\n    private\
+    \ final UserRepository userRepository;\n\n    /**\n     * Pega o e-mail do Token\
+    \ JWT (via SecurityContext) e busca o usuário no banco.\n     */\n    @Transactional(readOnly\
+    \ = true)\n    public UserResponseDTO getMe() {\n        String email = SecurityContextHolder.getContext().getAuthentication().getName();\n\
+    \n        User user = userRepository.findByEmail(email)\n                .orElseThrow(()\
+    \ -> new ResourceNotFoundException(\"Usuário logado não encontrado no banco.\"\
+    ));\n\n        return UserResponseDTO.fromEntity(user);\n    }\n\n    /**\n  \
+    \   * Atualiza dados básicos do perfil\n     */\n    @Transactional\n    public\
+    \ UserResponseDTO updateProfile(UpdateProfileDTO request) {\n        String email\
+    \ = SecurityContextHolder.getContext().getAuthentication().getName();\n      \
+    \  User user = userRepository.findByEmail(email)\n                .orElseThrow(()\
+    \ -> new RuntimeException(\"Usuário não encontrado\"));\n\n        if (request.name()\
+    \ != null && !request.name().isBlank()) {\n            user.setUsername(request.name());\n\
+    \        }\n        if (request.avatarUrl() != null && !request.avatarUrl().isBlank())\
+    \ {\n            user.setAvatarUrl(request.avatarUrl());\n        }\n\n      \
+    \  User savedUser = userRepository.save(user);\n        return UserResponseDTO.fromEntity(savedUser);\n\
+    \    }\n}"
+  info:
+    "size": "1884"
+    "last_modified": "2026-01-05T15:20:52.050786558"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/service/BannerService.java"
+  content: "package com.caco.sitedocaco.service;\n\nimport com.caco.sitedocaco.dto.response.BannerDTO;\n\
+    import com.caco.sitedocaco.repository.BannerRepository;\nimport lombok.RequiredArgsConstructor;\n\
+    import org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\n\
+    \nimport java.util.List;\n\n@Service\n@RequiredArgsConstructor\npublic class BannerService\
+    \ {\n\n    private final BannerRepository bannerRepository;\n\n    @Transactional(readOnly\
+    \ = true)\n    public List<BannerDTO> getActiveBanners() {\n        return bannerRepository.findByActiveTrueOrderByDisplayOrderAsc()\n\
+    \                .stream()\n                .map(b -> new BannerDTO(b.getId(),\
+    \ b.getTitle(), b.getImageUrl(), b.getTargetLink()))\n                .toList();\n\
+    \    }\n}"
+  info:
+    "size": "758"
+    "last_modified": "2026-01-05T15:20:52.053702118"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/service/WarningService.java"
+  content: "package com.caco.sitedocaco.service;\n\nimport com.caco.sitedocaco.dto.response.WarningDTO;\n\
+    import com.caco.sitedocaco.repository.WarningRepository;\nimport lombok.RequiredArgsConstructor;\n\
+    import org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\n\
+    \nimport java.time.LocalDateTime;\nimport java.util.List;\n\n@Service\n@RequiredArgsConstructor\n\
+    public class WarningService {\n\n    private final WarningRepository warningRepository;\n\
+    \n    @Transactional(readOnly = true)\n    public List<WarningDTO> getActiveWarnings()\
+    \ {\n        return warningRepository.findActiveWarnings(LocalDateTime.now())\n\
+    \                .stream()\n                .map(w -> new WarningDTO(w.getId(),\
+    \ w.getMarkdownText(), w.getExpiresAt()))\n                .toList();\n    }\n\
+    }"
+  info:
+    "size": "787"
+    "last_modified": "2026-01-05T15:20:52.056516462"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/service/NewsService.java"
+  content: "package com.caco.sitedocaco.service;\n\n\n\nimport com.caco.sitedocaco.dto.response.NewsSummaryDTO;\n\
+    import com.caco.sitedocaco.repository.NewsRepository;\nimport lombok.RequiredArgsConstructor;\n\
+    import org.springframework.data.domain.PageRequest;\nimport org.springframework.stereotype.Service;\n\
+    import org.springframework.transaction.annotation.Transactional;\n\nimport java.util.List;\n\
+    \n@Service\n@RequiredArgsConstructor\npublic class NewsService {\n\n    private\
+    \ final NewsRepository newsRepository;\n\n    @Transactional(readOnly = true)\n\
+    \    public List<NewsSummaryDTO> getLatestNews(int limit) {\n        return newsRepository.findAllSummaries(PageRequest.of(0,\
+    \ limit)).getContent();\n    }\n}"
+  info:
+    "size": "679"
+    "last_modified": "2026-01-05T15:20:52.059150645"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/controller/privateController/UserController.java"
+  content: "package com.caco.sitedocaco.controller.privateController;\n\nimport com.caco.sitedocaco.dto.request.UpdateProfileDTO;\n\
+    import com.caco.sitedocaco.dto.response.UserResponseDTO;\nimport com.caco.sitedocaco.service.UserService;\n\
+    import lombok.RequiredArgsConstructor;\nimport org.springframework.http.ResponseEntity;\n\
+    import org.springframework.web.bind.annotation.*;\n\n@RestController\n@RequestMapping(\"\
+    /api/user\")\n@RequiredArgsConstructor\npublic class UserController {\n\n    private\
+    \ final UserService userService;\n\n    // GET /api/private/me\n    @GetMapping(\"\
+    /me\")\n    public ResponseEntity<UserResponseDTO> getMyProfile() {\n        return\
+    \ ResponseEntity.ok(userService.getMe());\n    }\n\n    // PUT /api/private/me\n\
+    \    @PutMapping(\"/me\")\n    public ResponseEntity<UserResponseDTO> updateMyProfile(@RequestBody\
+    \ UpdateProfileDTO dto) {\n        return ResponseEntity.ok(userService.updateProfile(dto));\n\
+    \    }\n}"
+  info:
+    "size": "895"
+    "last_modified": "2026-01-05T15:20:52.063396296"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/controller/publicController/HomeController.java"
+  content: "package com.caco.sitedocaco.controller.publicController;\n\nimport com.caco.sitedocaco.dto.response.BannerDTO;\n\
+    import com.caco.sitedocaco.dto.response.DashboardDTO;\nimport com.caco.sitedocaco.dto.response.NewsSummaryDTO;\n\
+    import com.caco.sitedocaco.dto.response.WarningDTO;\nimport com.caco.sitedocaco.service.BannerService;\n\
+    import com.caco.sitedocaco.service.NewsService;\nimport com.caco.sitedocaco.service.WarningService;\n\
+    import lombok.RequiredArgsConstructor;\nimport org.springframework.http.ResponseEntity;\n\
+    import org.springframework.web.bind.annotation.GetMapping;\nimport org.springframework.web.bind.annotation.RequestMapping;\n\
+    import org.springframework.web.bind.annotation.RestController;\n\nimport java.util.List;\n\
+    \n@RestController\n@RequestMapping(\"/api/public/home\")\n@RequiredArgsConstructor\n\
+    public class HomeController {\n\n    private final BannerService bannerService;\n\
+    \    private final WarningService warningService;\n    private final NewsService\
+    \ newsService;\n\n    @GetMapping\n    public ResponseEntity<DashboardDTO> getHomeDashboard()\
+    \ {\n        // 1. Busca banners ativos (ordenados por prioridade)\n        List<BannerDTO>\
+    \ banners = bannerService.getActiveBanners();\n\n        // 2. Busca avisos urgentes\
+    \ (que não expiraram)\n        List<WarningDTO> warnings = warningService.getActiveWarnings();\n\
+    \n        // 3. Busca apenas as 3 últimas notícias para a capa\n        List<NewsSummaryDTO>\
+    \ latestNews = newsService.getLatestNews(3);\n\n        // 4. Monta o objeto de\
+    \ resposta agregado\n        DashboardDTO dashboard = new DashboardDTO(\n    \
+    \            banners,\n                warnings,\n                latestNews\n\
+    \        );\n\n        return ResponseEntity.ok(dashboard);\n    }\n}"
+  info:
+    "size": "1682"
+    "last_modified": "2026-01-05T15:20:52.06725188"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/exception/GlobalExceptionHandler.java"
+  content: "package com.caco.sitedocaco.exception;\n\nimport com.caco.sitedocaco.dto.response.ErrorResponseDTO;\n\
+    import jakarta.servlet.http.HttpServletRequest;\nimport org.springframework.http.HttpStatus;\n\
+    import org.springframework.http.ResponseEntity;\nimport org.springframework.security.access.AccessDeniedException;\n\
+    import org.springframework.web.bind.annotation.ExceptionHandler;\nimport org.springframework.web.bind.annotation.RestControllerAdvice;\n\
+    \nimport java.time.LocalDateTime;\n\n@RestControllerAdvice\npublic class GlobalExceptionHandler\
+    \ {\n\n    // 1. Handle Resource Not Found (404)\n    @ExceptionHandler(ResourceNotFoundException.class)\n\
+    \    public ResponseEntity<ErrorResponseDTO> handleNotFound(ResourceNotFoundException\
+    \ ex, HttpServletRequest request) {\n        return buildResponse(HttpStatus.NOT_FOUND,\
+    \ ex.getMessage(), request);\n    }\n\n    // 2. Handle Business Rules (400)\n\
+    \    @ExceptionHandler(BusinessRuleException.class)\n    public ResponseEntity<ErrorResponseDTO>\
+    \ handleBusinessRule(BusinessRuleException ex, HttpServletRequest request) {\n\
+    \        return buildResponse(HttpStatus.BAD_REQUEST, ex.getMessage(), request);\n\
+    \    }\n\n    // 3. Handle Security/Access Denied (403) - e.g. Student trying\
+    \ to access Admin route\n    @ExceptionHandler(AccessDeniedException.class)\n\
+    \    public ResponseEntity<ErrorResponseDTO> handleAccessDenied(AccessDeniedException\
+    \ ex, HttpServletRequest request) {\n        return buildResponse(HttpStatus.FORBIDDEN,\
+    \ \"Access Denied: You don't have permission.\", request);\n    }\n\n    // 4.\
+    \ Handle Generic/Unexpected Errors (500)\n    @ExceptionHandler(Exception.class)\n\
+    \    public ResponseEntity<ErrorResponseDTO> handleGeneric(Exception ex, HttpServletRequest\
+    \ request) {\n        // Log the real error here so you can debug it later\n \
+    \       ex.printStackTrace();\n        return buildResponse(HttpStatus.INTERNAL_SERVER_ERROR,\
+    \ \"An unexpected error occurred.\", request);\n    }\n\n    // Helper method\
+    \ to build the JSON response\n    private ResponseEntity<ErrorResponseDTO> buildResponse(HttpStatus\
+    \ status, String message, HttpServletRequest request) {\n        ErrorResponseDTO\
+    \ error = new ErrorResponseDTO(\n                LocalDateTime.now(),\n      \
+    \          status.value(),\n                status.getReasonPhrase(),\n      \
+    \          message,\n                request.getRequestURI()\n        );\n   \
+    \     return ResponseEntity.status(status).body(error);\n    }\n}"
+  info:
+    "size": "2375"
+    "last_modified": "2026-01-05T15:20:52.073055755"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/exception/ResourceNotFoundException.java"
+  content: "package com.caco.sitedocaco.exception;\n\npublic class ResourceNotFoundException\
+    \ extends RuntimeException {\n    public ResourceNotFoundException(String message)\
+    \ {\n        super(message);\n    }\n}"
+  info:
+    "size": "192"
+    "last_modified": "2026-01-05T15:20:52.075758895"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/exception/BusinessRuleException.java"
+  content: "package com.caco.sitedocaco.exception;\n\npublic class BusinessRuleException\
+    \ extends RuntimeException {\n    public BusinessRuleException(String message)\
+    \ {\n        super(message);\n    }\n}\n"
+  info:
+    "size": "185"
+    "last_modified": "2026-01-05T15:20:52.078423822"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "test/java/com/caco/sitedocaco/SitedocacoApplicationTests.java"
+  content: "package com.caco.sitedocaco;\n\nimport org.junit.jupiter.api.Test;\nimport\
+    \ org.springframework.boot.test.context.SpringBootTest;\n\n@SpringBootTest\nclass\
+    \ SitedocacoApplicationTests {\n\n\t@Test\n\tvoid contextLoads() {\n\t}\n\n}\n"
+  info:
+    "size": "215"
+    "last_modified": "2026-01-05T15:20:52.087086237"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
