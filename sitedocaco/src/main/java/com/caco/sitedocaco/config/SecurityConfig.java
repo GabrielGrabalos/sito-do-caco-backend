@@ -2,6 +2,7 @@ package com.caco.sitedocaco.config;
 
 import com.caco.sitedocaco.security.jwt.JwtAuthenticationFilter;
 import com.caco.sitedocaco.security.oauth2.CustomOAuth2UserService;
+import com.caco.sitedocaco.security.oauth2.OAuth2LoginFailureHandler;
 import com.caco.sitedocaco.security.oauth2.OAuth2LoginSuccessHandler;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
@@ -28,6 +29,7 @@ public class SecurityConfig {
 
     private final CustomOAuth2UserService customOAuth2UserService;
     private final OAuth2LoginSuccessHandler oAuth2LoginSuccessHandler;
+    private final OAuth2LoginFailureHandler oAuth2LoginFailureHandler;
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
 
     // Frontend URL from application.properties:
@@ -54,8 +56,6 @@ public class SecurityConfig {
 
                         // Rotas Admin
                         .requestMatchers("/api/admin/**").hasRole("ADMIN")
-
-                        // Todo o resto requer autenticação
                         .anyRequest().authenticated()
                 )
 
@@ -67,6 +67,7 @@ public class SecurityConfig {
                         )
                         // Handler executado após login com sucesso (Gera JWT e redireciona)
                         .successHandler(oAuth2LoginSuccessHandler)
+                        .failureHandler(oAuth2LoginFailureHandler)
                 )
 
                 // 6. Adiciona o filtro JWT antes do filtro padrão do Spring

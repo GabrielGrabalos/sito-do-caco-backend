@@ -3,10 +3,10 @@ package com.caco.sitedocaco.service;
 import com.caco.sitedocaco.dto.request.UpdateProfileDTO;
 import com.caco.sitedocaco.dto.response.UserResponseDTO;
 import com.caco.sitedocaco.entity.User;
+import com.caco.sitedocaco.exception.ResourceNotFoundException;
 import com.caco.sitedocaco.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -24,7 +24,7 @@ public class UserService {
         String email = SecurityContextHolder.getContext().getAuthentication().getName();
 
         User user = userRepository.findByEmail(email)
-                .orElseThrow(() -> new UsernameNotFoundException("Usuário logado não encontrado no banco."));
+                .orElseThrow(() -> new ResourceNotFoundException("Usuário logado não encontrado no banco."));
 
         return UserResponseDTO.fromEntity(user);
     }
