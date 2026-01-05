@@ -1,4 +1,4 @@
-package com.caco.sitedocaco.controller;
+package com.caco.sitedocaco.controller.privateController;
 
 import com.caco.sitedocaco.dto.request.UpdateProfileDTO;
 import com.caco.sitedocaco.dto.response.UserResponseDTO;

@@ -2,7 +2,10 @@ package com.caco.sitedocaco.entity.home;
 
 import com.caco.sitedocaco.entity.User;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -10,6 +13,9 @@ import java.util.UUID;
 @Entity
 @Table
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class News {
     /*
     3. **`News`**
