@@ -10,11 +10,13 @@ import com.caco.sitedocaco.service.NewsService;
 import com.caco.sitedocaco.service.WarningService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.net.URI;
 import java.nio.file.AccessDeniedException;
 import java.util.List;
@@ -82,13 +84,23 @@ public class HomeAdminController {
         return ResponseEntity.ok(bannerService.getInactiveBanners());
     }
 
-    @PostMapping("/banners")
+    @PostMapping(value = "/banners", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     @PreAuthorize("hasRole('ADMIN')")
-    public ResponseEntity<Banner> createBanner(@RequestBody @Valid CreateBannerDTO dto) {
+    public ResponseEntity<Banner> createBanner(@ModelAttribute @Valid CreateBannerDTO dto) throws IOException {
         return ResponseEntity.ok(bannerService.createBanner(dto));
     }
 
-    @PatchMapping("/banners/{id}/toggle")
+    @PutMapping(value = "/banners/{id}", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<Banner> updateBanner(
+            @PathVariable UUID id,
+            @ModelAttribute @Valid UpdateBannerDTO dto) throws IOException {
+
+        Banner updated = bannerService.updateBanner(id, dto);
+        return ResponseEntity.ok(updated);
+    }
+
+    @PutMapping("/banners/{id}/toggle")
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<Banner> toggleBannerActive(@PathVariable UUID id) {
         return ResponseEntity.ok(bannerService.toggleActive(id));

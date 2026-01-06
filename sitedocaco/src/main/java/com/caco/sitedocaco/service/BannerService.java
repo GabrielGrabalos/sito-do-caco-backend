@@ -1,7 +1,9 @@
 package com.caco.sitedocaco.service;
 
 import com.caco.sitedocaco.dto.request.CreateBannerDTO;
+import com.caco.sitedocaco.dto.request.UpdateBannerDTO;
 import com.caco.sitedocaco.dto.response.BannerDTO;
+import com.caco.sitedocaco.entity.enums.ImageType;
 import com.caco.sitedocaco.entity.home.Banner;
 import com.caco.sitedocaco.exception.ResourceNotFoundException;
 import com.caco.sitedocaco.repository.BannerRepository;
@@ -9,6 +11,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.UUID;
 
@@ -17,6 +20,7 @@ import java.util.UUID;
 public class BannerService {
 
     private final BannerRepository bannerRepository;
+    private final ImgBBService imgBBService;
 
     @Transactional(readOnly = true)
     public List<BannerDTO> getActiveBanners() {
@@ -34,16 +38,41 @@ public class BannerService {
     }
 
     @Transactional
-    public Banner createBanner(CreateBannerDTO dto) {
+    public Banner createBanner(CreateBannerDTO dto) throws IOException {
         Banner banner = new Banner();
         banner.setTitle(dto.title());
-        banner.setImageUrl(dto.imageUrl());
+
+        // Fazer upload da imagem
+        if (dto.imageFile() != null && !dto.imageFile().isEmpty()) {
+            String imageUrl = imgBBService.uploadImage(dto.imageFile(), ImageType.BANNER_IMAGE);
+            banner.setImageUrl(imageUrl);
+        }
+
         banner.setTargetLink(dto.targetLink());
         banner.setActive(dto.active() != null ? dto.active() : true);
 
-        // Regra: Adiciona ao final da lista
+        // Ordenação automática
         Integer maxOrder = bannerRepository.findMaxDisplayOrder();
         banner.setDisplayOrder(maxOrder == null ? 0 : maxOrder + 1);
+
+        return bannerRepository.save(banner);
+    }
+
+    @Transactional
+    public Banner updateBanner(UUID id, UpdateBannerDTO dto) throws IOException {
+        Banner banner = bannerRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Banner não encontrado"));
+
+        if (dto.title() != null) banner.setTitle(dto.title());
+
+        // Atualizar imagem se fornecida
+        if (dto.imageFile() != null && !dto.imageFile().isEmpty()) {
+            String imageUrl = imgBBService.uploadImage(dto.imageFile(), ImageType.BANNER_IMAGE);
+            banner.setImageUrl(imageUrl);
+        }
+
+        if (dto.targetLink() != null) banner.setTargetLink(dto.targetLink());
+        if (dto.active() != null) banner.setActive(dto.active());
 
         return bannerRepository.save(banner);
     }
@@ -53,6 +82,11 @@ public class BannerService {
         Banner banner = bannerRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Banner não encontrado"));
         banner.setActive(!banner.getActive());
+        // Colocar banner em último na ordem se ativado
+        if (banner.getActive()) {
+            Integer maxOrder = bannerRepository.findMaxDisplayOrder();
+            banner.setDisplayOrder(maxOrder == null ? 0 : maxOrder + 1);
+        }
         return bannerRepository.save(banner);
     }
 
