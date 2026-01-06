@@ -15,6 +15,19 @@ spring.jpa.show-sql=true
 jwt.secret=
 jwt.expiration=86400000
 
+# ImgBB
+imgbb.api.key=
+imgbb.upload.url=https://api.imgbb.com/1/upload
+
+# Upload Limits
+spring.servlet.multipart.max-file-size=10MB
+spring.servlet.multipart.max-request-size=10MB
+spring.servlet.multipart.enabled=true
+
+# Timeouts (importante para uploads grandes)
+server.servlet.connection-timeout=30s
+spring.mvc.async.request-timeout=30s
+
 # Email
 spring.mail.host=smtp.gmail.com
 spring.mail.port=587
