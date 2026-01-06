@@ -4,6 +4,7 @@ import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import com.caco.sitedocaco.entity.User;
+import org.jspecify.annotations.Nullable;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -49,4 +50,9 @@ public class JwtService {
         DecodedJWT jwt = validateToken(token);
         return jwt != null ? jwt.getSubject() : null;
     }
+
+    // 4. Expiration Time in Millis
+    public long getExpirationInMillis() {
+        return expiration;
+        }
 }
