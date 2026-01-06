@@ -1,9 +1,9 @@
 project_info:
   name: "src"
   path: "/home/genazemildo/Documents/GitHub/sito-do-caco-backend/sitedocaco/src"
-  generatedAt: "2026-01-05T15:20:52.094852537"
-  totalFiles: 50
-  totalSize: 48128
+  generatedAt: "2026-01-05T18:06:47.681103413"
+  totalFiles: 57
+  totalSize: 64666
 structure:
   "main":
     type: null
@@ -17,7 +17,7 @@ structure:
             type: "file"
             info:
               "size": "543"
-              "last_modified": "2026-01-05T15:20:51.839964487"
+              "last_modified": "2026-01-05T18:06:47.426021525"
               "mime_type": "text/plain"
               "extension": ".example"
             children: null
@@ -25,7 +25,7 @@ structure:
             type: "file"
             info:
               "size": "1268"
-              "last_modified": "2026-01-05T15:20:51.878982761"
+              "last_modified": "2026-01-05T18:06:47.448515533"
               "mime_type": "text/x-java-properties"
               "extension": ".properties"
             children: null
@@ -49,7 +49,7 @@ structure:
                         type: "file"
                         info:
                           "size": "320"
-                          "last_modified": "2026-01-05T15:20:51.88669299"
+                          "last_modified": "2026-01-05T18:06:47.463903063"
                           "mime_type": "text/x-java-source"
                           "extension": ".java"
                         children: null
@@ -61,7 +61,7 @@ structure:
                             type: "file"
                             info:
                               "size": "4365"
-                              "last_modified": "2026-01-05T15:20:51.892432742"
+                              "last_modified": "2026-01-05T18:06:47.473493238"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -73,7 +73,7 @@ structure:
                             type: "file"
                             info:
                               "size": "1106"
-                              "last_modified": "2026-01-05T15:20:51.89966409"
+                              "last_modified": "2026-01-05T18:06:47.483327629"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -85,7 +85,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "591"
-                                  "last_modified": "2026-01-05T15:20:51.904505262"
+                                  "last_modified": "2026-01-05T18:06:47.491315177"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -93,7 +93,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "666"
-                                  "last_modified": "2026-01-05T15:20:51.909368602"
+                                  "last_modified": "2026-01-05T18:06:47.499052345"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -101,7 +101,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "1103"
-                                  "last_modified": "2026-01-05T15:20:51.913866851"
+                                  "last_modified": "2026-01-05T18:06:47.506763635"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -113,7 +113,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "1422"
-                                  "last_modified": "2026-01-05T15:20:51.919918253"
+                                  "last_modified": "2026-01-05T18:06:47.516031865"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -121,7 +121,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "624"
-                                  "last_modified": "2026-01-05T15:20:51.925292612"
+                                  "last_modified": "2026-01-05T18:06:47.5208954"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -133,7 +133,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "813"
-                                  "last_modified": "2026-01-05T15:20:51.932413376"
+                                  "last_modified": "2026-01-05T18:06:47.524444399"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -141,7 +141,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "910"
-                                  "last_modified": "2026-01-05T15:20:51.937375868"
+                                  "last_modified": "2026-01-05T18:06:47.527059412"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -149,7 +149,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "784"
-                                  "last_modified": "2026-01-05T15:20:51.941583572"
+                                  "last_modified": "2026-01-05T18:06:47.52953305"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -157,7 +157,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "771"
-                                  "last_modified": "2026-01-05T15:20:51.946224399"
+                                  "last_modified": "2026-01-05T18:06:47.53193031"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -169,7 +169,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "779"
-                                  "last_modified": "2026-01-05T15:20:51.952990866"
+                                  "last_modified": "2026-01-05T18:06:47.535210545"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -177,7 +177,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "391"
-                                  "last_modified": "2026-01-05T15:20:51.956156818"
+                                  "last_modified": "2026-01-05T18:06:47.537493875"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -189,7 +189,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "720"
-                                  "last_modified": "2026-01-05T15:20:51.960517602"
+                                  "last_modified": "2026-01-05T18:06:47.540809885"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -197,7 +197,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "617"
-                                  "last_modified": "2026-01-05T15:20:51.965152421"
+                                  "last_modified": "2026-01-05T18:06:47.543165642"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -205,7 +205,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "617"
-                                  "last_modified": "2026-01-05T15:20:51.968288098"
+                                  "last_modified": "2026-01-05T18:06:47.545363145"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -213,7 +213,7 @@ structure:
                             type: "file"
                             info:
                               "size": "693"
-                              "last_modified": "2026-01-05T15:20:51.972716218"
+                              "last_modified": "2026-01-05T18:06:47.548489343"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -225,7 +225,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "1452"
-                                  "last_modified": "2026-01-05T15:20:51.976388408"
+                                  "last_modified": "2026-01-05T18:06:47.550819107"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -233,7 +233,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "654"
-                                  "last_modified": "2026-01-05T15:20:51.979554664"
+                                  "last_modified": "2026-01-05T18:06:47.55303698"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -245,7 +245,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "99"
-                                  "last_modified": "2026-01-05T15:20:51.98374227"
+                                  "last_modified": "2026-01-05T18:06:47.556569878"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -260,16 +260,16 @@ structure:
                               "CustomOAuth2UserService.java":
                                 type: "file"
                                 info:
-                                  "size": "2609"
-                                  "last_modified": "2026-01-05T15:20:51.989231725"
+                                  "size": "2629"
+                                  "last_modified": "2026-01-05T18:06:47.560609318"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
                               "OAuth2LoginSuccessHandler.java":
                                 type: "file"
                                 info:
-                                  "size": "1960"
-                                  "last_modified": "2026-01-05T15:20:51.992911073"
+                                  "size": "2037"
+                                  "last_modified": "2026-01-05T18:06:47.562910718"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -277,7 +277,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "2046"
-                                  "last_modified": "2026-01-05T15:20:51.996135562"
+                                  "last_modified": "2026-01-05T18:06:47.565100404"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -288,8 +288,8 @@ structure:
                               "JwtService.java":
                                 type: "file"
                                 info:
-                                  "size": "1679"
-                                  "last_modified": "2026-01-05T15:20:52.001179085"
+                                  "size": "1837"
+                                  "last_modified": "2026-01-05T18:06:47.568158787"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -297,7 +297,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "2721"
-                                  "last_modified": "2026-01-05T15:20:52.004513934"
+                                  "last_modified": "2026-01-05T18:06:47.570288446"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -305,7 +305,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "1677"
-                                  "last_modified": "2026-01-05T15:20:52.007457052"
+                                  "last_modified": "2026-01-05T18:06:47.57280373"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -317,15 +317,15 @@ structure:
                             type: "file"
                             info:
                               "size": "413"
-                              "last_modified": "2026-01-05T15:20:52.013060374"
+                              "last_modified": "2026-01-05T18:06:47.576636678"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
                           "BannerRepository.java":
                             type: "file"
                             info:
-                              "size": "473"
-                              "last_modified": "2026-01-05T15:20:52.016855986"
+                              "size": "743"
+                              "last_modified": "2026-01-05T18:06:47.57898872"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -333,7 +333,7 @@ structure:
                             type: "file"
                             info:
                               "size": "692"
-                              "last_modified": "2026-01-05T15:20:52.020282884"
+                              "last_modified": "2026-01-05T18:06:47.58114318"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -341,7 +341,7 @@ structure:
                             type: "file"
                             info:
                               "size": "994"
-                              "last_modified": "2026-01-05T15:20:52.023141921"
+                              "last_modified": "2026-01-05T18:06:47.58341647"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -357,7 +357,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "572"
-                                  "last_modified": "2026-01-05T15:20:52.027249908"
+                                  "last_modified": "2026-01-05T18:06:47.596642871"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -365,7 +365,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "232"
-                                  "last_modified": "2026-01-05T15:20:52.030252587"
+                                  "last_modified": "2026-01-05T18:06:47.598822247"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -373,7 +373,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "186"
-                                  "last_modified": "2026-01-05T15:20:52.033401087"
+                                  "last_modified": "2026-01-05T18:06:47.601017097"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -381,7 +381,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "207"
-                                  "last_modified": "2026-01-05T15:20:52.03642923"
+                                  "last_modified": "2026-01-05T18:06:47.603231976"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -389,7 +389,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "305"
-                                  "last_modified": "2026-01-05T15:20:52.039272129"
+                                  "last_modified": "2026-01-05T18:06:47.60533826"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -397,7 +397,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "207"
-                                  "last_modified": "2026-01-05T15:20:52.042041563"
+                                  "last_modified": "2026-01-05T18:06:47.607586372"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -409,7 +409,55 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "195"
-                                  "last_modified": "2026-01-05T15:20:52.045860076"
+                                  "last_modified": "2026-01-05T18:06:47.610583571"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "CreateNewsDTO.java":
+                                type: "file"
+                                info:
+                                  "size": "415"
+                                  "last_modified": "2026-01-05T18:06:47.612708156"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "UpdateNewsDTO.java":
+                                type: "file"
+                                info:
+                                  "size": "172"
+                                  "last_modified": "2026-01-05T18:06:47.61477235"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "CreateBannerDTO.java":
+                                type: "file"
+                                info:
+                                  "size": "244"
+                                  "last_modified": "2026-01-05T18:06:47.61677827"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "ReorderBannersDTO.java":
+                                type: "file"
+                                info:
+                                  "size": "264"
+                                  "last_modified": "2026-01-05T18:06:47.618833027"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "CreateWarningDTO.java":
+                                type: "file"
+                                info:
+                                  "size": "383"
+                                  "last_modified": "2026-01-05T18:06:47.621940854"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "UpdateWarningDTO.java":
+                                type: "file"
+                                info:
+                                  "size": "205"
+                                  "last_modified": "2026-01-05T18:06:47.625241841"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -421,31 +469,31 @@ structure:
                             type: "file"
                             info:
                               "size": "1884"
-                              "last_modified": "2026-01-05T15:20:52.050786558"
+                              "last_modified": "2026-01-05T18:06:47.630319421"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
                           "BannerService.java":
                             type: "file"
                             info:
-                              "size": "758"
-                              "last_modified": "2026-01-05T15:20:52.053702118"
+                              "size": "3086"
+                              "last_modified": "2026-01-05T18:06:47.633632529"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
                           "WarningService.java":
                             type: "file"
                             info:
-                              "size": "787"
-                              "last_modified": "2026-01-05T15:20:52.056516462"
+                              "size": "3353"
+                              "last_modified": "2026-01-05T18:06:47.637006703"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
                           "NewsService.java":
                             type: "file"
                             info:
-                              "size": "679"
-                              "last_modified": "2026-01-05T15:20:52.059150645"
+                              "size": "4162"
+                              "last_modified": "2026-01-05T18:06:47.640475308"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -460,8 +508,8 @@ structure:
                               "UserController.java":
                                 type: "file"
                                 info:
-                                  "size": "895"
-                                  "last_modified": "2026-01-05T15:20:52.063396296"
+                                  "size": "841"
+                                  "last_modified": "2026-01-05T18:06:47.644929059"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -473,14 +521,22 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "1682"
-                                  "last_modified": "2026-01-05T15:20:52.06725188"
+                                  "last_modified": "2026-01-05T18:06:47.649057763"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
                           "admin":
                             type: null
                             info: null
-                            children: {}
+                            children:
+                              "HomeAdminController.java":
+                                type: "file"
+                                info:
+                                  "size": "5645"
+                                  "last_modified": "2026-01-05T18:06:47.653267698"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
                       "exception":
                         type: null
                         info: null
@@ -488,8 +544,8 @@ structure:
                           "GlobalExceptionHandler.java":
                             type: "file"
                             info:
-                              "size": "2375"
-                              "last_modified": "2026-01-05T15:20:52.073055755"
+                              "size": "2737"
+                              "last_modified": "2026-01-05T18:06:47.658630895"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -497,7 +553,7 @@ structure:
                             type: "file"
                             info:
                               "size": "192"
-                              "last_modified": "2026-01-05T15:20:52.075758895"
+                              "last_modified": "2026-01-05T18:06:47.661946306"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -505,7 +561,7 @@ structure:
                             type: "file"
                             info:
                               "size": "185"
-                              "last_modified": "2026-01-05T15:20:52.078423822"
+                              "last_modified": "2026-01-05T18:06:47.665179692"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -533,7 +589,7 @@ structure:
                         type: "file"
                         info:
                           "size": "215"
-                          "last_modified": "2026-01-05T15:20:52.087086237"
+                          "last_modified": "2026-01-05T18:06:47.673484775"
                           "mime_type": "text/x-java-source"
                           "extension": ".java"
                         children: null
@@ -547,11 +603,11 @@ files:
     #spring.mail.password=\nspring.mail.properties.mail.smtp.auth=true\nspring.mail.properties.mail.smtp.starttls.enable=true"
   info:
     "size": "543"
-    "last_modified": "2026-01-05T15:20:51.839964487"
+    "last_modified": "2026-01-05T18:06:47.426021525"
     "mime_type": "text/plain"
     "extension": ".example"
 - path: "main/resources/application.properties"
-  content: "spring.application.name=sitedocaco\nserver.port=8080\n\n# App:\napp.frontend.url=http://localhost:3000\n\
+  content: "spring.application.name=sitedocaco\nserver.port=8080\n\n# App:\napp.frontend.url=http://localhost:5173\n\
     \n# Database\nspring.datasource.url=jdbc:mysql://127.0.0.1:3306/sitedocaco_dev?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC\n\
     spring.datasource.username=genazemildo\nspring.datasource.password=201190abC=M\n\
     spring.jpa.hibernate.ddl-auto=update\nspring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver\n\
@@ -566,7 +622,7 @@ files:
     #spring.mail.password=\nspring.mail.properties.mail.smtp.auth=true\nspring.mail.properties.mail.smtp.starttls.enable=true"
   info:
     "size": "1268"
-    "last_modified": "2026-01-05T15:20:51.878982761"
+    "last_modified": "2026-01-05T18:06:47.448515533"
     "mime_type": "text/x-java-properties"
     "extension": ".properties"
 - path: "main/java/com/caco/sitedocaco/SitedocacoApplication.java"
@@ -576,7 +632,7 @@ files:
     \ {\n\t\tSpringApplication.run(SitedocacoApplication.class, args);\n\t}\n\n}\n"
   info:
     "size": "320"
-    "last_modified": "2026-01-05T15:20:51.88669299"
+    "last_modified": "2026-01-05T18:06:47.463903063"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/config/SecurityConfig.java"
@@ -632,7 +688,7 @@ files:
     \ source;\n    }\n}"
   info:
     "size": "4365"
-    "last_modified": "2026-01-05T15:20:51.892432742"
+    "last_modified": "2026-01-05T18:06:47.473493238"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/User.java"
@@ -653,7 +709,7 @@ files:
     \ createdAt;\n}\n"
   info:
     "size": "1106"
-    "last_modified": "2026-01-05T15:20:51.89966409"
+    "last_modified": "2026-01-05T18:06:47.483327629"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/home/Banner.java"
@@ -668,7 +724,7 @@ files:
     }\n"
   info:
     "size": "591"
-    "last_modified": "2026-01-05T15:20:51.904505262"
+    "last_modified": "2026-01-05T18:06:47.491315177"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/home/Warning.java"
@@ -683,7 +739,7 @@ files:
     \    private LocalDateTime expiresAt;\n}\n"
   info:
     "size": "666"
-    "last_modified": "2026-01-05T15:20:51.909368602"
+    "last_modified": "2026-01-05T18:06:47.499052345"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/home/News.java"
@@ -704,7 +760,7 @@ files:
     }\n"
   info:
     "size": "1103"
-    "last_modified": "2026-01-05T15:20:51.913866851"
+    "last_modified": "2026-01-05T18:06:47.506763635"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/event/Event.java"
@@ -729,7 +785,7 @@ files:
     \    private EventStatus status;\n}\n"
   info:
     "size": "1422"
-    "last_modified": "2026-01-05T15:20:51.919918253"
+    "last_modified": "2026-01-05T18:06:47.516031865"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/event/EventGalleryItem.java"
@@ -744,7 +800,7 @@ files:
     \ MediaType type;\n}\n"
   info:
     "size": "624"
-    "last_modified": "2026-01-05T15:20:51.925292612"
+    "last_modified": "2026-01-05T18:06:47.5208954"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/manual/ManualCategory.java"
@@ -761,7 +817,7 @@ files:
     \ List<ManualChapter> chapters;\n}\n"
   info:
     "size": "813"
-    "last_modified": "2026-01-05T15:20:51.932413376"
+    "last_modified": "2026-01-05T18:06:47.524444399"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/manual/ManualChapter.java"
@@ -780,7 +836,7 @@ files:
     }\n"
   info:
     "size": "910"
-    "last_modified": "2026-01-05T15:20:51.937375868"
+    "last_modified": "2026-01-05T18:06:47.527059412"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/manual/ManualArticle.java"
@@ -797,7 +853,7 @@ files:
     \ ManualChapter chapter;\n}\n"
   info:
     "size": "784"
-    "last_modified": "2026-01-05T15:20:51.941583572"
+    "last_modified": "2026-01-05T18:06:47.52953305"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/manual/ArticleFeedback.java"
@@ -813,7 +869,7 @@ files:
     \    private String comment;\n\n    private LocalDateTime postedAt;\n}\n"
   info:
     "size": "771"
-    "last_modified": "2026-01-05T15:20:51.946224399"
+    "last_modified": "2026-01-05T18:06:47.53193031"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/exam/Exam.java"
@@ -830,7 +886,7 @@ files:
     \ = false)\n    private String fileUrl;\n}\n"
   info:
     "size": "779"
-    "last_modified": "2026-01-05T15:20:51.952990866"
+    "last_modified": "2026-01-05T18:06:47.535210545"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/exam/Subject.java"
@@ -842,7 +898,7 @@ files:
     \ String name;\n}\n"
   info:
     "size": "391"
-    "last_modified": "2026-01-05T15:20:51.956156818"
+    "last_modified": "2026-01-05T18:06:47.537493875"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/sticker/Sticker.java"
@@ -858,7 +914,7 @@ files:
     \ originEvent;\n}\n"
   info:
     "size": "720"
-    "last_modified": "2026-01-05T15:20:51.960517602"
+    "last_modified": "2026-01-05T18:06:47.540809885"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/sticker/UserSticker.java"
@@ -872,7 +928,7 @@ files:
     \    private Sticker sticker;\n\n    private LocalDateTime obtainedAt;\n}\n"
   info:
     "size": "617"
-    "last_modified": "2026-01-05T15:20:51.965152421"
+    "last_modified": "2026-01-05T18:06:47.543165642"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/sticker/RedemptionCode.java"
@@ -887,7 +943,7 @@ files:
     }\n"
   info:
     "size": "617"
-    "last_modified": "2026-01-05T15:20:51.968288098"
+    "last_modified": "2026-01-05T18:06:47.545363145"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/AnalyticsLog.java"
@@ -903,7 +959,7 @@ files:
     \ String targetId;\n}\n"
   info:
     "size": "693"
-    "last_modified": "2026-01-05T15:20:51.972716218"
+    "last_modified": "2026-01-05T18:06:47.548489343"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/store/Product.java"
@@ -928,7 +984,7 @@ files:
     \ = false)\n    private String category;\n}\n"
   info:
     "size": "1452"
-    "last_modified": "2026-01-05T15:20:51.976388408"
+    "last_modified": "2026-01-05T18:06:47.550819107"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/store/ProductVariation.java"
@@ -943,7 +999,7 @@ files:
     \ additionalPrice;\n\n    private Integer stockQuantity;\n}\n"
   info:
     "size": "654"
-    "last_modified": "2026-01-05T15:20:51.979554664"
+    "last_modified": "2026-01-05T18:06:47.55303698"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/enums/Role.java"
@@ -951,7 +1007,7 @@ files:
     \    ADMIN,\n    EDITOR\n}\n"
   info:
     "size": "99"
-    "last_modified": "2026-01-05T15:20:51.98374227"
+    "last_modified": "2026-01-05T18:06:47.556569878"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/security/oauth2/CustomOAuth2UserService.java"
@@ -973,23 +1029,24 @@ files:
     );\n        String name = oAuth2User.getAttribute(\"name\");\n        String avatarUrl\
     \ = oAuth2User.getAttribute(\"picture\");\n\n        // TODO: Descomentar para\
     \ restringir acesso por domínio de e-mail\n        // REGRA DE NEGÓCIO: Validaç\
-    ão de Domínio\n        assert email != null;\n        if (!email.endsWith(\"@dac.unicamp.br\"\
-    )) {\n            OAuth2Error oauth2Error = new OAuth2Error(\n               \
-    \     \"invalid_domain\",\n                    \"O e-mail não pertence ao domí\
-    nio institucional permitido.\",\n                    null\n            );\n\n\
-    \            throw new OAuth2AuthenticationException(oauth2Error, oauth2Error.toString());\n\
-    \        }\n\n        // Salva ou atualiza o usuário\n        Optional<User> userOptional\
-    \ = userRepository.findByEmail(email);\n        User user;\n\n        // Atualiza\
-    \ se existir, senão cria novo\n        if (userOptional.isPresent()) {\n     \
-    \       user = userOptional.get();\n            user.setAvatarUrl(avatarUrl);\n\
-    \            user.setUsername(name);\n        } else {\n            user = new\
-    \ User();\n            user.setEmail(email);\n            user.setUsername(name);\n\
-    \            user.setAvatarUrl(avatarUrl);\n            user.setRole(Role.STUDENT);\
-    \ // Padrão\n            user.setCreatedAt(LocalDateTime.now());\n        }\n\n\
-    \        userRepository.save(user);\n\n        return oAuth2User;\n    }\n}"
+    ão de Domínio\n//        assert email != null;\n//        if (!email.endsWith(\"\
+    @dac.unicamp.br\")) {\n//            OAuth2Error oauth2Error = new OAuth2Error(\n\
+    //                    \"invalid_domain\",\n//                    \"O e-mail nã\
+    o pertence ao domínio institucional permitido.\",\n//                    null\n\
+    //            );\n//\n//            throw new OAuth2AuthenticationException(oauth2Error,\
+    \ oauth2Error.toString());\n//        }\n\n        // Salva ou atualiza o usuá\
+    rio\n        Optional<User> userOptional = userRepository.findByEmail(email);\n\
+    \        User user;\n\n        // Atualiza se existir, senão cria novo\n     \
+    \   if (userOptional.isPresent()) {\n            user = userOptional.get();\n\
+    \            user.setAvatarUrl(avatarUrl);\n            user.setUsername(name);\n\
+    \        } else {\n            user = new User();\n            user.setEmail(email);\n\
+    \            user.setUsername(name);\n            user.setAvatarUrl(avatarUrl);\n\
+    \            user.setRole(Role.STUDENT); // Padrão\n            user.setCreatedAt(LocalDateTime.now());\n\
+    \        }\n\n        userRepository.save(user);\n\n        return oAuth2User;\n\
+    \    }\n}"
   info:
-    "size": "2609"
-    "last_modified": "2026-01-05T15:20:51.989231725"
+    "size": "2629"
+    "last_modified": "2026-01-05T18:06:47.560609318"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/security/oauth2/OAuth2LoginSuccessHandler.java"
@@ -1013,12 +1070,13 @@ files:
     \ pós-login\"));\n\n        // Gera o token JWT\n        String token = jwtService.generateToken(user);\n\
     \n        // Redireciona para o Front com o token na URL\n        String targetUrl\
     \ = UriComponentsBuilder.fromUriString(frontendUrl + \"/auth/callback\")\n   \
-    \             .queryParam(\"token\", token)\n                .build().toUriString();\n\
+    \             .queryParam(\"token\", token)\n                .queryParam(\"expiresIn\"\
+    , jwtService.getExpirationInMillis())\n                .build().toUriString();\n\
     \n        getRedirectStrategy().sendRedirect(request, response, targetUrl);\n\
     \    }\n}"
   info:
-    "size": "1960"
-    "last_modified": "2026-01-05T15:20:51.992911073"
+    "size": "2037"
+    "last_modified": "2026-01-05T18:06:47.562910718"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/security/oauth2/OAuth2LoginFailureHandler.java"
@@ -1048,35 +1106,37 @@ files:
     \ response, targetUrl);\n    }\n}"
   info:
     "size": "2046"
-    "last_modified": "2026-01-05T15:20:51.996135562"
+    "last_modified": "2026-01-05T18:06:47.565100404"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/security/jwt/JwtService.java"
   content: "package com.caco.sitedocaco.security.jwt;\n\nimport com.auth0.jwt.JWT;\n\
     import com.auth0.jwt.algorithms.Algorithm;\nimport com.auth0.jwt.interfaces.DecodedJWT;\n\
-    import com.caco.sitedocaco.entity.User;\nimport org.springframework.beans.factory.annotation.Value;\n\
-    import org.springframework.stereotype.Service;\n\nimport java.time.Instant;\n\
-    import java.time.temporal.ChronoUnit;\n\n@Service\npublic class JwtService {\n\
-    \n    @Value(\"${jwt.secret}\")\n    private String secret;\n\n    @Value(\"${jwt.expiration}\"\
-    )\n    private long expiration;\n\n    // 1. Gerar Token (Login bem sucedido)\n\
-    \    public String generateToken(User user) {\n        return JWT.create()\n \
-    \               .withSubject(user.getEmail()) // Identificador principal\n   \
-    \             .withClaim(\"id\", user.getId().toString()) // Payload útil\n  \
-    \              .withClaim(\"role\", user.getRole().name()) // Payload útil para\
-    \ o Front\n                .withIssuedAt(Instant.now())\n                .withExpiresAt(Instant.now().plus(expiration,\
-    \ ChronoUnit.MILLIS))\n                .withIssuer(\"caco-api\")\n           \
-    \     .sign(Algorithm.HMAC256(secret));\n    }\n\n    // 2. Validar e Decodificar\
-    \ Token\n    public DecodedJWT validateToken(String token) {\n        try {\n\
-    \            return JWT.require(Algorithm.HMAC256(secret))\n                 \
-    \   .withIssuer(\"caco-api\")\n                    .build()\n                \
-    \    .verify(token);\n        } catch (Exception e) {\n            // Token invá\
-    lido ou expirado\n            return null;\n        }\n    }\n\n    // 3. Extrair\
-    \ E-mail (Subject)\n    public String extractUsername(String token) {\n      \
-    \  DecodedJWT jwt = validateToken(token);\n        return jwt != null ? jwt.getSubject()\
-    \ : null;\n    }\n}"
+    import com.caco.sitedocaco.entity.User;\nimport org.jspecify.annotations.Nullable;\n\
+    import org.springframework.beans.factory.annotation.Value;\nimport org.springframework.stereotype.Service;\n\
+    \nimport java.time.Instant;\nimport java.time.temporal.ChronoUnit;\n\n@Service\n\
+    public class JwtService {\n\n    @Value(\"${jwt.secret}\")\n    private String\
+    \ secret;\n\n    @Value(\"${jwt.expiration}\")\n    private long expiration;\n\
+    \n    // 1. Gerar Token (Login bem sucedido)\n    public String generateToken(User\
+    \ user) {\n        return JWT.create()\n                .withSubject(user.getEmail())\
+    \ // Identificador principal\n                .withClaim(\"id\", user.getId().toString())\
+    \ // Payload útil\n                .withClaim(\"role\", user.getRole().name())\
+    \ // Payload útil para o Front\n                .withIssuedAt(Instant.now())\n\
+    \                .withExpiresAt(Instant.now().plus(expiration, ChronoUnit.MILLIS))\n\
+    \                .withIssuer(\"caco-api\")\n                .sign(Algorithm.HMAC256(secret));\n\
+    \    }\n\n    // 2. Validar e Decodificar Token\n    public DecodedJWT validateToken(String\
+    \ token) {\n        try {\n            return JWT.require(Algorithm.HMAC256(secret))\n\
+    \                    .withIssuer(\"caco-api\")\n                    .build()\n\
+    \                    .verify(token);\n        } catch (Exception e) {\n      \
+    \      // Token inválido ou expirado\n            return null;\n        }\n  \
+    \  }\n\n    // 3. Extrair E-mail (Subject)\n    public String extractUsername(String\
+    \ token) {\n        DecodedJWT jwt = validateToken(token);\n        return jwt\
+    \ != null ? jwt.getSubject() : null;\n    }\n\n    // 4. Expiration Time in Millis\n\
+    \    public long getExpirationInMillis() {\n        return expiration;\n     \
+    \   }\n}"
   info:
-    "size": "1679"
-    "last_modified": "2026-01-05T15:20:52.001179085"
+    "size": "1837"
+    "last_modified": "2026-01-05T18:06:47.568158787"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/security/jwt/JwtAuthenticationFilter.java"
@@ -1113,7 +1173,7 @@ files:
     \        }\n\n        filterChain.doFilter(request, response);\n    }\n}"
   info:
     "size": "2721"
-    "last_modified": "2026-01-05T15:20:52.004513934"
+    "last_modified": "2026-01-05T18:06:47.570288446"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/security/jwt/UserDetailsServiceImpl.java"
@@ -1139,7 +1199,7 @@ files:
     \        );\n    }\n}"
   info:
     "size": "1677"
-    "last_modified": "2026-01-05T15:20:52.007457052"
+    "last_modified": "2026-01-05T18:06:47.57280373"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/repository/UserRepository.java"
@@ -1150,19 +1210,22 @@ files:
     \ email);\n    boolean existsByEmail(String email);\n}"
   info:
     "size": "413"
-    "last_modified": "2026-01-05T15:20:52.013060374"
+    "last_modified": "2026-01-05T18:06:47.576636678"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/repository/BannerRepository.java"
   content: "package com.caco.sitedocaco.repository;\n\nimport com.caco.sitedocaco.entity.home.Banner;\n\
-    import org.springframework.data.jpa.repository.JpaRepository;\nimport org.springframework.stereotype.Repository;\n\
-    \nimport java.util.List;\nimport java.util.UUID;\n\n@Repository\npublic interface\
-    \ BannerRepository extends JpaRepository<Banner, UUID> {\n    // Busca apenas\
-    \ ativos, ordenados pela ordem de exibição definida no admin\n    List<Banner>\
-    \ findByActiveTrueOrderByDisplayOrderAsc();\n}"
+    import org.springframework.data.jpa.repository.JpaRepository;\nimport org.springframework.data.jpa.repository.Query;\n\
+    import org.springframework.stereotype.Repository;\n\nimport java.util.List;\n\
+    import java.util.UUID;\n\n@Repository\npublic interface BannerRepository extends\
+    \ JpaRepository<Banner, UUID> {\n    // Busca apenas ativos, ordenados pela ordem\
+    \ de exibição definida no admin\n    List<Banner> findByActiveTrueOrderByDisplayOrderAsc();\n\
+    \    List<Banner> findAllByActiveFalseOrderByTitleAsc();\n\n    // Busca o maior\
+    \ valor de ordem para inserir o próximo no final\n    @Query(\"SELECT MAX(b.displayOrder)\
+    \ FROM Banner b\")\n    Integer findMaxDisplayOrder();\n}"
   info:
-    "size": "473"
-    "last_modified": "2026-01-05T15:20:52.016855986"
+    "size": "743"
+    "last_modified": "2026-01-05T18:06:47.57898872"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/repository/WarningRepository.java"
@@ -1177,7 +1240,7 @@ files:
     \ now);\n}"
   info:
     "size": "692"
-    "last_modified": "2026-01-05T15:20:52.020282884"
+    "last_modified": "2026-01-05T18:06:47.58114318"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/repository/NewsRepository.java"
@@ -1195,7 +1258,7 @@ files:
     \ findAllSummaries(Pageable pageable);\n}"
   info:
     "size": "994"
-    "last_modified": "2026-01-05T15:20:52.023141921"
+    "last_modified": "2026-01-05T18:06:47.58341647"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/response/UserResponseDTO.java"
@@ -1209,7 +1272,7 @@ files:
     \    user.getRole()\n        );\n    }\n}"
   info:
     "size": "572"
-    "last_modified": "2026-01-05T15:20:52.027249908"
+    "last_modified": "2026-01-05T18:06:47.596642871"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/response/ErrorResponseDTO.java"
@@ -1219,7 +1282,7 @@ files:
     ) {\n}"
   info:
     "size": "232"
-    "last_modified": "2026-01-05T15:20:52.030252587"
+    "last_modified": "2026-01-05T18:06:47.598822247"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/response/BannerDTO.java"
@@ -1228,7 +1291,7 @@ files:
     \ imageUrl,\n        String targetLink\n) {}"
   info:
     "size": "186"
-    "last_modified": "2026-01-05T15:20:52.033401087"
+    "last_modified": "2026-01-05T18:06:47.601017097"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/response/WarningDTO.java"
@@ -1237,7 +1300,7 @@ files:
     \  String markdownText,\n        LocalDateTime expiresAt\n) {}"
   info:
     "size": "207"
-    "last_modified": "2026-01-05T15:20:52.03642923"
+    "last_modified": "2026-01-05T18:06:47.603231976"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/response/NewsSummaryDTO.java"
@@ -1248,7 +1311,7 @@ files:
     ) {}"
   info:
     "size": "305"
-    "last_modified": "2026-01-05T15:20:52.039272129"
+    "last_modified": "2026-01-05T18:06:47.60533826"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/response/DashboardDTO.java"
@@ -1257,7 +1320,7 @@ files:
     \ warnings,\n        List<NewsSummaryDTO> latestNews\n) {}"
   info:
     "size": "207"
-    "last_modified": "2026-01-05T15:20:52.042041563"
+    "last_modified": "2026-01-05T18:06:47.607586372"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/request/UpdateProfileDTO.java"
@@ -1266,7 +1329,67 @@ files:
     \    String name,\n        String avatarUrl\n) {}"
   info:
     "size": "195"
-    "last_modified": "2026-01-05T15:20:52.045860076"
+    "last_modified": "2026-01-05T18:06:47.610583571"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/request/CreateNewsDTO.java"
+  content: "package com.caco.sitedocaco.dto.request;\n\nimport jakarta.validation.constraints.NotBlank;\n\
+    \npublic record CreateNewsDTO(\n        @NotBlank(message = \"O título é obrigató\
+    rio\") String title,\n        @NotBlank(message = \"O resumo é obrigatório\")\
+    \ String summary,\n        @NotBlank(message = \"O conteúdo é obrigatório\") String\
+    \ content,\n        String coverImage // Opcional no início, pode ser setado depois\n\
+    ) {}"
+  info:
+    "size": "415"
+    "last_modified": "2026-01-05T18:06:47.612708156"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/request/UpdateNewsDTO.java"
+  content: "package com.caco.sitedocaco.dto.request;\n\npublic record UpdateNewsDTO(\n\
+    \        String title,\n        String summary,\n        String content,\n   \
+    \     String coverImage\n) {}\n"
+  info:
+    "size": "172"
+    "last_modified": "2026-01-05T18:06:47.61477235"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/request/CreateBannerDTO.java"
+  content: "package com.caco.sitedocaco.dto.request;\n\nimport jakarta.validation.constraints.NotBlank;\n\
+    \npublic record CreateBannerDTO(\n        @NotBlank String title,\n        @NotBlank\
+    \ String imageUrl,\n        String targetLink,\n        Boolean active\n) {}\n"
+  info:
+    "size": "244"
+    "last_modified": "2026-01-05T18:06:47.61677827"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/request/ReorderBannersDTO.java"
+  content: "package com.caco.sitedocaco.dto.request;\n\nimport jakarta.validation.constraints.NotNull;\n\
+    \nimport java.util.List;\nimport java.util.UUID;\n\npublic record ReorderBannersDTO(\n\
+    \        @NotNull List<UUID> bannerIds // Lista ordenada de IDs ex: [ID_A, ID_D,\
+    \ ID_B...]\n) {}\n"
+  info:
+    "size": "264"
+    "last_modified": "2026-01-05T18:06:47.618833027"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/request/CreateWarningDTO.java"
+  content: "package com.caco.sitedocaco.dto.request;\n\nimport jakarta.validation.constraints.Future;\n\
+    import jakarta.validation.constraints.NotBlank;\nimport jakarta.validation.constraints.NotNull;\n\
+    \nimport java.time.LocalDateTime;\n\npublic record CreateWarningDTO(\n       \
+    \ @NotBlank String markdownText,\n        @NotNull LocalDateTime startsAt,\n \
+    \       @NotNull @Future LocalDateTime expiresAt\n) {}\n"
+  info:
+    "size": "383"
+    "last_modified": "2026-01-05T18:06:47.621940854"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/request/UpdateWarningDTO.java"
+  content: "package com.caco.sitedocaco.dto.request;\n\nimport java.time.LocalDateTime;\n\
+    \npublic record UpdateWarningDTO(\n        String markdownText,\n        LocalDateTime\
+    \ startsAt,\n        LocalDateTime expiresAt\n) {}\n"
+  info:
+    "size": "205"
+    "last_modified": "2026-01-05T18:06:47.625241841"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/service/UserService.java"
@@ -1294,52 +1417,152 @@ files:
     \    }\n}"
   info:
     "size": "1884"
-    "last_modified": "2026-01-05T15:20:52.050786558"
+    "last_modified": "2026-01-05T18:06:47.630319421"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/service/BannerService.java"
-  content: "package com.caco.sitedocaco.service;\n\nimport com.caco.sitedocaco.dto.response.BannerDTO;\n\
-    import com.caco.sitedocaco.repository.BannerRepository;\nimport lombok.RequiredArgsConstructor;\n\
-    import org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\n\
-    \nimport java.util.List;\n\n@Service\n@RequiredArgsConstructor\npublic class BannerService\
+  content: "package com.caco.sitedocaco.service;\n\nimport com.caco.sitedocaco.dto.request.CreateBannerDTO;\n\
+    import com.caco.sitedocaco.dto.response.BannerDTO;\nimport com.caco.sitedocaco.entity.home.Banner;\n\
+    import com.caco.sitedocaco.exception.ResourceNotFoundException;\nimport com.caco.sitedocaco.repository.BannerRepository;\n\
+    import lombok.RequiredArgsConstructor;\nimport org.springframework.stereotype.Service;\n\
+    import org.springframework.transaction.annotation.Transactional;\n\nimport java.util.List;\n\
+    import java.util.UUID;\n\n@Service\n@RequiredArgsConstructor\npublic class BannerService\
     \ {\n\n    private final BannerRepository bannerRepository;\n\n    @Transactional(readOnly\
     \ = true)\n    public List<BannerDTO> getActiveBanners() {\n        return bannerRepository.findByActiveTrueOrderByDisplayOrderAsc()\n\
     \                .stream()\n                .map(b -> new BannerDTO(b.getId(),\
     \ b.getTitle(), b.getImageUrl(), b.getTargetLink()))\n                .toList();\n\
-    \    }\n}"
+    \    }\n\n    public List<BannerDTO> getInactiveBanners() {\n        return bannerRepository.findAllByActiveFalseOrderByTitleAsc()\n\
+    \                .stream()\n                .map(b -> new BannerDTO(b.getId(),\
+    \ b.getTitle(), b.getImageUrl(), b.getTargetLink()))\n                .toList();\n\
+    \    }\n\n    @Transactional\n    public Banner createBanner(CreateBannerDTO dto)\
+    \ {\n        Banner banner = new Banner();\n        banner.setTitle(dto.title());\n\
+    \        banner.setImageUrl(dto.imageUrl());\n        banner.setTargetLink(dto.targetLink());\n\
+    \        banner.setActive(dto.active() != null ? dto.active() : true);\n\n   \
+    \     // Regra: Adiciona ao final da lista\n        Integer maxOrder = bannerRepository.findMaxDisplayOrder();\n\
+    \        banner.setDisplayOrder(maxOrder == null ? 0 : maxOrder + 1);\n\n    \
+    \    return bannerRepository.save(banner);\n    }\n\n    @Transactional\n    public\
+    \ Banner toggleActive(UUID id) {\n        Banner banner = bannerRepository.findById(id)\n\
+    \                .orElseThrow(() -> new ResourceNotFoundException(\"Banner nã\
+    o encontrado\"));\n        banner.setActive(!banner.getActive());\n        return\
+    \ bannerRepository.save(banner);\n    }\n\n    @Transactional\n    public void\
+    \ deleteBanner(UUID id) {\n        bannerRepository.deleteById(id);\n    }\n\n\
+    \    /**\n     * Função Especial: Reordenar Banners\n     * Recebe uma lista de\
+    \ IDs na ordem desejada (A, D, B, C, E)\n     * Itera e atualiza o displayOrder\
+    \ de acordo com o índice na lista.\n     */\n    @Transactional\n    public void\
+    \ reorderBanners(List<UUID> orderedIds) {\n        // Atualiza a ordem baseada\
+    \ na lista recebida.\n        // Nota: Isso funciona mesmo se a lista misturar\
+    \ ativos e inativos,\n        // mas idealmente o front deve mandar a lista do\
+    \ contexto que está vendo.\n        for (int i = 0; i < orderedIds.size(); i++)\
+    \ {\n            UUID id = orderedIds.get(i);\n            // Usamos ifPresent\
+    \ para evitar erro caso o ID tenha sido deletado recentemente\n            int\
+    \ finalI = i;\n            bannerRepository.findById(id).ifPresent(banner -> {\n\
+    \                banner.setDisplayOrder(finalI);\n                bannerRepository.save(banner);\n\
+    \            });\n        }\n    }\n}"
   info:
-    "size": "758"
-    "last_modified": "2026-01-05T15:20:52.053702118"
+    "size": "3086"
+    "last_modified": "2026-01-05T18:06:47.633632529"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/service/WarningService.java"
-  content: "package com.caco.sitedocaco.service;\n\nimport com.caco.sitedocaco.dto.response.WarningDTO;\n\
-    import com.caco.sitedocaco.repository.WarningRepository;\nimport lombok.RequiredArgsConstructor;\n\
-    import org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\n\
-    \nimport java.time.LocalDateTime;\nimport java.util.List;\n\n@Service\n@RequiredArgsConstructor\n\
+  content: "package com.caco.sitedocaco.service;\n\nimport com.caco.sitedocaco.dto.request.CreateWarningDTO;\n\
+    import com.caco.sitedocaco.dto.request.UpdateWarningDTO;\nimport com.caco.sitedocaco.dto.response.WarningDTO;\n\
+    import com.caco.sitedocaco.entity.home.Warning;\nimport com.caco.sitedocaco.exception.BusinessRuleException;\n\
+    import com.caco.sitedocaco.exception.ResourceNotFoundException;\nimport com.caco.sitedocaco.repository.WarningRepository;\n\
+    import lombok.RequiredArgsConstructor;\nimport org.springframework.stereotype.Service;\n\
+    import org.springframework.transaction.annotation.Transactional;\n\nimport java.time.LocalDateTime;\n\
+    import java.util.List;\nimport java.util.UUID;\n\n@Service\n@RequiredArgsConstructor\n\
     public class WarningService {\n\n    private final WarningRepository warningRepository;\n\
     \n    @Transactional(readOnly = true)\n    public List<WarningDTO> getActiveWarnings()\
     \ {\n        return warningRepository.findActiveWarnings(LocalDateTime.now())\n\
     \                .stream()\n                .map(w -> new WarningDTO(w.getId(),\
     \ w.getMarkdownText(), w.getExpiresAt()))\n                .toList();\n    }\n\
-    }"
+    \n\n    @Transactional\n    public Warning createWarning(CreateWarningDTO dto)\
+    \ {\n        if (dto.expiresAt().isBefore(dto.startsAt())) {\n            throw\
+    \ new IllegalArgumentException(\"A data de expiração deve ser posterior ao iní\
+    cio.\");\n        }\n        Warning warning = new Warning();\n        warning.setMarkdownText(dto.markdownText());\n\
+    \        warning.setStartsAt(dto.startsAt());\n        warning.setExpiresAt(dto.expiresAt());\n\
+    \        return warningRepository.save(warning);\n    }\n\n    /**\n     * Funç\
+    ão Especial: Expirar Aviso Imediatamente\n     * Define o expiresAt para agora,\
+    \ removendo-o da visualização pública\n     * (considerando a query de filtro\
+    \ padrão NOW() between start and expires).\n     */\n    @Transactional\n    public\
+    \ void expireWarningNow(UUID id) {\n        Warning warning = warningRepository.findById(id)\n\
+    \                .orElseThrow(() -> new ResourceNotFoundException(\"Aviso não\
+    \ encontrado\"));\n\n        warning.setExpiresAt(LocalDateTime.now());\n    \
+    \    warningRepository.save(warning);\n    }\n\n    @Transactional\n    public\
+    \ Warning updateWarning(UUID id, UpdateWarningDTO dto) {\n        Warning warning\
+    \ = warningRepository.findById(id)\n                .orElseThrow(() -> new ResourceNotFoundException(\"\
+    Aviso não encontrado\"));\n\n        // Se datas forem passadas, valida consistê\
+    ncia\n        LocalDateTime newStart = dto.startsAt() != null ? dto.startsAt()\
+    \ : warning.getStartsAt();\n        LocalDateTime newEnd = dto.expiresAt() !=\
+    \ null ? dto.expiresAt() : warning.getExpiresAt();\n\n        if (dto.startsAt()\
+    \ != null || dto.expiresAt() != null) {\n            validateDates(newStart, newEnd);\n\
+    \        }\n\n        if (dto.markdownText() != null) warning.setMarkdownText(dto.markdownText());\n\
+    \        if (dto.startsAt() != null) warning.setStartsAt(dto.startsAt());\n  \
+    \      if (dto.expiresAt() != null) warning.setExpiresAt(dto.expiresAt());\n\n\
+    \        return warningRepository.save(warning);\n    }\n\n    @Transactional\n\
+    \    public void deleteWarning(UUID id) {\n        warningRepository.deleteById(id);\n\
+    \    }\n\n    private void validateDates(LocalDateTime start, LocalDateTime end)\
+    \ {\n        if (end.isBefore(start)) {\n            throw new BusinessRuleException(\"\
+    Data de expiração deve ser após o início.\");\n        }\n    }\n}"
   info:
-    "size": "787"
-    "last_modified": "2026-01-05T15:20:52.056516462"
+    "size": "3353"
+    "last_modified": "2026-01-05T18:06:47.637006703"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/service/NewsService.java"
-  content: "package com.caco.sitedocaco.service;\n\n\n\nimport com.caco.sitedocaco.dto.response.NewsSummaryDTO;\n\
-    import com.caco.sitedocaco.repository.NewsRepository;\nimport lombok.RequiredArgsConstructor;\n\
-    import org.springframework.data.domain.PageRequest;\nimport org.springframework.stereotype.Service;\n\
-    import org.springframework.transaction.annotation.Transactional;\n\nimport java.util.List;\n\
-    \n@Service\n@RequiredArgsConstructor\npublic class NewsService {\n\n    private\
-    \ final NewsRepository newsRepository;\n\n    @Transactional(readOnly = true)\n\
-    \    public List<NewsSummaryDTO> getLatestNews(int limit) {\n        return newsRepository.findAllSummaries(PageRequest.of(0,\
-    \ limit)).getContent();\n    }\n}"
+  content: "package com.caco.sitedocaco.service;\n\n\n\nimport com.caco.sitedocaco.dto.request.CreateNewsDTO;\n\
+    import com.caco.sitedocaco.dto.request.UpdateNewsDTO;\nimport com.caco.sitedocaco.dto.response.NewsSummaryDTO;\n\
+    import com.caco.sitedocaco.entity.User;\nimport com.caco.sitedocaco.entity.home.News;\n\
+    import com.caco.sitedocaco.exception.ResourceNotFoundException;\nimport com.caco.sitedocaco.repository.NewsRepository;\n\
+    import com.caco.sitedocaco.repository.UserRepository;\nimport jakarta.persistence.EntityNotFoundException;\n\
+    import lombok.RequiredArgsConstructor;\nimport org.springframework.data.domain.PageRequest;\n\
+    import org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\n\
+    \nimport java.nio.file.AccessDeniedException;\nimport java.text.Normalizer;\n\
+    import java.time.LocalDateTime;\nimport java.util.List;\nimport java.util.Locale;\n\
+    import java.util.UUID;\n\n@Service\n@RequiredArgsConstructor\npublic class NewsService\
+    \ {\n\n    private final NewsRepository newsRepository;\n    private final UserRepository\
+    \ userRepository;\n\n    @Transactional(readOnly = true)\n    public List<NewsSummaryDTO>\
+    \ getLatestNews(int limit) {\n        return newsRepository.findAllSummaries(PageRequest.of(0,\
+    \ limit)).getContent();\n    }\n\n    @Transactional\n    public News createNews(CreateNewsDTO\
+    \ dto, UUID authorId) {\n        User author = userRepository.findById(authorId)\n\
+    \                .orElseThrow(() -> new ResourceNotFoundException(\"Autor não\
+    \ encontrado\"));\n\n        News news = new News();\n        news.setTitle(dto.title());\n\
+    \        news.setSummary(dto.summary());\n        news.setContent(dto.content());\n\
+    \        news.setCoverImage(dto.coverImage());\n        news.setAuthor(author);\n\
+    \        news.setPublishDate(LocalDateTime.now());\n\n        // Regra de Negó\
+    cio: Gerar Slug único [cite: 276]\n        news.setSlug(generateUniqueSlug(dto.title()));\n\
+    \n        return newsRepository.save(news);\n    }\n\n    @Transactional\n   \
+    \ public News updateNews(UUID id, UpdateNewsDTO dto, UUID requesterId, boolean\
+    \ isAdmin) throws AccessDeniedException {\n        News news = newsRepository.findById(id)\n\
+    \                .orElseThrow(() -> new EntityNotFoundException(\"Notícia não\
+    \ encontrada\"));\n\n        // REGRA DE NEGÓCIO: Só Admin ou o Próprio Autor\
+    \ podem editar\n        validateOwnership(news, requesterId, isAdmin);\n\n   \
+    \     if (dto.title() != null) news.setTitle(dto.title());\n        if (dto.summary()\
+    \ != null) news.setSummary(dto.summary());\n        if (dto.content() != null)\
+    \ news.setContent(dto.content());\n        if (dto.coverImage() != null) news.setCoverImage(dto.coverImage());\n\
+    \n        return newsRepository.save(news);\n    }\n\n    @Transactional\n   \
+    \ public void deleteNews(UUID id, UUID requesterId, boolean isAdmin) throws AccessDeniedException\
+    \ {\n        News news = newsRepository.findById(id)\n                .orElseThrow(()\
+    \ -> new EntityNotFoundException(\"Notícia não encontrada\"));\n\n        // REGRA\
+    \ DE NEGÓCIO: Só Admin ou o Próprio Autor podem deletar\n        validateOwnership(news,\
+    \ requesterId, isAdmin);\n\n        newsRepository.delete(news);\n    }\n\n  \
+    \  private void validateOwnership(News news, UUID requesterId, boolean isAdmin)\
+    \ throws AccessDeniedException {\n        if (isAdmin) return; // Admin pode tudo\n\
+    \n        if (!news.getAuthor().getId().equals(requesterId)) {\n            throw\
+    \ new AccessDeniedException(\"Você só pode alterar notícias criadas por você.\"\
+    );\n        }\n    }\n\n    // Lógica para gerar slug (ex: \"Festa Junina\" ->\
+    \ \"festa-junina\") [cite: 276]\n    private String generateUniqueSlug(String\
+    \ title) {\n        String baseSlug = Normalizer.normalize(title, Normalizer.Form.NFD)\n\
+    \                .replaceAll(\"[\\\\p{InCombiningDiacriticalMarks}]\", \"\")\n\
+    \                .toLowerCase(Locale.ROOT)\n                .replaceAll(\"[^a-z0-9\\\
+    \\s-]\", \"\")\n                .trim()\n                .replaceAll(\"\\\\s+\"\
+    , \"-\");\n\n        String uniqueSlug = baseSlug;\n        int counter = 1;\n\
+    \n        // Garante unicidade adicionando sufixo numérico\n        while (newsRepository.existsBySlug(uniqueSlug))\
+    \ {\n            uniqueSlug = baseSlug + \"-\" + counter;\n            counter++;\n\
+    \        }\n        return uniqueSlug;\n    }\n}"
   info:
-    "size": "679"
-    "last_modified": "2026-01-05T15:20:52.059150645"
+    "size": "4162"
+    "last_modified": "2026-01-05T18:06:47.640475308"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/controller/privateController/UserController.java"
@@ -1348,15 +1571,14 @@ files:
     import lombok.RequiredArgsConstructor;\nimport org.springframework.http.ResponseEntity;\n\
     import org.springframework.web.bind.annotation.*;\n\n@RestController\n@RequestMapping(\"\
     /api/user\")\n@RequiredArgsConstructor\npublic class UserController {\n\n    private\
-    \ final UserService userService;\n\n    // GET /api/private/me\n    @GetMapping(\"\
-    /me\")\n    public ResponseEntity<UserResponseDTO> getMyProfile() {\n        return\
-    \ ResponseEntity.ok(userService.getMe());\n    }\n\n    // PUT /api/private/me\n\
-    \    @PutMapping(\"/me\")\n    public ResponseEntity<UserResponseDTO> updateMyProfile(@RequestBody\
-    \ UpdateProfileDTO dto) {\n        return ResponseEntity.ok(userService.updateProfile(dto));\n\
+    \ final UserService userService;\n\n    @GetMapping(\"/me\")\n    public ResponseEntity<UserResponseDTO>\
+    \ getMyProfile() {\n        return ResponseEntity.ok(userService.getMe());\n \
+    \   }\n\n    @PutMapping(\"/me\")\n    public ResponseEntity<UserResponseDTO>\
+    \ updateMyProfile(@RequestBody UpdateProfileDTO dto) {\n        return ResponseEntity.ok(userService.updateProfile(dto));\n\
     \    }\n}"
   info:
-    "size": "895"
-    "last_modified": "2026-01-05T15:20:52.063396296"
+    "size": "841"
+    "last_modified": "2026-01-05T18:06:47.644929059"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/controller/publicController/HomeController.java"
@@ -1381,7 +1603,82 @@ files:
     \        );\n\n        return ResponseEntity.ok(dashboard);\n    }\n}"
   info:
     "size": "1682"
-    "last_modified": "2026-01-05T15:20:52.06725188"
+    "last_modified": "2026-01-05T18:06:47.649057763"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/controller/admin/HomeAdminController.java"
+  content: "package com.caco.sitedocaco.controller.admin;\n\nimport com.caco.sitedocaco.dto.request.*;\n\
+    import com.caco.sitedocaco.dto.response.BannerDTO;\nimport com.caco.sitedocaco.entity.home.Banner;\n\
+    import com.caco.sitedocaco.entity.home.News;\nimport com.caco.sitedocaco.entity.home.Warning;\n\
+    import com.caco.sitedocaco.service.BannerService;\nimport com.caco.sitedocaco.service.NewsService;\n\
+    import com.caco.sitedocaco.service.WarningService;\nimport jakarta.validation.Valid;\n\
+    import lombok.RequiredArgsConstructor;\nimport org.springframework.http.ResponseEntity;\n\
+    import org.springframework.security.access.prepost.PreAuthorize;\nimport org.springframework.security.core.Authentication;\n\
+    import org.springframework.web.bind.annotation.*;\n\nimport java.net.URI;\nimport\
+    \ java.nio.file.AccessDeniedException;\nimport java.util.List;\nimport java.util.Objects;\n\
+    import java.util.UUID;\n\n@RestController\n@RequestMapping(\"/api/admin\")\n@RequiredArgsConstructor\n\
+    public class HomeAdminController {\n\n    private final NewsService newsService;\n\
+    \    private final BannerService bannerService;\n    private final WarningService\
+    \ warningService;\n\n    // Helper para pegar ID e Role (depende da sua config\
+    \ de security, assumindo Oauth2 padrão)\n    private UUID getUserId(Authentication\
+    \ auth) {\n        // Exemplo: Se o Principal for customizado ou extraído do Token\
+    \ JWT\n        // return UUID.fromString(auth.getName()); // ou lógica especí\
+    fica\n        // Para fins deste exemplo, assumimos que o ID venha no Principal\n\
+    \        return UUID.fromString(auth.getName());\n    }\n\n    private boolean\
+    \ isAdmin(Authentication auth) {\n        return auth.getAuthorities().stream()\n\
+    \                .anyMatch(a -> Objects.equals(a.getAuthority(), \"ROLE_ADMIN\"\
+    ));\n    }\n\n    // ==================== NEWS (ADMIN + EDITOR) ====================\n\
+    \n    @PostMapping(\"/news\")\n    @PreAuthorize(\"hasAnyRole('ADMIN', 'EDITOR')\"\
+    )\n    public ResponseEntity<News> createNews(@RequestBody @Valid CreateNewsDTO\
+    \ dto, Authentication auth) {\n        News created = newsService.createNews(dto,\
+    \ getUserId(auth));\n        return ResponseEntity.created(URI.create(\"/api/public/news/\"\
+    \ + created.getSlug())).body(created);\n    }\n\n    @PutMapping(\"/news/{id}\"\
+    )\n    @PreAuthorize(\"hasAnyRole('ADMIN', 'EDITOR')\")\n    public ResponseEntity<News>\
+    \ updateNews(@PathVariable UUID id,\n                                        \
+    \   @RequestBody @Valid UpdateNewsDTO dto,\n                                 \
+    \          Authentication auth) throws AccessDeniedException {\n        // Passamos\
+    \ o ID e a flag isAdmin para o service validar a regra de \"Editor Owns News\"\
+    \n        return ResponseEntity.ok(newsService.updateNews(id, dto, getUserId(auth),\
+    \ isAdmin(auth)));\n    }\n\n    @DeleteMapping(\"/news/{id}\")\n    @PreAuthorize(\"\
+    hasAnyRole('ADMIN', 'EDITOR')\")\n    public ResponseEntity<Void> deleteNews(@PathVariable\
+    \ UUID id, Authentication auth) throws AccessDeniedException {\n        newsService.deleteNews(id,\
+    \ getUserId(auth), isAdmin(auth));\n        return ResponseEntity.noContent().build();\n\
+    \    }\n\n    // ==================== BANNERS (ADMIN ONLY) ====================\n\
+    \n    @GetMapping(\"/banners/active\")\n    @PreAuthorize(\"hasRole('ADMIN')\"\
+    )\n    public ResponseEntity<List<BannerDTO>> getActiveBanners() {\n        return\
+    \ ResponseEntity.ok(bannerService.getActiveBanners());\n    }\n\n    @GetMapping(\"\
+    /banners/inactive\")\n    @PreAuthorize(\"hasRole('ADMIN')\")\n    public ResponseEntity<List<BannerDTO>>\
+    \ getInactiveBanners() {\n        return ResponseEntity.ok(bannerService.getInactiveBanners());\n\
+    \    }\n\n    @PostMapping(\"/banners\")\n    @PreAuthorize(\"hasRole('ADMIN')\"\
+    )\n    public ResponseEntity<Banner> createBanner(@RequestBody @Valid CreateBannerDTO\
+    \ dto) {\n        return ResponseEntity.ok(bannerService.createBanner(dto));\n\
+    \    }\n\n    @PatchMapping(\"/banners/{id}/toggle\")\n    @PreAuthorize(\"hasRole('ADMIN')\"\
+    )\n    public ResponseEntity<Banner> toggleBannerActive(@PathVariable UUID id)\
+    \ {\n        return ResponseEntity.ok(bannerService.toggleActive(id));\n    }\n\
+    \n    @PutMapping(\"/banners/reorder\")\n    @PreAuthorize(\"hasRole('ADMIN')\"\
+    )\n    public ResponseEntity<Void> reorderBanners(@RequestBody @Valid ReorderBannersDTO\
+    \ dto) {\n        bannerService.reorderBanners(dto.bannerIds());\n        return\
+    \ ResponseEntity.noContent().build();\n    }\n\n    @DeleteMapping(\"/banners/{id}\"\
+    )\n    @PreAuthorize(\"hasRole('ADMIN')\")\n    public ResponseEntity<Void> deleteBanner(@PathVariable\
+    \ UUID id) {\n        bannerService.deleteBanner(id);\n        return ResponseEntity.noContent().build();\n\
+    \    }\n\n    // ==================== WARNINGS (ADMIN ONLY) ====================\n\
+    \    // Editors geralmente não postam alertas de infra, apenas notícias\n\n  \
+    \  @PostMapping(\"/warnings\")\n    @PreAuthorize(\"hasRole('ADMIN')\")\n    public\
+    \ ResponseEntity<Warning> createWarning(@RequestBody @Valid CreateWarningDTO dto)\
+    \ {\n        return ResponseEntity.ok(warningService.createWarning(dto));\n  \
+    \  }\n\n    @PutMapping(\"/warnings/{id}\")\n    @PreAuthorize(\"hasRole('ADMIN')\"\
+    )\n    public ResponseEntity<Warning> updateWarning(@PathVariable UUID id, @RequestBody\
+    \ @Valid UpdateWarningDTO dto) {\n        return ResponseEntity.ok(warningService.updateWarning(id,\
+    \ dto));\n    }\n\n    @PatchMapping(\"/warnings/{id}/expire\")\n    @PreAuthorize(\"\
+    hasRole('ADMIN')\")\n    public ResponseEntity<Void> expireWarning(@PathVariable\
+    \ UUID id) {\n        warningService.expireWarningNow(id);\n        return ResponseEntity.noContent().build();\n\
+    \    }\n\n    @DeleteMapping(\"/warnings/{id}\")\n    @PreAuthorize(\"hasRole('ADMIN')\"\
+    )\n    public ResponseEntity<Void> deleteWarning(@PathVariable UUID id) {\n  \
+    \      warningService.deleteWarning(id);\n        return ResponseEntity.noContent().build();\n\
+    \    }\n}"
+  info:
+    "size": "5645"
+    "last_modified": "2026-01-05T18:06:47.653267698"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/exception/GlobalExceptionHandler.java"
@@ -1389,7 +1686,8 @@ files:
     import jakarta.servlet.http.HttpServletRequest;\nimport org.springframework.http.HttpStatus;\n\
     import org.springframework.http.ResponseEntity;\nimport org.springframework.security.access.AccessDeniedException;\n\
     import org.springframework.web.bind.annotation.ExceptionHandler;\nimport org.springframework.web.bind.annotation.RestControllerAdvice;\n\
-    \nimport java.time.LocalDateTime;\n\n@RestControllerAdvice\npublic class GlobalExceptionHandler\
+    import org.springframework.web.servlet.resource.NoResourceFoundException;\n\n\
+    import java.time.LocalDateTime;\n\n@RestControllerAdvice\npublic class GlobalExceptionHandler\
     \ {\n\n    // 1. Handle Resource Not Found (404)\n    @ExceptionHandler(ResourceNotFoundException.class)\n\
     \    public ResponseEntity<ErrorResponseDTO> handleNotFound(ResourceNotFoundException\
     \ ex, HttpServletRequest request) {\n        return buildResponse(HttpStatus.NOT_FOUND,\
@@ -1401,9 +1699,12 @@ files:
     \ to access Admin route\n    @ExceptionHandler(AccessDeniedException.class)\n\
     \    public ResponseEntity<ErrorResponseDTO> handleAccessDenied(AccessDeniedException\
     \ ex, HttpServletRequest request) {\n        return buildResponse(HttpStatus.FORBIDDEN,\
-    \ \"Access Denied: You don't have permission.\", request);\n    }\n\n    // 4.\
-    \ Handle Generic/Unexpected Errors (500)\n    @ExceptionHandler(Exception.class)\n\
-    \    public ResponseEntity<ErrorResponseDTO> handleGeneric(Exception ex, HttpServletRequest\
+    \ \"Access Denied: You don't have permission.\", request);\n    }\n\n    @ExceptionHandler(NoResourceFoundException.class)\n\
+    \    public ResponseEntity<ErrorResponseDTO> handleNoResourceFound(NoResourceFoundException\
+    \ ex, HttpServletRequest request) {\n        return buildResponse(HttpStatus.NOT_FOUND,\
+    \ \"The requested resource was not found.\", request);\n    }\n\n    // 4. Handle\
+    \ Generic/Unexpected Errors (500)\n    @ExceptionHandler(Exception.class)\n  \
+    \  public ResponseEntity<ErrorResponseDTO> handleGeneric(Exception ex, HttpServletRequest\
     \ request) {\n        // Log the real error here so you can debug it later\n \
     \       ex.printStackTrace();\n        return buildResponse(HttpStatus.INTERNAL_SERVER_ERROR,\
     \ \"An unexpected error occurred.\", request);\n    }\n\n    // Helper method\
@@ -1414,8 +1715,8 @@ files:
     \          message,\n                request.getRequestURI()\n        );\n   \
     \     return ResponseEntity.status(status).body(error);\n    }\n}"
   info:
-    "size": "2375"
-    "last_modified": "2026-01-05T15:20:52.073055755"
+    "size": "2737"
+    "last_modified": "2026-01-05T18:06:47.658630895"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/exception/ResourceNotFoundException.java"
@@ -1424,7 +1725,7 @@ files:
     \ {\n        super(message);\n    }\n}"
   info:
     "size": "192"
-    "last_modified": "2026-01-05T15:20:52.075758895"
+    "last_modified": "2026-01-05T18:06:47.661946306"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/exception/BusinessRuleException.java"
@@ -1433,7 +1734,7 @@ files:
     \ {\n        super(message);\n    }\n}\n"
   info:
     "size": "185"
-    "last_modified": "2026-01-05T15:20:52.078423822"
+    "last_modified": "2026-01-05T18:06:47.665179692"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "test/java/com/caco/sitedocaco/SitedocacoApplicationTests.java"
@@ -1442,6 +1743,6 @@ files:
     \ SitedocacoApplicationTests {\n\n\t@Test\n\tvoid contextLoads() {\n\t}\n\n}\n"
   info:
     "size": "215"
-    "last_modified": "2026-01-05T15:20:52.087086237"
+    "last_modified": "2026-01-05T18:06:47.673484775"
     "mime_type": "text/x-java-source"
     "extension": ".java"

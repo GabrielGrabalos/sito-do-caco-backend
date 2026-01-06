@@ -14,13 +14,11 @@ public class UserController {
 
     private final UserService userService;
 
-    // GET /api/private/me
     @GetMapping("/me")
     public ResponseEntity<UserResponseDTO> getMyProfile() {
         return ResponseEntity.ok(userService.getMe());
     }
 
-    // PUT /api/private/me
     @PutMapping("/me")
     public ResponseEntity<UserResponseDTO> updateMyProfile(@RequestBody UpdateProfileDTO dto) {
         return ResponseEntity.ok(userService.updateProfile(dto));

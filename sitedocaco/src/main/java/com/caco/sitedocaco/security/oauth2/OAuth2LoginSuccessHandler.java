@@ -40,6 +40,7 @@ public class OAuth2LoginSuccessHandler extends SimpleUrlAuthenticationSuccessHan
         // Redireciona para o Front com o token na URL
         String targetUrl = UriComponentsBuilder.fromUriString(frontendUrl + "/auth/callback")
                 .queryParam("token", token)
+                .queryParam("expiresIn", jwtService.getExpirationInMillis())
                 .build().toUriString();
 
         getRedirectStrategy().sendRedirect(request, response, targetUrl);
