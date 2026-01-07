@@ -47,23 +47,18 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
 
         // Salva ou atualiza o usuário
         Optional<User> userOptional = userRepository.findByEmail(email);
-        User user;
 
         // Atualiza se existir, senão cria novo
-        if (userOptional.isPresent()) {
-            user = userOptional.get();
-            user.setAvatarUrl(avatarUrl);
-            user.setUsername(name);
-        } else {
-            user = new User();
+        if (!userOptional.isPresent()) {
+            User user = new User();
             user.setEmail(email);
             user.setUsername(name);
             user.setAvatarUrl(avatarUrl);
             user.setRole(Role.STUDENT); // Padrão
             user.setCreatedAt(LocalDateTime.now());
+            userRepository.save(user);
         }
 
-        userRepository.save(user);
 
         return oAuth2User;
     }

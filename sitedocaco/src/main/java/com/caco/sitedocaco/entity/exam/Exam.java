@@ -1,5 +1,6 @@
 package com.caco.sitedocaco.entity.exam;
 
+import com.caco.sitedocaco.entity.enums.ExamType;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -18,20 +19,12 @@ public class Exam {
         - `String fileUrl`
     */
 
-    public enum ExamType {
-        P1,
-        P2,
-        P3,
-        EXAME,
-        SUB,
-        OUTROS
-    }
-
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
     @ManyToOne
+    @JoinColumn(name = "subject_code", nullable = false)
     private Subject subject;
 
     private Integer year;

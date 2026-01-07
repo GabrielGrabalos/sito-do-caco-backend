@@ -11,13 +11,13 @@ import java.util.UUID;
 public class Subject {
     /*
     2. `Subject`
-        - `UUID id`
+        - `String subjectCode` (Código da disciplina, ex: "MC102", "F159", etc) [PK]
         - `String name`
     */
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+    @Column(nullable = false, unique = true)
+    private String subjectCode;
 
     @Column(nullable = false, unique = true)
     private String name;
