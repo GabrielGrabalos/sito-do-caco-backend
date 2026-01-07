@@ -152,4 +152,64 @@ public class ImgBBService {
             );
         }
     }
+
+
+    // =================== PDF UPLOAD  ===================
+    /**
+     * Upload de arquivo com nome customizado
+     *
+     * @param file Arquivo a ser enviado
+     * @param customName Nome customizado (opcional)
+     * @return URL pública do arquivo
+     * @throws IOException Se ocorrer erro ao ler o arquivo
+     */
+    public String uploadFile(MultipartFile file, String customName) throws IOException {
+        // Validar tamanho máximo (32MB - limite do ImgBB)
+        long maxSize = 32 * 1024 * 1024; // 32MB em bytes
+        if (file.getSize() > maxSize) {
+            throw new IllegalArgumentException(
+                    String.format("Arquivo muito grande. Máximo: %dMB", maxSize / (1024 * 1024))
+            );
+        }
+
+        // Converter para Base64
+        byte[] fileBytes = file.getBytes();
+        String base64File = Base64.getEncoder().encodeToString(fileBytes);
+
+        // Usar nome do arquivo original se customName for null
+        String fileName = customName != null ? customName : file.getOriginalFilename();
+
+        // Fazer upload
+        return uploadToImgBB(base64File, fileName);
+    }
+
+    /**
+     * Upload específico para PDF com validação
+     *
+     * @param pdfFile Arquivo PDF
+     * @param customName Nome customizado (opcional)
+     * @return URL pública do PDF
+     * @throws IOException Se não for PDF válido
+     */
+    public String uploadPdf(MultipartFile pdfFile, String customName) throws IOException {
+        // Validar se é PDF
+        String contentType = pdfFile.getContentType();
+        String originalName = pdfFile.getOriginalFilename();
+
+        boolean isPdf = "application/pdf".equals(contentType) ||
+                (originalName != null && originalName.toLowerCase().endsWith(".pdf"));
+
+        if (!isPdf) {
+            throw new IllegalArgumentException("O arquivo deve ser um PDF válido");
+        }
+
+        return uploadFile(pdfFile, customName);
+    }
+
+    /**
+     * Upload específico para PDF sem nome customizado
+     */
+    public String uploadPdf(MultipartFile pdfFile) throws IOException {
+        return uploadPdf(pdfFile, null);
+    }
 }
