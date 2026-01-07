@@ -1,5 +1,6 @@
 package com.caco.sitedocaco.entity.home;
 
+import com.caco.sitedocaco.entity.enums.SeverityLevel;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -14,6 +15,7 @@ public class Warning {
     2. `Warning` (Avisos)
         - `UUID id`
         - `String markdownText`
+        - `SeverityLevel severityLevel` (ENUM: LOW, MEDIUM, HIGH, CRITICAL) [default: MEDIUM]
         - `LocalDateTime startsAt`
         - `LocalDateTime expiresAt`
     */
@@ -24,6 +26,9 @@ public class Warning {
 
     @Column(columnDefinition = "TEXT", nullable = false)
     private String markdownText;
+
+    @Enumerated(EnumType.STRING)
+    SeverityLevel severityLevel = SeverityLevel.MEDIUM;
 
     @Column(nullable = false)
     private LocalDateTime startsAt;

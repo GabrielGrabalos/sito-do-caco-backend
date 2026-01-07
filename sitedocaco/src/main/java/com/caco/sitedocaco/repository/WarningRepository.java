@@ -11,8 +11,8 @@ import java.util.UUID;
 
 @Repository
 public interface WarningRepository extends JpaRepository<Warning, UUID> {
-
-    // Regra: O aviso deve ter começado (startsAt <= agora) E não ter expirado (expiresAt > agora)
-    @Query("SELECT w FROM Warning w WHERE w.startsAt <= :now AND w.expiresAt > :now ORDER BY w.startsAt DESC")
+    // Ordenando por severidade (CRITICAL > HIGH > MEDIUM > LOW) e depois por data de início (mais recente primeiro)
+    @Query("SELECT w FROM Warning w WHERE w.startsAt <= :now AND w.expiresAt > :now " +
+            "ORDER BY w.severityLevel DESC, w.startsAt DESC")
     List<Warning> findActiveWarnings(LocalDateTime now);
 }
