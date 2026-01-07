@@ -2,6 +2,7 @@ package com.caco.sitedocaco.controller.admin;
 
 import com.caco.sitedocaco.dto.request.*;
 import com.caco.sitedocaco.dto.response.BannerDTO;
+import com.caco.sitedocaco.dto.response.WarningDTO;
 import com.caco.sitedocaco.entity.home.Banner;
 import com.caco.sitedocaco.entity.home.News;
 import com.caco.sitedocaco.entity.home.Warning;
@@ -123,6 +124,12 @@ public class HomeAdminController {
     // ==================== WARNINGS (ADMIN ONLY) ====================
     // Editors geralmente não postam alertas de infra, apenas notícias
 
+    @GetMapping("/warnings")
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<List<WarningDTO>> getAllWarnings() {
+        return ResponseEntity.ok(warningService.getAllWarnings());
+    }
+
     @PostMapping("/warnings")
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<Warning> createWarning(@RequestBody @Valid CreateWarningDTO dto) {
@@ -135,7 +142,7 @@ public class HomeAdminController {
         return ResponseEntity.ok(warningService.updateWarning(id, dto));
     }
 
-    @PatchMapping("/warnings/{id}/expire")
+    @PutMapping("/warnings/{id}/expire")
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<Void> expireWarning(@PathVariable UUID id) {
         warningService.expireWarningNow(id);

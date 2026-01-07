@@ -25,7 +25,15 @@ public class WarningService {
     public List<WarningDTO> getActiveWarnings() {
         return warningRepository.findActiveWarnings(LocalDateTime.now())
                 .stream()
-                .map(w -> new WarningDTO(w.getId(), w.getMarkdownText(), w.getExpiresAt()))
+                .map(w -> new WarningDTO(w.getId(), w.getMarkdownText(), w.getSeverityLevel(), w.getStartsAt(), w.getExpiresAt()))
+                .toList();
+    }
+
+    @Transactional(readOnly = true)
+    public List<WarningDTO> getAllWarnings() {
+        return warningRepository.findAll()
+                .stream()
+                .map(w -> new WarningDTO(w.getId(), w.getMarkdownText(), w.getSeverityLevel(), w.getStartsAt(), w.getExpiresAt()))
                 .toList();
     }
 
@@ -37,6 +45,7 @@ public class WarningService {
         }
         Warning warning = new Warning();
         warning.setMarkdownText(dto.markdownText());
+        warning.setSeverityLevel(dto.severityLevel());
         warning.setStartsAt(dto.startsAt());
         warning.setExpiresAt(dto.expiresAt());
         return warningRepository.save(warning);
@@ -70,6 +79,7 @@ public class WarningService {
         }
 
         if (dto.markdownText() != null) warning.setMarkdownText(dto.markdownText());
+        if (dto.severityLevel() != null) warning.setSeverityLevel(dto.severityLevel());
         if (dto.startsAt() != null) warning.setStartsAt(dto.startsAt());
         if (dto.expiresAt() != null) warning.setExpiresAt(dto.expiresAt());
 
