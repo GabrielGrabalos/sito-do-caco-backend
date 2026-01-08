@@ -33,6 +33,7 @@ public class ArticleFeedback {
 
     private Boolean isHelpful;
 
+    @Column(length = 500)
     private String comment;
 
     private LocalDateTime postedAt;

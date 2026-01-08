@@ -31,19 +31,27 @@ public class ImgBBService {
     /**
      * Faz upload de uma imagem para o ImgBB
      * @param file Arquivo de imagem
-     * @param imageType Tipo da imagem (para validação)
      * @return URL pública da imagem no ImgBB
      */
-    public String uploadImage(MultipartFile file, ImageType imageType) throws IOException {
-        // Validações básicas
-        validateImage(file, imageType);
-
+    public String uploadImage(MultipartFile file) throws IOException {
         // Converter para Base64
         byte[] fileBytes = file.getBytes();
         String base64Image = Base64.getEncoder().encodeToString(fileBytes);
 
         // Fazer upload para ImgBB
         return uploadToImgBB(base64Image, file.getOriginalFilename());
+    }
+
+    /**
+     * Faz upload de uma imagem para o ImgBB
+     * @param file Arquivo de imagem
+     * @param imageType Tipo da imagem (para validação)
+     * @return URL pública da imagem no ImgBB
+     */
+    public String uploadImage(MultipartFile file, ImageType imageType) throws IOException {
+        validateImage(file, imageType);
+
+        return uploadImage(file);
     }
 
     /**
