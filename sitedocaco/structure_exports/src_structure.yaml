@@ -1,9 +1,9 @@
 project_info:
   name: "src"
   path: "/home/genazemildo/Documents/GitHub/sito-do-caco-backend/sitedocaco/src"
-  generatedAt: "2026-01-07T16:01:24.816736088"
-  totalFiles: 77
-  totalSize: 99243
+  generatedAt: "2026-01-08T16:39:14.459377817"
+  totalFiles: 103
+  totalSize: 145629
 structure:
   "main":
     type: null
@@ -17,15 +17,15 @@ structure:
             type: "file"
             info:
               "size": "882"
-              "last_modified": "2026-01-07T16:01:23.998321772"
+              "last_modified": "2026-01-08T16:39:14.096237141"
               "mime_type": "text/plain"
               "extension": ".example"
             children: null
           "application.properties":
             type: "file"
             info:
-              "size": "1636"
-              "last_modified": "2026-01-07T16:01:24.081979099"
+              "size": "1640"
+              "last_modified": "2026-01-08T16:39:14.121796966"
               "mime_type": "text/x-java-properties"
               "extension": ".properties"
             children: null
@@ -49,7 +49,7 @@ structure:
                         type: "file"
                         info:
                           "size": "320"
-                          "last_modified": "2026-01-07T16:01:24.129818192"
+                          "last_modified": "2026-01-08T16:39:14.133150548"
                           "mime_type": "text/x-java-source"
                           "extension": ".java"
                         children: null
@@ -60,8 +60,8 @@ structure:
                           "SecurityConfig.java":
                             type: "file"
                             info:
-                              "size": "4365"
-                              "last_modified": "2026-01-07T16:01:24.158580434"
+                              "size": "4390"
+                              "last_modified": "2026-01-08T16:39:14.140663008"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -69,7 +69,7 @@ structure:
                             type: "file"
                             info:
                               "size": "438"
-                              "last_modified": "2026-01-07T16:01:24.189871467"
+                              "last_modified": "2026-01-08T16:39:14.147711088"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -81,7 +81,7 @@ structure:
                             type: "file"
                             info:
                               "size": "1105"
-                              "last_modified": "2026-01-07T16:01:24.227504854"
+                              "last_modified": "2026-01-08T16:39:14.159313919"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -93,7 +93,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "591"
-                                  "last_modified": "2026-01-07T16:01:24.250036825"
+                                  "last_modified": "2026-01-08T16:39:14.168226895"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -101,7 +101,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "905"
-                                  "last_modified": "2026-01-07T16:01:24.27246621"
+                                  "last_modified": "2026-01-08T16:39:14.17682418"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -109,7 +109,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "1103"
-                                  "last_modified": "2026-01-07T16:01:24.294334229"
+                                  "last_modified": "2026-01-08T16:39:14.185481499"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -121,7 +121,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "1422"
-                                  "last_modified": "2026-01-07T16:01:24.353833089"
+                                  "last_modified": "2026-01-08T16:39:14.194118268"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -129,7 +129,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "624"
-                                  "last_modified": "2026-01-07T16:01:24.369607837"
+                                  "last_modified": "2026-01-08T16:39:14.199032343"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -141,7 +141,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "813"
-                                  "last_modified": "2026-01-07T16:01:24.389369669"
+                                  "last_modified": "2026-01-08T16:39:14.205145288"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -149,7 +149,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "910"
-                                  "last_modified": "2026-01-07T16:01:24.409065168"
+                                  "last_modified": "2026-01-08T16:39:14.210092724"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -157,15 +157,15 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "784"
-                                  "last_modified": "2026-01-07T16:01:24.430838065"
+                                  "last_modified": "2026-01-08T16:39:14.21509934"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
                               "ArticleFeedback.java":
                                 type: "file"
                                 info:
-                                  "size": "771"
-                                  "last_modified": "2026-01-07T16:01:24.44279969"
+                                  "size": "797"
+                                  "last_modified": "2026-01-08T16:39:14.21994752"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -177,7 +177,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "773"
-                                  "last_modified": "2026-01-07T16:01:24.454851678"
+                                  "last_modified": "2026-01-08T16:39:14.226002362"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -185,7 +185,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "461"
-                                  "last_modified": "2026-01-07T16:01:24.464674902"
+                                  "last_modified": "2026-01-08T16:39:14.228781476"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -197,7 +197,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "720"
-                                  "last_modified": "2026-01-07T16:01:24.472010465"
+                                  "last_modified": "2026-01-08T16:39:14.232581989"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -205,7 +205,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "617"
-                                  "last_modified": "2026-01-07T16:01:24.478389953"
+                                  "last_modified": "2026-01-08T16:39:14.23513518"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -213,7 +213,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "617"
-                                  "last_modified": "2026-01-07T16:01:24.484009291"
+                                  "last_modified": "2026-01-08T16:39:14.238099121"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -221,7 +221,7 @@ structure:
                             type: "file"
                             info:
                               "size": "693"
-                              "last_modified": "2026-01-07T16:01:24.491249078"
+                              "last_modified": "2026-01-08T16:39:14.241791861"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -233,7 +233,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "1452"
-                                  "last_modified": "2026-01-07T16:01:24.49903818"
+                                  "last_modified": "2026-01-08T16:39:14.244337747"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -241,7 +241,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "654"
-                                  "last_modified": "2026-01-07T16:01:24.50625237"
+                                  "last_modified": "2026-01-08T16:39:14.246821823"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -253,7 +253,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "99"
-                                  "last_modified": "2026-01-07T16:01:24.513711651"
+                                  "last_modified": "2026-01-08T16:39:14.250443275"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -261,7 +261,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "1394"
-                                  "last_modified": "2026-01-07T16:01:24.519387666"
+                                  "last_modified": "2026-01-08T16:39:14.252900895"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -269,7 +269,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "117"
-                                  "last_modified": "2026-01-07T16:01:24.524832102"
+                                  "last_modified": "2026-01-08T16:39:14.25542627"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -277,7 +277,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "122"
-                                  "last_modified": "2026-01-07T16:01:24.530277166"
+                                  "last_modified": "2026-01-08T16:39:14.257992945"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -293,7 +293,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "2486"
-                                  "last_modified": "2026-01-07T16:01:24.538796101"
+                                  "last_modified": "2026-01-08T16:39:14.262436378"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -301,7 +301,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "2037"
-                                  "last_modified": "2026-01-07T16:01:24.543919657"
+                                  "last_modified": "2026-01-08T16:39:14.264769394"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -309,7 +309,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "2046"
-                                  "last_modified": "2026-01-07T16:01:24.549238125"
+                                  "last_modified": "2026-01-08T16:39:14.267034232"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -321,7 +321,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "1837"
-                                  "last_modified": "2026-01-07T16:01:24.554853219"
+                                  "last_modified": "2026-01-08T16:39:14.270568888"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -329,7 +329,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "2721"
-                                  "last_modified": "2026-01-07T16:01:24.558761983"
+                                  "last_modified": "2026-01-08T16:39:14.273015969"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -337,7 +337,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "1677"
-                                  "last_modified": "2026-01-07T16:01:24.563273206"
+                                  "last_modified": "2026-01-08T16:39:14.275617997"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -349,7 +349,7 @@ structure:
                             type: "file"
                             info:
                               "size": "413"
-                              "last_modified": "2026-01-07T16:01:24.571061492"
+                              "last_modified": "2026-01-08T16:39:14.280142824"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -357,7 +357,7 @@ structure:
                             type: "file"
                             info:
                               "size": "743"
-                              "last_modified": "2026-01-07T16:01:24.57499954"
+                              "last_modified": "2026-01-08T16:39:14.28227085"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -365,7 +365,7 @@ structure:
                             type: "file"
                             info:
                               "size": "747"
-                              "last_modified": "2026-01-07T16:01:24.579395739"
+                              "last_modified": "2026-01-08T16:39:14.284602835"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -373,7 +373,7 @@ structure:
                             type: "file"
                             info:
                               "size": "994"
-                              "last_modified": "2026-01-07T16:01:24.58361364"
+                              "last_modified": "2026-01-08T16:39:14.28691503"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -381,7 +381,7 @@ structure:
                             type: "file"
                             info:
                               "size": "472"
-                              "last_modified": "2026-01-07T16:01:24.587462662"
+                              "last_modified": "2026-01-08T16:39:14.289024062"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -389,7 +389,39 @@ structure:
                             type: "file"
                             info:
                               "size": "1182"
-                              "last_modified": "2026-01-07T16:01:24.591382297"
+                              "last_modified": "2026-01-08T16:39:14.291085335"
+                              "mime_type": "text/x-java-source"
+                              "extension": ".java"
+                            children: null
+                          "ManualCategoryRepository.java":
+                            type: "file"
+                            info:
+                              "size": "671"
+                              "last_modified": "2026-01-08T16:39:14.293148573"
+                              "mime_type": "text/x-java-source"
+                              "extension": ".java"
+                            children: null
+                          "ManualChapterRepository.java":
+                            type: "file"
+                            info:
+                              "size": "1036"
+                              "last_modified": "2026-01-08T16:39:14.295198719"
+                              "mime_type": "text/x-java-source"
+                              "extension": ".java"
+                            children: null
+                          "ManualArticleRepository.java":
+                            type: "file"
+                            info:
+                              "size": "1020"
+                              "last_modified": "2026-01-08T16:39:14.297221334"
+                              "mime_type": "text/x-java-source"
+                              "extension": ".java"
+                            children: null
+                          "ArticleFeedbackRepository.java":
+                            type: "file"
+                            info:
+                              "size": "1217"
+                              "last_modified": "2026-01-08T16:39:14.299269884"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -405,7 +437,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "572"
-                                  "last_modified": "2026-01-07T16:01:24.5972372"
+                                  "last_modified": "2026-01-08T16:39:14.302393585"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -413,7 +445,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "232"
-                                  "last_modified": "2026-01-07T16:01:24.603727624"
+                                  "last_modified": "2026-01-08T16:39:14.304666589"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -421,7 +453,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "186"
-                                  "last_modified": "2026-01-07T16:01:24.609709264"
+                                  "last_modified": "2026-01-08T16:39:14.306811167"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -429,7 +461,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "332"
-                                  "last_modified": "2026-01-07T16:01:24.61629511"
+                                  "last_modified": "2026-01-08T16:39:14.308884651"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -437,7 +469,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "305"
-                                  "last_modified": "2026-01-07T16:01:24.622502808"
+                                  "last_modified": "2026-01-08T16:39:14.311191815"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -445,7 +477,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "207"
-                                  "last_modified": "2026-01-07T16:01:24.628744151"
+                                  "last_modified": "2026-01-08T16:39:14.313604141"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -453,7 +485,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "569"
-                                  "last_modified": "2026-01-07T16:01:24.634343437"
+                                  "last_modified": "2026-01-08T16:39:14.315647685"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -461,7 +493,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "952"
-                                  "last_modified": "2026-01-07T16:01:24.639749158"
+                                  "last_modified": "2026-01-08T16:39:14.317627849"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -469,7 +501,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "246"
-                                  "last_modified": "2026-01-07T16:01:24.645138471"
+                                  "last_modified": "2026-01-08T16:39:14.319609171"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -477,10 +509,54 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "104"
-                                  "last_modified": "2026-01-07T16:01:24.650433098"
+                                  "last_modified": "2026-01-08T16:39:14.321680575"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
+                              "manual":
+                                type: null
+                                info: null
+                                children:
+                                  "ManualCategoryDTO.java":
+                                    type: "file"
+                                    info:
+                                      "size": "693"
+                                      "last_modified": "2026-01-08T16:39:14.3237098"
+                                      "mime_type": "text/x-java-source"
+                                      "extension": ".java"
+                                    children: null
+                                  "ManualChapterDTO.java":
+                                    type: "file"
+                                    info:
+                                      "size": "835"
+                                      "last_modified": "2026-01-08T16:39:14.325670622"
+                                      "mime_type": "text/x-java-source"
+                                      "extension": ".java"
+                                    children: null
+                                  "ManualArticleDTO.java":
+                                    type: "file"
+                                    info:
+                                      "size": "1194"
+                                      "last_modified": "2026-01-08T16:39:14.327745925"
+                                      "mime_type": "text/x-java-source"
+                                      "extension": ".java"
+                                    children: null
+                                  "ArticleFeedbackDTO.java":
+                                    type: "file"
+                                    info:
+                                      "size": "2290"
+                                      "last_modified": "2026-01-08T16:39:14.329806177"
+                                      "mime_type": "text/x-java-source"
+                                      "extension": ".java"
+                                    children: null
+                                  "ManualArticleWithoutFeedbackCountDTO.java":
+                                    type: "file"
+                                    info:
+                                      "size": "1490"
+                                      "last_modified": "2026-01-08T16:39:14.331805413"
+                                      "mime_type": "text/x-java-source"
+                                      "extension": ".java"
+                                    children: null
                           "request":
                             type: null
                             info: null
@@ -489,7 +565,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "310"
-                                  "last_modified": "2026-01-07T16:01:24.656961816"
+                                  "last_modified": "2026-01-08T16:39:14.335562503"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -497,7 +573,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "415"
-                                  "last_modified": "2026-01-07T16:01:24.662165595"
+                                  "last_modified": "2026-01-08T16:39:14.337639807"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -505,7 +581,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "172"
-                                  "last_modified": "2026-01-07T16:01:24.668023458"
+                                  "last_modified": "2026-01-08T16:39:14.340032486"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -513,7 +589,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "308"
-                                  "last_modified": "2026-01-07T16:01:24.673384231"
+                                  "last_modified": "2026-01-08T16:39:14.342316923"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -521,7 +597,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "264"
-                                  "last_modified": "2026-01-07T16:01:24.678501145"
+                                  "last_modified": "2026-01-08T16:39:14.344625777"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -529,7 +605,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "475"
-                                  "last_modified": "2026-01-07T16:01:24.683784725"
+                                  "last_modified": "2026-01-08T16:39:14.346657427"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -537,7 +613,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "298"
-                                  "last_modified": "2026-01-07T16:01:24.688904467"
+                                  "last_modified": "2026-01-08T16:39:14.348684281"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -545,7 +621,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "239"
-                                  "last_modified": "2026-01-07T16:01:24.693926536"
+                                  "last_modified": "2026-01-08T16:39:14.351113431"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -553,7 +629,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "315"
-                                  "last_modified": "2026-01-07T16:01:24.699059506"
+                                  "last_modified": "2026-01-08T16:39:14.353491712"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -561,7 +637,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "569"
-                                  "last_modified": "2026-01-07T16:01:24.704245053"
+                                  "last_modified": "2026-01-08T16:39:14.355585619"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -569,10 +645,94 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "278"
-                                  "last_modified": "2026-01-07T16:01:24.709368603"
+                                  "last_modified": "2026-01-08T16:39:14.357628097"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
+                              "manual":
+                                type: null
+                                info: null
+                                children:
+                                  "CreateManualCategoryDTO.java":
+                                    type: "file"
+                                    info:
+                                      "size": "295"
+                                      "last_modified": "2026-01-08T16:39:14.359762286"
+                                      "mime_type": "text/x-java-source"
+                                      "extension": ".java"
+                                    children: null
+                                  "UpdateManualCategoryDTO.java":
+                                    type: "file"
+                                    info:
+                                      "size": "134"
+                                      "last_modified": "2026-01-08T16:39:14.361788613"
+                                      "mime_type": "text/x-java-source"
+                                      "extension": ".java"
+                                    children: null
+                                  "ReorderCategoriesDTO.java":
+                                    type: "file"
+                                    info:
+                                      "size": "232"
+                                      "last_modified": "2026-01-08T16:39:14.36368627"
+                                      "mime_type": "text/x-java-source"
+                                      "extension": ".java"
+                                    children: null
+                                  "CreateManualChapterDTO.java":
+                                    type: "file"
+                                    info:
+                                      "size": "449"
+                                      "last_modified": "2026-01-08T16:39:14.365639734"
+                                      "mime_type": "text/x-java-source"
+                                      "extension": ".java"
+                                    children: null
+                                  "UpdateManualChapterDTO.java":
+                                    type: "file"
+                                    info:
+                                      "size": "182"
+                                      "last_modified": "2026-01-08T16:39:14.367626414"
+                                      "mime_type": "text/x-java-source"
+                                      "extension": ".java"
+                                    children: null
+                                  "ReorderChaptersDTO.java":
+                                    type: "file"
+                                    info:
+                                      "size": "272"
+                                      "last_modified": "2026-01-08T16:39:14.369611275"
+                                      "mime_type": "text/x-java-source"
+                                      "extension": ".java"
+                                    children: null
+                                  "CreateManualArticleDTO.java":
+                                    type: "file"
+                                    info:
+                                      "size": "532"
+                                      "last_modified": "2026-01-08T16:39:14.371664466"
+                                      "mime_type": "text/x-java-source"
+                                      "extension": ".java"
+                                    children: null
+                                  "UpdateManualArticleDTO.java":
+                                    type: "file"
+                                    info:
+                                      "size": "205"
+                                      "last_modified": "2026-01-08T16:39:14.373628232"
+                                      "mime_type": "text/x-java-source"
+                                      "extension": ".java"
+                                    children: null
+                                  "ReorderArticlesDTO.java":
+                                    type: "file"
+                                    info:
+                                      "size": "271"
+                                      "last_modified": "2026-01-08T16:39:14.375518161"
+                                      "mime_type": "text/x-java-source"
+                                      "extension": ".java"
+                                    children: null
+                                  "CreateArticleFeedbackDTO.java":
+                                    type: "file"
+                                    info:
+                                      "size": "209"
+                                      "last_modified": "2026-01-08T16:39:14.377428009"
+                                      "mime_type": "text/x-java-source"
+                                      "extension": ".java"
+                                    children: null
                       "service":
                         type: null
                         info: null
@@ -581,7 +741,7 @@ structure:
                             type: "file"
                             info:
                               "size": "3657"
-                              "last_modified": "2026-01-07T16:01:24.717197058"
+                              "last_modified": "2026-01-08T16:39:14.38198434"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -589,7 +749,7 @@ structure:
                             type: "file"
                             info:
                               "size": "4501"
-                              "last_modified": "2026-01-07T16:01:24.722309227"
+                              "last_modified": "2026-01-08T16:39:14.38457163"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -597,7 +757,7 @@ structure:
                             type: "file"
                             info:
                               "size": "3852"
-                              "last_modified": "2026-01-07T16:01:24.727265923"
+                              "last_modified": "2026-01-08T16:39:14.38722527"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -605,7 +765,7 @@ structure:
                             type: "file"
                             info:
                               "size": "4162"
-                              "last_modified": "2026-01-07T16:01:24.732533465"
+                              "last_modified": "2026-01-08T16:39:14.389890383"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -613,7 +773,7 @@ structure:
                             type: "file"
                             info:
                               "size": "8253"
-                              "last_modified": "2026-01-07T16:01:24.737998828"
+                              "last_modified": "2026-01-08T16:39:14.392170554"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -621,7 +781,7 @@ structure:
                             type: "file"
                             info:
                               "size": "2006"
-                              "last_modified": "2026-01-07T16:01:24.743336893"
+                              "last_modified": "2026-01-08T16:39:14.39440492"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -629,7 +789,39 @@ structure:
                             type: "file"
                             info:
                               "size": "3715"
-                              "last_modified": "2026-01-07T16:01:24.748646679"
+                              "last_modified": "2026-01-08T16:39:14.397541731"
+                              "mime_type": "text/x-java-source"
+                              "extension": ".java"
+                            children: null
+                          "ManualCategoryService.java":
+                            type: "file"
+                            info:
+                              "size": "3910"
+                              "last_modified": "2026-01-08T16:39:14.401032396"
+                              "mime_type": "text/x-java-source"
+                              "extension": ".java"
+                            children: null
+                          "ManualChapterService.java":
+                            type: "file"
+                            info:
+                              "size": "5671"
+                              "last_modified": "2026-01-08T16:39:14.404510846"
+                              "mime_type": "text/x-java-source"
+                              "extension": ".java"
+                            children: null
+                          "ManualArticleService.java":
+                            type: "file"
+                            info:
+                              "size": "7005"
+                              "last_modified": "2026-01-08T16:39:14.408103483"
+                              "mime_type": "text/x-java-source"
+                              "extension": ".java"
+                            children: null
+                          "ArticleFeedbackService.java":
+                            type: "file"
+                            info:
+                              "size": "4309"
+                              "last_modified": "2026-01-08T16:39:14.410946154"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -645,7 +837,15 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "1233"
-                                  "last_modified": "2026-01-07T16:01:24.755514874"
+                                  "last_modified": "2026-01-08T16:39:14.414110516"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "ArticleFeedbackController.java":
+                                type: "file"
+                                info:
+                                  "size": "1467"
+                                  "last_modified": "2026-01-08T16:39:14.416299497"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -657,7 +857,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "1682"
-                                  "last_modified": "2026-01-07T16:01:24.762068159"
+                                  "last_modified": "2026-01-08T16:39:14.419459879"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -665,7 +865,15 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "1346"
-                                  "last_modified": "2026-01-07T16:01:24.767609622"
+                                  "last_modified": "2026-01-08T16:39:14.422375858"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "ManualController.java":
+                                type: "file"
+                                info:
+                                  "size": "4194"
+                                  "last_modified": "2026-01-08T16:39:14.425293087"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -677,7 +885,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "6446"
-                                  "last_modified": "2026-01-07T16:01:24.774311897"
+                                  "last_modified": "2026-01-08T16:39:14.428992176"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -685,7 +893,7 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "3535"
-                                  "last_modified": "2026-01-07T16:01:24.780035531"
+                                  "last_modified": "2026-01-08T16:39:14.432211999"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -693,7 +901,15 @@ structure:
                                 type: "file"
                                 info:
                                   "size": "1243"
-                                  "last_modified": "2026-01-07T16:01:24.783658841"
+                                  "last_modified": "2026-01-08T16:39:14.434435773"
+                                  "mime_type": "text/x-java-source"
+                                  "extension": ".java"
+                                children: null
+                              "ManualAdminController.java":
+                                type: "file"
+                                info:
+                                  "size": "6548"
+                                  "last_modified": "2026-01-08T16:39:14.436832733"
                                   "mime_type": "text/x-java-source"
                                   "extension": ".java"
                                 children: null
@@ -705,7 +921,7 @@ structure:
                             type: "file"
                             info:
                               "size": "3929"
-                              "last_modified": "2026-01-07T16:01:24.789618299"
+                              "last_modified": "2026-01-08T16:39:14.441439185"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -713,7 +929,7 @@ structure:
                             type: "file"
                             info:
                               "size": "192"
-                              "last_modified": "2026-01-07T16:01:24.792796435"
+                              "last_modified": "2026-01-08T16:39:14.443669997"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -721,7 +937,7 @@ structure:
                             type: "file"
                             info:
                               "size": "185"
-                              "last_modified": "2026-01-07T16:01:24.795918104"
+                              "last_modified": "2026-01-08T16:39:14.445692287"
                               "mime_type": "text/x-java-source"
                               "extension": ".java"
                             children: null
@@ -749,7 +965,7 @@ structure:
                         type: "file"
                         info:
                           "size": "215"
-                          "last_modified": "2026-01-07T16:01:24.807359346"
+                          "last_modified": "2026-01-08T16:39:14.453176885"
                           "mime_type": "text/x-java-source"
                           "extension": ".java"
                         children: null
@@ -767,11 +983,11 @@ files:
     #spring.mail.password=\nspring.mail.properties.mail.smtp.auth=true\nspring.mail.properties.mail.smtp.starttls.enable=true"
   info:
     "size": "882"
-    "last_modified": "2026-01-07T16:01:23.998321772"
+    "last_modified": "2026-01-08T16:39:14.096237141"
     "mime_type": "text/plain"
     "extension": ".example"
 - path: "main/resources/application.properties"
-  content: "spring.application.name=sitedocaco\nserver.port=8080\n\n# App:\napp.frontend.url=http://localhost:5173\n\
+  content: "spring.application.name=sitedocaco\nserver.port=8080\n\n# App:\napp.frontend.url=http://192.168.15.80:5173\n\
     \n# Database\nspring.datasource.url=jdbc:mysql://127.0.0.1:3306/sitedocaco_dev?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC\n\
     spring.datasource.username=genazemildo\nspring.datasource.password=201190abC=M\n\
     spring.jpa.hibernate.ddl-auto=update\nspring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver\n\
@@ -789,8 +1005,8 @@ files:
     # Email\nspring.mail.host=smtp.gmail.com\nspring.mail.port=587\n#spring.mail.username=\n\
     #spring.mail.password=\nspring.mail.properties.mail.smtp.auth=true\nspring.mail.properties.mail.smtp.starttls.enable=true"
   info:
-    "size": "1636"
-    "last_modified": "2026-01-07T16:01:24.081979099"
+    "size": "1640"
+    "last_modified": "2026-01-08T16:39:14.121796966"
     "mime_type": "text/x-java-properties"
     "extension": ".properties"
 - path: "main/java/com/caco/sitedocaco/SitedocacoApplication.java"
@@ -800,7 +1016,7 @@ files:
     \ {\n\t\tSpringApplication.run(SitedocacoApplication.class, args);\n\t}\n\n}\n"
   info:
     "size": "320"
-    "last_modified": "2026-01-07T16:01:24.129818192"
+    "last_modified": "2026-01-08T16:39:14.133150548"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/config/SecurityConfig.java"
@@ -848,15 +1064,16 @@ files:
     o do Spring\n                .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);\n\
     \n        return http.build();\n    }\n\n    @Bean\n    public CorsConfigurationSource\
     \ corsConfigurationSource() {\n        CorsConfiguration configuration = new CorsConfiguration();\n\
-    \        configuration.setAllowedOrigins(List.of(frontendUrl));\n        configuration.setAllowedMethods(List.of(\"\
-    GET\", \"POST\", \"PUT\", \"DELETE\", \"OPTIONS\"));\n        configuration.setAllowedHeaders(List.of(\"\
+    \        configuration.setAllowedOrigins(List.of(frontendUrl, \"http://localhost:5173\"\
+    ));\n        configuration.setAllowedMethods(List.of(\"GET\", \"POST\", \"PUT\"\
+    , \"DELETE\", \"OPTIONS\"));\n        configuration.setAllowedHeaders(List.of(\"\
     Authorization\", \"Content-Type\"));\n        configuration.setAllowCredentials(true);\n\
     \n        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();\n\
     \        source.registerCorsConfiguration(\"/**\", configuration);\n        return\
     \ source;\n    }\n}"
   info:
-    "size": "4365"
-    "last_modified": "2026-01-07T16:01:24.158580434"
+    "size": "4390"
+    "last_modified": "2026-01-08T16:39:14.140663008"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/config/ImgBBConfig.java"
@@ -868,7 +1085,7 @@ files:
     \    private String apiUrl;\n\n}"
   info:
     "size": "438"
-    "last_modified": "2026-01-07T16:01:24.189871467"
+    "last_modified": "2026-01-08T16:39:14.147711088"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/User.java"
@@ -888,7 +1105,7 @@ files:
     \    @Column(updatable = false)\n    private LocalDateTime createdAt;\n}\n"
   info:
     "size": "1105"
-    "last_modified": "2026-01-07T16:01:24.227504854"
+    "last_modified": "2026-01-08T16:39:14.159313919"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/home/Banner.java"
@@ -903,7 +1120,7 @@ files:
     }\n"
   info:
     "size": "591"
-    "last_modified": "2026-01-07T16:01:24.250036825"
+    "last_modified": "2026-01-08T16:39:14.168226895"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/home/Warning.java"
@@ -921,7 +1138,7 @@ files:
     \ LocalDateTime expiresAt;\n}\n"
   info:
     "size": "905"
-    "last_modified": "2026-01-07T16:01:24.27246621"
+    "last_modified": "2026-01-08T16:39:14.17682418"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/home/News.java"
@@ -942,7 +1159,7 @@ files:
     }\n"
   info:
     "size": "1103"
-    "last_modified": "2026-01-07T16:01:24.294334229"
+    "last_modified": "2026-01-08T16:39:14.185481499"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/event/Event.java"
@@ -967,7 +1184,7 @@ files:
     \    private EventStatus status;\n}\n"
   info:
     "size": "1422"
-    "last_modified": "2026-01-07T16:01:24.353833089"
+    "last_modified": "2026-01-08T16:39:14.194118268"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/event/EventGalleryItem.java"
@@ -982,7 +1199,7 @@ files:
     \ MediaType type;\n}\n"
   info:
     "size": "624"
-    "last_modified": "2026-01-07T16:01:24.369607837"
+    "last_modified": "2026-01-08T16:39:14.199032343"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/manual/ManualCategory.java"
@@ -999,7 +1216,7 @@ files:
     \ List<ManualChapter> chapters;\n}\n"
   info:
     "size": "813"
-    "last_modified": "2026-01-07T16:01:24.389369669"
+    "last_modified": "2026-01-08T16:39:14.205145288"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/manual/ManualChapter.java"
@@ -1018,7 +1235,7 @@ files:
     }\n"
   info:
     "size": "910"
-    "last_modified": "2026-01-07T16:01:24.409065168"
+    "last_modified": "2026-01-08T16:39:14.210092724"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/manual/ManualArticle.java"
@@ -1035,7 +1252,7 @@ files:
     \ ManualChapter chapter;\n}\n"
   info:
     "size": "784"
-    "last_modified": "2026-01-07T16:01:24.430838065"
+    "last_modified": "2026-01-08T16:39:14.21509934"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/manual/ArticleFeedback.java"
@@ -1048,10 +1265,11 @@ files:
     \ postedAt`\n    */\n\n    @Id\n    @GeneratedValue(strategy = GenerationType.UUID)\n\
     \    private UUID id;\n\n    @ManyToOne\n    private ManualArticle article;\n\n\
     \    @ManyToOne\n    private User user;\n\n    private Boolean isHelpful;\n\n\
-    \    private String comment;\n\n    private LocalDateTime postedAt;\n}\n"
+    \    @Column(length = 500)\n    private String comment;\n\n    private LocalDateTime\
+    \ postedAt;\n}\n"
   info:
-    "size": "771"
-    "last_modified": "2026-01-07T16:01:24.44279969"
+    "size": "797"
+    "last_modified": "2026-01-08T16:39:14.21994752"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/exam/Exam.java"
@@ -1067,7 +1285,7 @@ files:
     \n    @Column(nullable = false)\n    private String fileUrl;\n}\n"
   info:
     "size": "773"
-    "last_modified": "2026-01-07T16:01:24.454851678"
+    "last_modified": "2026-01-08T16:39:14.226002362"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/exam/Subject.java"
@@ -1080,7 +1298,7 @@ files:
     \ String name;\n}\n"
   info:
     "size": "461"
-    "last_modified": "2026-01-07T16:01:24.464674902"
+    "last_modified": "2026-01-08T16:39:14.228781476"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/sticker/Sticker.java"
@@ -1096,7 +1314,7 @@ files:
     \ originEvent;\n}\n"
   info:
     "size": "720"
-    "last_modified": "2026-01-07T16:01:24.472010465"
+    "last_modified": "2026-01-08T16:39:14.232581989"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/sticker/UserSticker.java"
@@ -1110,7 +1328,7 @@ files:
     \    private Sticker sticker;\n\n    private LocalDateTime obtainedAt;\n}\n"
   info:
     "size": "617"
-    "last_modified": "2026-01-07T16:01:24.478389953"
+    "last_modified": "2026-01-08T16:39:14.23513518"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/sticker/RedemptionCode.java"
@@ -1125,7 +1343,7 @@ files:
     }\n"
   info:
     "size": "617"
-    "last_modified": "2026-01-07T16:01:24.484009291"
+    "last_modified": "2026-01-08T16:39:14.238099121"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/AnalyticsLog.java"
@@ -1141,7 +1359,7 @@ files:
     \ String targetId;\n}\n"
   info:
     "size": "693"
-    "last_modified": "2026-01-07T16:01:24.491249078"
+    "last_modified": "2026-01-08T16:39:14.241791861"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/store/Product.java"
@@ -1166,7 +1384,7 @@ files:
     \ = false)\n    private String category;\n}\n"
   info:
     "size": "1452"
-    "last_modified": "2026-01-07T16:01:24.49903818"
+    "last_modified": "2026-01-08T16:39:14.244337747"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/store/ProductVariation.java"
@@ -1181,7 +1399,7 @@ files:
     \ additionalPrice;\n\n    private Integer stockQuantity;\n}\n"
   info:
     "size": "654"
-    "last_modified": "2026-01-07T16:01:24.50625237"
+    "last_modified": "2026-01-08T16:39:14.246821823"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/enums/Role.java"
@@ -1189,7 +1407,7 @@ files:
     \    ADMIN,\n    EDITOR\n}\n"
   info:
     "size": "99"
-    "last_modified": "2026-01-07T16:01:24.513711651"
+    "last_modified": "2026-01-08T16:39:14.250443275"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/enums/ImageType.java"
@@ -1213,7 +1431,7 @@ files:
     \ maxSizeBytes / (1024 * 1024)\n        );\n    }\n}"
   info:
     "size": "1394"
-    "last_modified": "2026-01-07T16:01:24.519387666"
+    "last_modified": "2026-01-08T16:39:14.252900895"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/enums/SeverityLevel.java"
@@ -1221,7 +1439,7 @@ files:
     \ {\n    LOW,\n    MEDIUM,\n    HIGH,\n    CRITICAL\n}\n"
   info:
     "size": "117"
-    "last_modified": "2026-01-07T16:01:24.524832102"
+    "last_modified": "2026-01-08T16:39:14.25542627"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/entity/enums/ExamType.java"
@@ -1229,7 +1447,7 @@ files:
     \    P1,\n    P2,\n    P3,\n    EXAME,\n    SUB,\n    OUTROS\n}"
   info:
     "size": "122"
-    "last_modified": "2026-01-07T16:01:24.530277166"
+    "last_modified": "2026-01-08T16:39:14.257992945"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/security/oauth2/CustomOAuth2UserService.java"
@@ -1266,7 +1484,7 @@ files:
     \    }\n}"
   info:
     "size": "2486"
-    "last_modified": "2026-01-07T16:01:24.538796101"
+    "last_modified": "2026-01-08T16:39:14.262436378"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/security/oauth2/OAuth2LoginSuccessHandler.java"
@@ -1296,7 +1514,7 @@ files:
     \    }\n}"
   info:
     "size": "2037"
-    "last_modified": "2026-01-07T16:01:24.543919657"
+    "last_modified": "2026-01-08T16:39:14.264769394"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/security/oauth2/OAuth2LoginFailureHandler.java"
@@ -1326,7 +1544,7 @@ files:
     \ response, targetUrl);\n    }\n}"
   info:
     "size": "2046"
-    "last_modified": "2026-01-07T16:01:24.549238125"
+    "last_modified": "2026-01-08T16:39:14.267034232"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/security/jwt/JwtService.java"
@@ -1356,7 +1574,7 @@ files:
     \   }\n}"
   info:
     "size": "1837"
-    "last_modified": "2026-01-07T16:01:24.554853219"
+    "last_modified": "2026-01-08T16:39:14.270568888"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/security/jwt/JwtAuthenticationFilter.java"
@@ -1393,7 +1611,7 @@ files:
     \        }\n\n        filterChain.doFilter(request, response);\n    }\n}"
   info:
     "size": "2721"
-    "last_modified": "2026-01-07T16:01:24.558761983"
+    "last_modified": "2026-01-08T16:39:14.273015969"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/security/jwt/UserDetailsServiceImpl.java"
@@ -1419,7 +1637,7 @@ files:
     \        );\n    }\n}"
   info:
     "size": "1677"
-    "last_modified": "2026-01-07T16:01:24.563273206"
+    "last_modified": "2026-01-08T16:39:14.275617997"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/repository/UserRepository.java"
@@ -1430,7 +1648,7 @@ files:
     \ email);\n    boolean existsByEmail(String email);\n}"
   info:
     "size": "413"
-    "last_modified": "2026-01-07T16:01:24.571061492"
+    "last_modified": "2026-01-08T16:39:14.280142824"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/repository/BannerRepository.java"
@@ -1445,7 +1663,7 @@ files:
     \ FROM Banner b\")\n    Integer findMaxDisplayOrder();\n}"
   info:
     "size": "743"
-    "last_modified": "2026-01-07T16:01:24.57499954"
+    "last_modified": "2026-01-08T16:39:14.28227085"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/repository/WarningRepository.java"
@@ -1461,7 +1679,7 @@ files:
     }"
   info:
     "size": "747"
-    "last_modified": "2026-01-07T16:01:24.579395739"
+    "last_modified": "2026-01-08T16:39:14.284602835"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/repository/NewsRepository.java"
@@ -1479,7 +1697,7 @@ files:
     \ findAllSummaries(Pageable pageable);\n}"
   info:
     "size": "994"
-    "last_modified": "2026-01-07T16:01:24.58361364"
+    "last_modified": "2026-01-08T16:39:14.28691503"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/repository/SubjectRepository.java"
@@ -1491,7 +1709,7 @@ files:
     \ existsByName(String name);\n}"
   info:
     "size": "472"
-    "last_modified": "2026-01-07T16:01:24.587462662"
+    "last_modified": "2026-01-08T16:39:14.289024062"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/repository/ExamRepository.java"
@@ -1511,7 +1729,77 @@ files:
     }"
   info:
     "size": "1182"
-    "last_modified": "2026-01-07T16:01:24.591382297"
+    "last_modified": "2026-01-08T16:39:14.291085335"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/repository/ManualCategoryRepository.java"
+  content: "package com.caco.sitedocaco.repository;\n\nimport com.caco.sitedocaco.entity.manual.ManualCategory;\n\
+    import org.springframework.data.jpa.repository.JpaRepository;\nimport org.springframework.data.jpa.repository.Query;\n\
+    import org.springframework.stereotype.Repository;\n\nimport java.util.List;\n\
+    import java.util.Optional;\nimport java.util.UUID;\n\n@Repository\npublic interface\
+    \ ManualCategoryRepository extends JpaRepository<ManualCategory, UUID> {\n   \
+    \ Optional<ManualCategory> findBySlug(String slug);\n    boolean existsBySlug(String\
+    \ slug);\n    List<ManualCategory> findAllByOrderByOrderAsc();\n\n    @Query(\"\
+    SELECT MAX(c.order) FROM ManualCategory c\")\n    Integer findMaxOrder();\n}"
+  info:
+    "size": "671"
+    "last_modified": "2026-01-08T16:39:14.293148573"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/repository/ManualChapterRepository.java"
+  content: "package com.caco.sitedocaco.repository;\n\nimport com.caco.sitedocaco.entity.manual.ManualCategory;\n\
+    import com.caco.sitedocaco.entity.manual.ManualChapter;\nimport org.springframework.data.jpa.repository.JpaRepository;\n\
+    import org.springframework.data.jpa.repository.Query;\nimport org.springframework.stereotype.Repository;\n\
+    \nimport java.util.List;\nimport java.util.Optional;\nimport java.util.UUID;\n\
+    \n@Repository\npublic interface ManualChapterRepository extends JpaRepository<ManualChapter,\
+    \ UUID> {\n    Optional<ManualChapter> findBySlug(String slug);\n    boolean existsBySlug(String\
+    \ slug);\n    List<ManualChapter> findByCategoryOrderByOrderAsc(ManualCategory\
+    \ category);\n    List<ManualChapter> findByCategoryIdOrderByOrderAsc(UUID categoryId);\n\
+    \n    @Query(\"SELECT MAX(c.order) FROM ManualChapter c WHERE c.category = ?1\"\
+    )\n    Integer findMaxOrderByCategory(ManualCategory category);\n\n    // Métodos\
+    \ adicionais necessários\n    long countByCategory(ManualCategory category);\n\
+    \    List<ManualChapter> findByCategory(ManualCategory category);\n}"
+  info:
+    "size": "1036"
+    "last_modified": "2026-01-08T16:39:14.295198719"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/repository/ManualArticleRepository.java"
+  content: "package com.caco.sitedocaco.repository;\n\nimport com.caco.sitedocaco.entity.manual.ManualArticle;\n\
+    import com.caco.sitedocaco.entity.manual.ManualChapter;\nimport org.springframework.data.jpa.repository.JpaRepository;\n\
+    import org.springframework.data.jpa.repository.Query;\nimport org.springframework.stereotype.Repository;\n\
+    \nimport java.util.List;\nimport java.util.Optional;\nimport java.util.UUID;\n\
+    \n@Repository\npublic interface ManualArticleRepository extends JpaRepository<ManualArticle,\
+    \ UUID> {\n    Optional<ManualArticle> findBySlug(String slug);\n    boolean existsBySlug(String\
+    \ slug);\n    List<ManualArticle> findByChapterOrderByOrderAsc(ManualChapter chapter);\n\
+    \    List<ManualArticle> findByChapterIdOrderByOrderAsc(UUID chapterId);\n\n \
+    \   @Query(\"SELECT MAX(a.order) FROM ManualArticle a WHERE a.chapter = ?1\")\n\
+    \    Integer findMaxOrderByChapter(ManualChapter chapter);\n\n    // Métodos adicionais\
+    \ necessários\n    long countByChapter(ManualChapter chapter);\n    List<ManualArticle>\
+    \ findByChapter(ManualChapter chapter);\n}"
+  info:
+    "size": "1020"
+    "last_modified": "2026-01-08T16:39:14.297221334"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/repository/ArticleFeedbackRepository.java"
+  content: "package com.caco.sitedocaco.repository;\n\nimport com.caco.sitedocaco.entity.manual.ArticleFeedback;\n\
+    import com.caco.sitedocaco.entity.manual.ManualArticle;\nimport org.springframework.data.domain.Page;\n\
+    import org.springframework.data.domain.Pageable;\nimport org.springframework.data.jpa.repository.JpaRepository;\n\
+    import org.springframework.data.jpa.repository.Query;\nimport org.springframework.stereotype.Repository;\n\
+    \nimport java.util.List;\nimport java.util.UUID;\n\n@Repository\npublic interface\
+    \ ArticleFeedbackRepository extends JpaRepository<ArticleFeedback, UUID> {\n \
+    \   List<ArticleFeedback> findByArticle(ManualArticle article);\n    Page<ArticleFeedback>\
+    \ findByArticleOrderByPostedAtDesc(ManualArticle article, Pageable pageable);\n\
+    \n    // Contagem de feedbacks úteis/não úteis\n    @Query(\"SELECT COUNT(f) FROM\
+    \ ArticleFeedback f WHERE f.article = ?1 AND f.isHelpful = true\")\n    long countHelpfulByArticle(ManualArticle\
+    \ article);\n\n    @Query(\"SELECT COUNT(f) FROM ArticleFeedback f WHERE f.article\
+    \ = ?1 AND f.isHelpful = false\")\n    long countUnhelpfulByArticle(ManualArticle\
+    \ article);\n\n    // Método alternativo para contagem direta\n    long countByArticleAndIsHelpful(ManualArticle\
+    \ article, boolean isHelpful);\n}"
+  info:
+    "size": "1217"
+    "last_modified": "2026-01-08T16:39:14.299269884"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/response/UserResponseDTO.java"
@@ -1525,7 +1813,7 @@ files:
     \    user.getRole()\n        );\n    }\n}"
   info:
     "size": "572"
-    "last_modified": "2026-01-07T16:01:24.5972372"
+    "last_modified": "2026-01-08T16:39:14.302393585"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/response/ErrorResponseDTO.java"
@@ -1535,7 +1823,7 @@ files:
     ) {\n}"
   info:
     "size": "232"
-    "last_modified": "2026-01-07T16:01:24.603727624"
+    "last_modified": "2026-01-08T16:39:14.304666589"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/response/BannerDTO.java"
@@ -1544,7 +1832,7 @@ files:
     \ imageUrl,\n        String targetLink\n) {}"
   info:
     "size": "186"
-    "last_modified": "2026-01-07T16:01:24.609709264"
+    "last_modified": "2026-01-08T16:39:14.306811167"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/response/WarningDTO.java"
@@ -1554,7 +1842,7 @@ files:
     \        LocalDateTime startsAt,\n        LocalDateTime expiresAt\n) {}"
   info:
     "size": "332"
-    "last_modified": "2026-01-07T16:01:24.61629511"
+    "last_modified": "2026-01-08T16:39:14.308884651"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/response/NewsSummaryDTO.java"
@@ -1565,7 +1853,7 @@ files:
     ) {}"
   info:
     "size": "305"
-    "last_modified": "2026-01-07T16:01:24.622502808"
+    "last_modified": "2026-01-08T16:39:14.311191815"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/response/DashboardDTO.java"
@@ -1574,7 +1862,7 @@ files:
     \ warnings,\n        List<NewsSummaryDTO> latestNews\n) {}"
   info:
     "size": "207"
-    "last_modified": "2026-01-07T16:01:24.628744151"
+    "last_modified": "2026-01-08T16:39:14.313604141"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/response/SubjectResponseDTO.java"
@@ -1588,7 +1876,7 @@ files:
     \   }\n}"
   info:
     "size": "569"
-    "last_modified": "2026-01-07T16:01:24.634343437"
+    "last_modified": "2026-01-08T16:39:14.315647685"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/response/ExamResponseDTO.java"
@@ -1607,7 +1895,7 @@ files:
     \   }\n}"
   info:
     "size": "952"
-    "last_modified": "2026-01-07T16:01:24.639749158"
+    "last_modified": "2026-01-08T16:39:14.317627849"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/response/ExamWithoutSubjectDTO.java"
@@ -1617,7 +1905,7 @@ files:
     ) {\n}\n"
   info:
     "size": "246"
-    "last_modified": "2026-01-07T16:01:24.645138471"
+    "last_modified": "2026-01-08T16:39:14.319609171"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/response/ImageUploadResponseDTO.java"
@@ -1625,7 +1913,118 @@ files:
     \        String url\n) {}"
   info:
     "size": "104"
-    "last_modified": "2026-01-07T16:01:24.650433098"
+    "last_modified": "2026-01-08T16:39:14.321680575"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/response/manual/ManualCategoryDTO.java"
+  content: "package com.caco.sitedocaco.dto.response.manual;\n\nimport com.caco.sitedocaco.entity.manual.ManualCategory;\n\
+    import com.fasterxml.jackson.annotation.JsonProperty;\n\nimport java.util.UUID;\n\
+    \npublic record ManualCategoryDTO(\n        UUID id,\n        String title,\n\
+    \        String slug,\n        Integer order,\n\n        @JsonProperty(\"chapterCount\"\
+    )\n        Long chapterCount\n) {\n    public static ManualCategoryDTO fromEntity(ManualCategory\
+    \ category, Long chapterCount) {\n        return new ManualCategoryDTO(\n    \
+    \            category.getId(),\n                category.getTitle(),\n       \
+    \         category.getSlug(),\n                category.getOrder(),\n        \
+    \        chapterCount\n        );\n    }\n}"
+  info:
+    "size": "693"
+    "last_modified": "2026-01-08T16:39:14.3237098"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/response/manual/ManualChapterDTO.java"
+  content: "package com.caco.sitedocaco.dto.response.manual;\n\nimport com.caco.sitedocaco.entity.manual.ManualChapter;\n\
+    import com.fasterxml.jackson.annotation.JsonProperty;\n\nimport java.util.UUID;\n\
+    \npublic record ManualChapterDTO(\n        UUID id,\n        String title,\n \
+    \       String slug,\n        Integer order,\n        UUID categoryId,\n     \
+    \   String categoryTitle,\n\n        @JsonProperty(\"articleCount\")\n       \
+    \ Long articleCount\n) {\n    public static ManualChapterDTO fromEntity(ManualChapter\
+    \ chapter, Long articleCount) {\n        return new ManualChapterDTO(\n      \
+    \          chapter.getId(),\n                chapter.getTitle(),\n           \
+    \     chapter.getSlug(),\n                chapter.getOrder(),\n              \
+    \  chapter.getCategory().getId(),\n                chapter.getCategory().getTitle(),\n\
+    \                articleCount\n        );\n    }\n}"
+  info:
+    "size": "835"
+    "last_modified": "2026-01-08T16:39:14.325670622"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/response/manual/ManualArticleDTO.java"
+  content: "package com.caco.sitedocaco.dto.response.manual;\n\nimport com.caco.sitedocaco.entity.manual.ManualArticle;\n\
+    import com.fasterxml.jackson.annotation.JsonProperty;\n\nimport java.util.UUID;\n\
+    \npublic record ManualArticleDTO(\n        UUID id,\n        String title,\n \
+    \       String slug,\n        String content,\n        Integer order,\n      \
+    \  UUID chapterId,\n        String chapterTitle,\n        UUID categoryId,\n \
+    \       String categoryTitle,\n\n        @JsonProperty(\"helpfulCount\")\n   \
+    \     Long helpfulCount,\n\n        @JsonProperty(\"unhelpfulCount\")\n      \
+    \  Long unhelpfulCount\n) {\n    public static ManualArticleDTO fromEntity(ManualArticle\
+    \ article, Long helpfulCount, Long unhelpfulCount) {\n        return new ManualArticleDTO(\n\
+    \                article.getId(),\n                article.getTitle(),\n     \
+    \           article.getSlug(),\n                article.getContent(),\n      \
+    \          article.getOrder(),\n                article.getChapter().getId(),\n\
+    \                article.getChapter().getTitle(),\n                article.getChapter().getCategory().getId(),\n\
+    \                article.getChapter().getCategory().getTitle(),\n            \
+    \    helpfulCount,\n                unhelpfulCount\n        );\n    }\n}"
+  info:
+    "size": "1194"
+    "last_modified": "2026-01-08T16:39:14.327745925"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/response/manual/ArticleFeedbackDTO.java"
+  content: "package com.caco.sitedocaco.dto.response.manual;\n\nimport com.caco.sitedocaco.entity.manual.ArticleFeedback;\n\
+    import com.fasterxml.jackson.annotation.JsonInclude;\nimport com.fasterxml.jackson.annotation.JsonProperty;\n\
+    \nimport java.time.LocalDateTime;\nimport java.util.UUID;\n\n@JsonInclude(JsonInclude.Include.NON_NULL)\n\
+    public record ArticleFeedbackDTO(\n        UUID id,\n        Boolean isHelpful,\n\
+    \        String comment,\n        LocalDateTime postedAt,\n\n        // Informaç\
+    ões do usuário\n        UUID userId,\n        String userName,\n        String\
+    \ userEmail,\n        String userAvatarUrl,\n\n        // Informações do artigo\
+    \ (opcional, para contexto)\n        @JsonProperty(access = JsonProperty.Access.READ_ONLY)\n\
+    \        UUID articleId,\n\n        @JsonProperty(access = JsonProperty.Access.READ_ONLY)\n\
+    \        String articleTitle\n) {\n    public static ArticleFeedbackDTO fromEntity(ArticleFeedback\
+    \ feedback) {\n        return new ArticleFeedbackDTO(\n                feedback.getId(),\n\
+    \                feedback.getIsHelpful(),\n                feedback.getComment(),\n\
+    \                feedback.getPostedAt(),\n                feedback.getUser() !=\
+    \ null ? feedback.getUser().getId() : null,\n                feedback.getUser()\
+    \ != null ? feedback.getUser().getUsername() : \"Anônimo\",\n                feedback.getUser()\
+    \ != null ? feedback.getUser().getEmail() : null,\n                feedback.getUser()\
+    \ != null ? feedback.getUser().getAvatarUrl() : null,\n                feedback.getArticle().getId(),\n\
+    \                feedback.getArticle().getTitle()\n        );\n    }\n\n    //\
+    \ Método alternativo sem informações do artigo\n    public static ArticleFeedbackDTO\
+    \ simpleFromEntity(ArticleFeedback feedback) {\n        return new ArticleFeedbackDTO(\n\
+    \                feedback.getId(),\n                feedback.getIsHelpful(),\n\
+    \                feedback.getComment(),\n                feedback.getPostedAt(),\n\
+    \                feedback.getUser() != null ? feedback.getUser().getId() : null,\n\
+    \                feedback.getUser() != null ? feedback.getUser().getUsername()\
+    \ : \"Anônimo\",\n                feedback.getUser() != null ? feedback.getUser().getEmail()\
+    \ : null,\n                feedback.getUser() != null ? feedback.getUser().getAvatarUrl()\
+    \ : null,\n                null,\n                null\n        );\n    }\n}"
+  info:
+    "size": "2290"
+    "last_modified": "2026-01-08T16:39:14.329806177"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/response/manual/ManualArticleWithoutFeedbackCountDTO.java"
+  content: "package com.caco.sitedocaco.dto.response.manual;\n\nimport com.caco.sitedocaco.entity.manual.ManualArticle;\n\
+    \nimport java.util.UUID;\n\npublic record ManualArticleWithoutFeedbackCountDTO\
+    \ (\n        UUID id,\n        String title,\n        String slug,\n        String\
+    \ content,\n        Integer order,\n        UUID chapterId,\n        String chapterTitle,\n\
+    \        UUID categoryId,\n        String categoryTitle\n) {\n    public static\
+    \ ManualArticleWithoutFeedbackCountDTO fromEntity(ManualArticle article) {\n \
+    \       return new ManualArticleWithoutFeedbackCountDTO(\n                article.getId(),\n\
+    \                article.getTitle(),\n                article.getSlug(),\n   \
+    \             article.getContent(),\n                article.getOrder(),\n   \
+    \             article.getChapter().getId(),\n                article.getChapter().getTitle(),\n\
+    \                article.getChapter().getCategory().getId(),\n               \
+    \ article.getChapter().getCategory().getTitle()\n        );\n    }\n\n    public\
+    \ static ManualArticleWithoutFeedbackCountDTO fromManualArticleDTO(ManualArticleDTO\
+    \ articleDTO) {\n        return new ManualArticleWithoutFeedbackCountDTO(\n  \
+    \              articleDTO.id(),\n                articleDTO.title(),\n       \
+    \         articleDTO.slug(),\n                articleDTO.content(),\n        \
+    \        articleDTO.order(),\n                articleDTO.chapterId(),\n      \
+    \          articleDTO.chapterTitle(),\n                articleDTO.categoryId(),\n\
+    \                articleDTO.categoryTitle()\n        );\n    }\n}"
+  info:
+    "size": "1490"
+    "last_modified": "2026-01-08T16:39:14.331805413"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/request/UpdateProfileDTO.java"
@@ -1635,7 +2034,7 @@ files:
     \ permite que Spring crie o objeto mesmo com avatar null\n    }\n}"
   info:
     "size": "310"
-    "last_modified": "2026-01-07T16:01:24.656961816"
+    "last_modified": "2026-01-08T16:39:14.335562503"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/request/CreateNewsDTO.java"
@@ -1647,7 +2046,7 @@ files:
     ) {}"
   info:
     "size": "415"
-    "last_modified": "2026-01-07T16:01:24.662165595"
+    "last_modified": "2026-01-08T16:39:14.337639807"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/request/UpdateNewsDTO.java"
@@ -1656,7 +2055,7 @@ files:
     \     String coverImage\n) {}\n"
   info:
     "size": "172"
-    "last_modified": "2026-01-07T16:01:24.668023458"
+    "last_modified": "2026-01-08T16:39:14.340032486"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/request/CreateBannerDTO.java"
@@ -1666,7 +2065,7 @@ files:
     \ String targetLink,\n        Boolean active\n) {}\n"
   info:
     "size": "308"
-    "last_modified": "2026-01-07T16:01:24.673384231"
+    "last_modified": "2026-01-08T16:39:14.342316923"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/request/ReorderBannersDTO.java"
@@ -1676,7 +2075,7 @@ files:
     \ ID_B...]\n) {}\n"
   info:
     "size": "264"
-    "last_modified": "2026-01-07T16:01:24.678501145"
+    "last_modified": "2026-01-08T16:39:14.344625777"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/request/CreateWarningDTO.java"
@@ -1688,7 +2087,7 @@ files:
     \        @NotNull @Future LocalDateTime expiresAt\n) {}\n"
   info:
     "size": "475"
-    "last_modified": "2026-01-07T16:01:24.683784725"
+    "last_modified": "2026-01-08T16:39:14.346657427"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/request/UpdateWarningDTO.java"
@@ -1698,7 +2097,7 @@ files:
     \ startsAt,\n        LocalDateTime expiresAt\n) {}\n"
   info:
     "size": "298"
-    "last_modified": "2026-01-07T16:01:24.688904467"
+    "last_modified": "2026-01-08T16:39:14.348684281"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/request/UpdateBannerDTO.java"
@@ -1707,7 +2106,7 @@ files:
     \ imageFile,\n        String targetLink,\n        Boolean active\n) {}"
   info:
     "size": "239"
-    "last_modified": "2026-01-07T16:01:24.693926536"
+    "last_modified": "2026-01-08T16:39:14.351113431"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/request/CreateSubjectDTO.java"
@@ -1717,7 +2116,7 @@ files:
     \ \"O nome da disciplina é obrigatório\")\n        String name\n) {}"
   info:
     "size": "315"
-    "last_modified": "2026-01-07T16:01:24.699059506"
+    "last_modified": "2026-01-08T16:39:14.353491712"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/request/CreateExamDTO.java"
@@ -1731,7 +2130,7 @@ files:
     \   String fileUrl\n) {}"
   info:
     "size": "569"
-    "last_modified": "2026-01-07T16:01:24.704245053"
+    "last_modified": "2026-01-08T16:39:14.355585619"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/dto/request/UpdateExamDTO.java"
@@ -1741,7 +2140,106 @@ files:
     \        String fileUrl\n) {}"
   info:
     "size": "278"
-    "last_modified": "2026-01-07T16:01:24.709368603"
+    "last_modified": "2026-01-08T16:39:14.357628097"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/request/manual/CreateManualCategoryDTO.java"
+  content: "package com.caco.sitedocaco.dto.request.manual;\n\nimport jakarta.validation.constraints.NotBlank;\n\
+    \npublic record CreateManualCategoryDTO(\n        @NotBlank(message = \"O título\
+    \ é obrigatório\")\n        String title,\n\n        @NotBlank(message = \"O slug\
+    \ é obrigatório\")\n        String slug\n) {}"
+  info:
+    "size": "295"
+    "last_modified": "2026-01-08T16:39:14.359762286"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/request/manual/UpdateManualCategoryDTO.java"
+  content: "package com.caco.sitedocaco.dto.request.manual;\n\npublic record UpdateManualCategoryDTO(\n\
+    \        String title,\n        String slug\n) {}"
+  info:
+    "size": "134"
+    "last_modified": "2026-01-08T16:39:14.361788613"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/request/manual/ReorderCategoriesDTO.java"
+  content: "package com.caco.sitedocaco.dto.request.manual;\n\nimport jakarta.validation.constraints.NotNull;\n\
+    \nimport java.util.List;\nimport java.util.UUID;\n\npublic record ReorderCategoriesDTO(\n\
+    \        @NotNull\n        List<UUID> categoryIds\n) {}"
+  info:
+    "size": "232"
+    "last_modified": "2026-01-08T16:39:14.36368627"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/request/manual/CreateManualChapterDTO.java"
+  content: "package com.caco.sitedocaco.dto.request.manual;\n\nimport jakarta.validation.constraints.NotBlank;\n\
+    import jakarta.validation.constraints.NotNull;\n\nimport java.util.UUID;\n\npublic\
+    \ record CreateManualChapterDTO(\n        @NotBlank(message = \"O título é obrigató\
+    rio\")\n        String title,\n\n        @NotBlank(message = \"O slug é obrigató\
+    rio\")\n        String slug,\n\n        @NotNull(message = \"A categoria é obrigató\
+    ria\")\n        UUID categoryId\n) {}"
+  info:
+    "size": "449"
+    "last_modified": "2026-01-08T16:39:14.365639734"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/request/manual/UpdateManualChapterDTO.java"
+  content: "package com.caco.sitedocaco.dto.request.manual;\n\nimport java.util.UUID;\n\
+    \npublic record UpdateManualChapterDTO(\n        String title,\n        String\
+    \ slug,\n        UUID categoryId\n) {}"
+  info:
+    "size": "182"
+    "last_modified": "2026-01-08T16:39:14.367626414"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/request/manual/ReorderChaptersDTO.java"
+  content: "package com.caco.sitedocaco.dto.request.manual;\n\nimport jakarta.validation.constraints.NotNull;\n\
+    \nimport java.util.List;\nimport java.util.UUID;\n\npublic record ReorderChaptersDTO(\n\
+    \        @NotNull\n        UUID categoryId,\n\n        @NotNull\n        List<UUID>\
+    \ chapterIds\n) {}"
+  info:
+    "size": "272"
+    "last_modified": "2026-01-08T16:39:14.369611275"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/request/manual/CreateManualArticleDTO.java"
+  content: "package com.caco.sitedocaco.dto.request.manual;\n\nimport jakarta.validation.constraints.NotBlank;\n\
+    import jakarta.validation.constraints.NotNull;\n\nimport java.util.UUID;\n\npublic\
+    \ record CreateManualArticleDTO(\n        @NotBlank(message = \"O título é obrigató\
+    rio\")\n        String title,\n\n        @NotBlank(message = \"O slug é obrigató\
+    rio\")\n        String slug,\n\n        @NotBlank(message = \"O conteúdo é obrigató\
+    rio\")\n        String content,\n\n        @NotNull(message = \"O capítulo é obrigató\
+    rio\")\n        UUID chapterId\n) {}"
+  info:
+    "size": "532"
+    "last_modified": "2026-01-08T16:39:14.371664466"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/request/manual/UpdateManualArticleDTO.java"
+  content: "package com.caco.sitedocaco.dto.request.manual;\n\nimport java.util.UUID;\n\
+    \npublic record UpdateManualArticleDTO(\n        String title,\n        String\
+    \ slug,\n        String content,\n        UUID chapterId\n) {}"
+  info:
+    "size": "205"
+    "last_modified": "2026-01-08T16:39:14.373628232"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/request/manual/ReorderArticlesDTO.java"
+  content: "package com.caco.sitedocaco.dto.request.manual;\n\nimport jakarta.validation.constraints.NotNull;\n\
+    \nimport java.util.List;\nimport java.util.UUID;\n\npublic record ReorderArticlesDTO(\n\
+    \        @NotNull\n        UUID chapterId,\n\n        @NotNull\n        List<UUID>\
+    \ articleIds\n) {}"
+  info:
+    "size": "271"
+    "last_modified": "2026-01-08T16:39:14.375518161"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/dto/request/manual/CreateArticleFeedbackDTO.java"
+  content: "package com.caco.sitedocaco.dto.request.manual;\n\nimport jakarta.validation.constraints.NotNull;\n\
+    \npublic record CreateArticleFeedbackDTO(\n        @NotNull\n        Boolean isHelpful,\n\
+    \n        String comment\n) {}"
+  info:
+    "size": "209"
+    "last_modified": "2026-01-08T16:39:14.377428009"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/service/UserService.java"
@@ -1791,7 +2289,7 @@ files:
     \        userRepository.save(user);\n    }\n}"
   info:
     "size": "3657"
-    "last_modified": "2026-01-07T16:01:24.717197058"
+    "last_modified": "2026-01-08T16:39:14.38198434"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/service/BannerService.java"
@@ -1850,7 +2348,7 @@ files:
     \            });\n        }\n    }\n}"
   info:
     "size": "4501"
-    "last_modified": "2026-01-07T16:01:24.722309227"
+    "last_modified": "2026-01-08T16:39:14.38457163"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/service/WarningService.java"
@@ -1902,7 +2400,7 @@ files:
     Data de expiração deve ser após o início.\");\n        }\n    }\n}"
   info:
     "size": "3852"
-    "last_modified": "2026-01-07T16:01:24.727265923"
+    "last_modified": "2026-01-08T16:39:14.38722527"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/service/NewsService.java"
@@ -1958,7 +2456,7 @@ files:
     \        }\n        return uniqueSlug;\n    }\n}"
   info:
     "size": "4162"
-    "last_modified": "2026-01-07T16:01:24.732533465"
+    "last_modified": "2026-01-08T16:39:14.389890383"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/service/ImgBBService.java"
@@ -2067,7 +2565,7 @@ files:
     \ {\n        return uploadPdf(pdfFile, null);\n    }\n}"
   info:
     "size": "8253"
-    "last_modified": "2026-01-07T16:01:24.737998828"
+    "last_modified": "2026-01-08T16:39:14.392170554"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/service/SubjectService.java"
@@ -2096,7 +2594,7 @@ files:
     \        subjectRepository.delete(subject);\n    }\n}"
   info:
     "size": "2006"
-    "last_modified": "2026-01-07T16:01:24.743336893"
+    "last_modified": "2026-01-08T16:39:14.39440492"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/service/ExamService.java"
@@ -2146,7 +2644,271 @@ files:
     \                ))\n                .toList();\n    }\n}"
   info:
     "size": "3715"
-    "last_modified": "2026-01-07T16:01:24.748646679"
+    "last_modified": "2026-01-08T16:39:14.397541731"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/service/ManualCategoryService.java"
+  content: "package com.caco.sitedocaco.service;\n\nimport com.caco.sitedocaco.dto.request.manual.CreateManualCategoryDTO;\n\
+    import com.caco.sitedocaco.dto.request.manual.UpdateManualCategoryDTO;\nimport\
+    \ com.caco.sitedocaco.dto.response.manual.ManualCategoryDTO;\nimport com.caco.sitedocaco.entity.manual.ManualCategory;\n\
+    import com.caco.sitedocaco.exception.BusinessRuleException;\nimport com.caco.sitedocaco.exception.ResourceNotFoundException;\n\
+    import com.caco.sitedocaco.repository.ManualCategoryRepository;\nimport com.caco.sitedocaco.repository.ManualChapterRepository;\n\
+    import lombok.RequiredArgsConstructor;\nimport org.springframework.stereotype.Service;\n\
+    import org.springframework.transaction.annotation.Transactional;\n\nimport java.util.List;\n\
+    import java.util.UUID;\n\n@Service\n@RequiredArgsConstructor\npublic class ManualCategoryService\
+    \ {\n\n    private final ManualCategoryRepository categoryRepository;\n    private\
+    \ final ManualChapterRepository chapterRepository;\n\n    @Transactional\n   \
+    \ public ManualCategory createCategory(CreateManualCategoryDTO dto) {\n      \
+    \  // Verificar se slug já existe\n        if (categoryRepository.existsBySlug(dto.slug()))\
+    \ {\n            throw new BusinessRuleException(\"Já existe uma categoria com\
+    \ este slug\");\n        }\n\n        ManualCategory category = new ManualCategory();\n\
+    \        category.setTitle(dto.title());\n        category.setSlug(dto.slug());\n\
+    \n        // Ordenação automática\n        Integer maxOrder = categoryRepository.findMaxOrder();\n\
+    \        category.setOrder(maxOrder == null ? 0 : maxOrder + 1);\n\n        return\
+    \ categoryRepository.save(category);\n    }\n\n    @Transactional(readOnly = true)\n\
+    \    public List<ManualCategoryDTO> getAllCategories() {\n        return categoryRepository.findAllByOrderByOrderAsc().stream()\n\
+    \                .map(category -> {\n                    Long chapterCount = chapterRepository.countByCategory(category);\n\
+    \                    return ManualCategoryDTO.fromEntity(category, chapterCount);\n\
+    \                })\n                .toList();\n    }\n\n    @Transactional(readOnly\
+    \ = true)\n    public ManualCategory getCategoryById(UUID id) {\n        return\
+    \ categoryRepository.findById(id)\n                .orElseThrow(() -> new ResourceNotFoundException(\"\
+    Categoria não encontrada\"));\n    }\n\n    @Transactional(readOnly = true)\n\
+    \    public ManualCategory getCategoryBySlug(String slug) {\n        return categoryRepository.findBySlug(slug)\n\
+    \                .orElseThrow(() -> new ResourceNotFoundException(\"Categoria\
+    \ não encontrada\"));\n    }\n\n    @Transactional\n    public ManualCategory\
+    \ updateCategory(UUID id, UpdateManualCategoryDTO dto) {\n        ManualCategory\
+    \ category = getCategoryById(id);\n\n        if (dto.title() != null) {\n    \
+    \        category.setTitle(dto.title());\n        }\n\n        if (dto.slug()\
+    \ != null && !dto.slug().equals(category.getSlug())) {\n            if (categoryRepository.existsBySlug(dto.slug()))\
+    \ {\n                throw new BusinessRuleException(\"Já existe uma categoria\
+    \ com este slug\");\n            }\n            category.setSlug(dto.slug());\n\
+    \        }\n\n        return categoryRepository.save(category);\n    }\n\n   \
+    \ @Transactional\n    public void deleteCategory(UUID id) {\n        ManualCategory\
+    \ category = getCategoryById(id);\n\n        // Verificar se tem capítulos antes\
+    \ de deletar\n        if (!chapterRepository.findByCategory(category).isEmpty())\
+    \ {\n            throw new BusinessRuleException(\"Não é possível deletar uma\
+    \ categoria que possui capítulos\");\n        }\n\n        categoryRepository.delete(category);\n\
+    \    }\n\n    @Transactional\n    public void reorderCategories(List<UUID> categoryIds)\
+    \ {\n        for (int i = 0; i < categoryIds.size(); i++) {\n            UUID\
+    \ id = categoryIds.get(i);\n            int finalI = i;\n            categoryRepository.findById(id).ifPresent(category\
+    \ -> {\n                category.setOrder(finalI);\n                categoryRepository.save(category);\n\
+    \            });\n        }\n    }\n}"
+  info:
+    "size": "3910"
+    "last_modified": "2026-01-08T16:39:14.401032396"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/service/ManualChapterService.java"
+  content: "package com.caco.sitedocaco.service;\n\nimport com.caco.sitedocaco.dto.request.manual.CreateManualChapterDTO;\n\
+    import com.caco.sitedocaco.dto.request.manual.UpdateManualChapterDTO;\nimport\
+    \ com.caco.sitedocaco.dto.response.manual.ManualChapterDTO;\nimport com.caco.sitedocaco.entity.manual.ManualCategory;\n\
+    import com.caco.sitedocaco.entity.manual.ManualChapter;\nimport com.caco.sitedocaco.exception.BusinessRuleException;\n\
+    import com.caco.sitedocaco.exception.ResourceNotFoundException;\nimport com.caco.sitedocaco.repository.ManualArticleRepository;\n\
+    import com.caco.sitedocaco.repository.ManualCategoryRepository;\nimport com.caco.sitedocaco.repository.ManualChapterRepository;\n\
+    import lombok.RequiredArgsConstructor;\nimport org.springframework.stereotype.Service;\n\
+    import org.springframework.transaction.annotation.Transactional;\n\nimport java.util.List;\n\
+    import java.util.UUID;\n\n@Service\n@RequiredArgsConstructor\npublic class ManualChapterService\
+    \ {\n\n    private final ManualChapterRepository chapterRepository;\n    private\
+    \ final ManualCategoryRepository categoryRepository;\n    private final ManualArticleRepository\
+    \ articleRepository;\n    private final ManualCategoryService categoryService;\n\
+    \n    @Transactional(readOnly = true)\n    public long countChaptersByCategory(UUID\
+    \ categoryId) {\n        ManualCategory category = categoryService.getCategoryById(categoryId);\n\
+    \        return chapterRepository.countByCategory(category);\n    }\n\n    @Transactional\n\
+    \    public void deleteChapter(UUID id) {\n        ManualChapter chapter = getChapterById(id);\n\
+    \n        // Verificar se tem artigos antes de deletar\n        if (!articleRepository.findByChapter(chapter).isEmpty())\
+    \ {\n            throw new BusinessRuleException(\"Não é possível deletar um capí\
+    tulo que possui artigos\");\n        }\n\n        chapterRepository.delete(chapter);\n\
+    \    }\n\n    @Transactional\n    public void reorderChapters(UUID categoryId,\
+    \ List<UUID> chapterIds) {\n        for (UUID chapterId : chapterIds) {\n    \
+    \        chapterRepository.findById(chapterId).ifPresent(chapter -> {\n      \
+    \          if (!chapter.getCategory().getId().equals(categoryId)) {\n        \
+    \            throw new BusinessRuleException(\n                            String.format(\"\
+    O capítulo %s não pertence à categoria %s\",\n                               \
+    \     chapterId, categoryId)\n                    );\n                }\n    \
+    \        });\n        }\n\n        // Reordenar\n        for (int i = 0; i < chapterIds.size();\
+    \ i++) {\n            UUID id = chapterIds.get(i);\n            int finalI = i;\n\
+    \            chapterRepository.findById(id).ifPresent(chapter -> {\n         \
+    \       chapter.setOrder(finalI);\n                chapterRepository.save(chapter);\n\
+    \            });\n        }\n    }\n\n    @Transactional\n    public ManualChapter\
+    \ createChapter(CreateManualChapterDTO dto) {\n        // Verificar se slug já\
+    \ existe\n        if (chapterRepository.existsBySlug(dto.slug())) {\n        \
+    \    throw new BusinessRuleException(\"Já existe um capítulo com este slug\");\n\
+    \        }\n\n        ManualCategory category = categoryService.getCategoryById(dto.categoryId());\n\
+    \n        ManualChapter chapter = new ManualChapter();\n        chapter.setTitle(dto.title());\n\
+    \        chapter.setSlug(dto.slug());\n        chapter.setCategory(category);\n\
+    \n        // Ordenação automática dentro da categoria\n        Integer maxOrder\
+    \ = chapterRepository.findMaxOrderByCategory(category);\n        chapter.setOrder(maxOrder\
+    \ == null ? 0 : maxOrder + 1);\n\n        return chapterRepository.save(chapter);\n\
+    \    }\n\n    @Transactional(readOnly = true)\n    public List<ManualChapterDTO>\
+    \ getAllChapters() {\n        return chapterRepository.findAll().stream()\n  \
+    \              .map(chapter -> {\n                    Long articleCount = articleRepository.countByChapter(chapter);\n\
+    \                    return ManualChapterDTO.fromEntity(chapter, articleCount);\n\
+    \                })\n                .toList();\n    }\n\n    @Transactional(readOnly\
+    \ = true)\n    public List<ManualChapterDTO> getChaptersByCategory(UUID categoryId)\
+    \ {\n        ManualCategory category = categoryService.getCategoryById(categoryId);\n\
+    \        return chapterRepository.findByCategoryOrderByOrderAsc(category).stream()\n\
+    \                .map(chapter -> {\n                    Long articleCount = articleRepository.countByChapter(chapter);\n\
+    \                    return ManualChapterDTO.fromEntity(chapter, articleCount);\n\
+    \                })\n                .toList();\n    }\n\n    @Transactional(readOnly\
+    \ = true)\n    public ManualChapter getChapterById(UUID id) {\n        return\
+    \ chapterRepository.findById(id)\n                .orElseThrow(() -> new ResourceNotFoundException(\"\
+    Capítulo não encontrado\"));\n    }\n\n    @Transactional(readOnly = true)\n \
+    \   public ManualChapter getChapterBySlug(String slug) {\n        return chapterRepository.findBySlug(slug)\n\
+    \                .orElseThrow(() -> new ResourceNotFoundException(\"Capítulo nã\
+    o encontrado\"));\n    }\n\n    @Transactional\n    public ManualChapter updateChapter(UUID\
+    \ id, UpdateManualChapterDTO dto) {\n        ManualChapter chapter = getChapterById(id);\n\
+    \n        if (dto.title() != null) {\n            chapter.setTitle(dto.title());\n\
+    \        }\n\n        if (dto.slug() != null && !dto.slug().equals(chapter.getSlug()))\
+    \ {\n            if (chapterRepository.existsBySlug(dto.slug())) {\n         \
+    \       throw new BusinessRuleException(\"Já existe um capítulo com este slug\"\
+    );\n            }\n            chapter.setSlug(dto.slug());\n        }\n\n   \
+    \     if (dto.categoryId() != null) {\n            ManualCategory newCategory\
+    \ = categoryService.getCategoryById(dto.categoryId());\n            chapter.setCategory(newCategory);\n\
+    \        }\n\n        return chapterRepository.save(chapter);\n    }\n}"
+  info:
+    "size": "5671"
+    "last_modified": "2026-01-08T16:39:14.404510846"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/service/ManualArticleService.java"
+  content: "package com.caco.sitedocaco.service;\n\nimport com.caco.sitedocaco.dto.request.manual.CreateManualArticleDTO;\n\
+    import com.caco.sitedocaco.dto.request.manual.UpdateManualArticleDTO;\nimport\
+    \ com.caco.sitedocaco.dto.response.manual.ManualArticleDTO;\nimport com.caco.sitedocaco.entity.manual.ArticleFeedback;\n\
+    import com.caco.sitedocaco.entity.manual.ManualArticle;\nimport com.caco.sitedocaco.entity.manual.ManualChapter;\n\
+    import com.caco.sitedocaco.exception.BusinessRuleException;\nimport com.caco.sitedocaco.exception.ResourceNotFoundException;\n\
+    import com.caco.sitedocaco.repository.ArticleFeedbackRepository;\nimport com.caco.sitedocaco.repository.ManualArticleRepository;\n\
+    import com.caco.sitedocaco.repository.ManualChapterRepository;\nimport lombok.RequiredArgsConstructor;\n\
+    import org.springframework.stereotype.Service;\nimport org.springframework.transaction.annotation.Transactional;\n\
+    \nimport java.util.List;\nimport java.util.UUID;\n\n@Service\n@RequiredArgsConstructor\n\
+    public class ManualArticleService {\n\n    private final ManualArticleRepository\
+    \ articleRepository;\n    private final ManualChapterRepository chapterRepository;\n\
+    \    private final ArticleFeedbackRepository feedbackRepository;\n    private\
+    \ final ManualChapterService chapterService;\n\n    @Transactional\n    public\
+    \ ManualArticle createArticle(CreateManualArticleDTO dto) {\n        // Verificar\
+    \ se slug já existe\n        if (articleRepository.existsBySlug(dto.slug())) {\n\
+    \            throw new BusinessRuleException(\"Já existe um artigo com este slug\"\
+    );\n        }\n\n        ManualChapter chapter = chapterService.getChapterById(dto.chapterId());\n\
+    \n        ManualArticle article = new ManualArticle();\n        article.setTitle(dto.title());\n\
+    \        article.setSlug(dto.slug());\n        article.setContent(dto.content());\n\
+    \        article.setChapter(chapter);\n\n        // Ordenação automática dentro\
+    \ do capítulo\n        Integer maxOrder = articleRepository.findMaxOrderByChapter(chapter);\n\
+    \        article.setOrder(maxOrder == null ? 0 : maxOrder + 1);\n\n        return\
+    \ articleRepository.save(article);\n    }\n\n    @Transactional(readOnly = true)\n\
+    \    public List<ManualArticleDTO> getAllArticles() {\n        return articleRepository.findAll().stream()\n\
+    \                .map(article -> {\n                    Long helpfulCount = feedbackRepository.countByArticleAndIsHelpful(article,\
+    \ true);\n                    Long unhelpfulCount = feedbackRepository.countByArticleAndIsHelpful(article,\
+    \ false);\n                    return ManualArticleDTO.fromEntity(article, helpfulCount,\
+    \ unhelpfulCount);\n                })\n                .toList();\n    }\n\n\
+    \    @Transactional(readOnly = true)\n    public List<ManualArticleDTO> getArticlesByChapter(UUID\
+    \ chapterId) {\n        ManualChapter chapter = chapterService.getChapterById(chapterId);\n\
+    \        return articleRepository.findByChapterOrderByOrderAsc(chapter).stream()\n\
+    \                .map(article -> {\n                    Long helpfulCount = feedbackRepository.countByArticleAndIsHelpful(article,\
+    \ true);\n                    Long unhelpfulCount = feedbackRepository.countByArticleAndIsHelpful(article,\
+    \ false);\n                    return ManualArticleDTO.fromEntity(article, helpfulCount,\
+    \ unhelpfulCount);\n                })\n                .toList();\n    }\n\n\
+    \    @Transactional(readOnly = true)\n    public ManualArticleDTO getArticleById(UUID\
+    \ id) {\n        ManualArticle article = articleRepository.findById(id)\n    \
+    \            .orElseThrow(() -> new ResourceNotFoundException(\"Artigo não encontrado\"\
+    ));\n\n        Long helpfulCount = feedbackRepository.countByArticleAndIsHelpful(article,\
+    \ true);\n        Long unhelpfulCount = feedbackRepository.countByArticleAndIsHelpful(article,\
+    \ false);\n\n        return ManualArticleDTO.fromEntity(article, helpfulCount,\
+    \ unhelpfulCount);\n    }\n\n    @Transactional(readOnly = true)\n    public ManualArticle\
+    \ getArticleEntityById(UUID id) {\n        return articleRepository.findById(id)\n\
+    \                .orElseThrow(() -> new ResourceNotFoundException(\"Artigo nã\
+    o encontrado\"));\n    }\n\n    @Transactional(readOnly = true)\n    public ManualArticleDTO\
+    \ getArticleBySlug(String slug) {\n        ManualArticle article = articleRepository.findBySlug(slug)\n\
+    \                .orElseThrow(() -> new ResourceNotFoundException(\"Artigo nã\
+    o encontrado\"));\n\n        Long helpfulCount = feedbackRepository.countByArticleAndIsHelpful(article,\
+    \ true);\n        Long unhelpfulCount = feedbackRepository.countByArticleAndIsHelpful(article,\
+    \ false);\n\n        return ManualArticleDTO.fromEntity(article, helpfulCount,\
+    \ unhelpfulCount);\n    }\n\n    @Transactional\n    public ManualArticle updateArticle(UUID\
+    \ id, UpdateManualArticleDTO dto) {\n        ManualArticle article = getArticleEntityById(id);\n\
+    \n        if (dto.title() != null) {\n            article.setTitle(dto.title());\n\
+    \        }\n\n        if (dto.slug() != null && !dto.slug().equals(article.getSlug()))\
+    \ {\n            if (articleRepository.existsBySlug(dto.slug())) {\n         \
+    \       throw new BusinessRuleException(\"Já existe um artigo com este slug\"\
+    );\n            }\n            article.setSlug(dto.slug());\n        }\n\n   \
+    \     if (dto.content() != null) {\n            article.setContent(dto.content());\n\
+    \        }\n\n        if (dto.chapterId() != null) {\n            ManualChapter\
+    \ newChapter = chapterService.getChapterById(dto.chapterId());\n            article.setChapter(newChapter);\n\
+    \        }\n\n        return articleRepository.save(article);\n    }\n\n    @Transactional\n\
+    \    public void deleteArticle(UUID id) {\n        ManualArticle article = getArticleEntityById(id);\n\
+    \n        // Deletar feedbacks associados primeiro\n        List<ArticleFeedback>\
+    \ feedbacks = feedbackRepository.findByArticle(article);\n        feedbackRepository.deleteAll(feedbacks);\n\
+    \n        articleRepository.delete(article);\n    }\n\n    @Transactional\n  \
+    \  public void reorderArticles(UUID chapterId, List<UUID> articleIds) {\n    \
+    \    ManualChapter chapter = chapterService.getChapterById(chapterId);\n\n   \
+    \     // Verificar se todos os artigos pertencem ao capítulo\n        for (UUID\
+    \ articleId : articleIds) {\n            articleRepository.findById(articleId).ifPresent(article\
+    \ -> {\n                if (!article.getChapter().getId().equals(chapterId)) {\n\
+    \                    throw new BusinessRuleException(\n                      \
+    \      String.format(\"O artigo %s não pertence ao capítulo %s\",\n          \
+    \                          articleId, chapterId)\n                    );\n   \
+    \             }\n            });\n        }\n\n        // Reordenar\n        for\
+    \ (int i = 0; i < articleIds.size(); i++) {\n            UUID id = articleIds.get(i);\n\
+    \            int finalI = i;\n            articleRepository.findById(id).ifPresent(article\
+    \ -> {\n                article.setOrder(finalI);\n                articleRepository.save(article);\n\
+    \            });\n        }\n    }\n\n    @Transactional(readOnly = true)\n  \
+    \  public long countArticlesByChapter(UUID chapterId) {\n        ManualChapter\
+    \ chapter = chapterService.getChapterById(chapterId);\n        return articleRepository.countByChapter(chapter);\n\
+    \    }\n}"
+  info:
+    "size": "7005"
+    "last_modified": "2026-01-08T16:39:14.408103483"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/service/ArticleFeedbackService.java"
+  content: "package com.caco.sitedocaco.service;\n\nimport com.caco.sitedocaco.dto.request.manual.CreateArticleFeedbackDTO;\n\
+    import com.caco.sitedocaco.dto.response.manual.ArticleFeedbackDTO;\nimport com.caco.sitedocaco.entity.User;\n\
+    import com.caco.sitedocaco.entity.manual.ArticleFeedback;\nimport com.caco.sitedocaco.entity.manual.ManualArticle;\n\
+    import com.caco.sitedocaco.exception.ResourceNotFoundException;\nimport com.caco.sitedocaco.repository.ArticleFeedbackRepository;\n\
+    import lombok.RequiredArgsConstructor;\nimport org.springframework.data.domain.Page;\n\
+    import org.springframework.data.domain.PageRequest;\nimport org.springframework.data.domain.Pageable;\n\
+    import org.springframework.data.domain.Sort;\nimport org.springframework.stereotype.Service;\n\
+    import org.springframework.transaction.annotation.Transactional;\n\nimport java.time.LocalDateTime;\n\
+    import java.util.Map;\nimport java.util.UUID;\n\n@Service\n@RequiredArgsConstructor\n\
+    public class ArticleFeedbackService {\n\n    private final ArticleFeedbackRepository\
+    \ feedbackRepository;\n    private final ManualArticleService articleService;\n\
+    \    private final UserService userService;\n\n    @Transactional\n    public\
+    \ ArticleFeedback createFeedback(UUID articleId, CreateArticleFeedbackDTO dto,\
+    \ User user) {\n        ManualArticle article = articleService.getArticleEntityById(articleId);\n\
+    \n        ArticleFeedback feedback = new ArticleFeedback();\n        feedback.setArticle(article);\n\
+    \        feedback.setUser(user);\n        feedback.setIsHelpful(dto.isHelpful());\n\
+    \        feedback.setComment(dto.comment());\n        feedback.setPostedAt(LocalDateTime.now());\n\
+    \n        return feedbackRepository.save(feedback);\n    }\n\n    @Transactional\n\
+    \    public ArticleFeedback createFeedback(UUID articleId, CreateArticleFeedbackDTO\
+    \ dto) {\n        // Para feedback anônimo\n        ManualArticle article = articleService.getArticleEntityById(articleId);\n\
+    \n        ArticleFeedback feedback = new ArticleFeedback();\n        feedback.setArticle(article);\n\
+    \        feedback.setUser(null); // Anônimo\n        feedback.setIsHelpful(dto.isHelpful());\n\
+    \        feedback.setComment(dto.comment());\n        feedback.setPostedAt(LocalDateTime.now());\n\
+    \n        return feedbackRepository.save(feedback);\n    }\n\n    @Transactional(readOnly\
+    \ = true)\n    public Page<ArticleFeedbackDTO> getFeedbackByArticle(UUID articleId,\
+    \ int page, int size) {\n        ManualArticle article = articleService.getArticleEntityById(articleId);\n\
+    \        Pageable pageable = PageRequest.of(page, size, Sort.by(Sort.Direction.DESC,\
+    \ \"postedAt\"));\n\n        return feedbackRepository.findByArticleOrderByPostedAtDesc(article,\
+    \ pageable)\n                .map(ArticleFeedbackDTO::fromEntity);\n    }\n\n\
+    \    @Transactional(readOnly = true)\n    public Page<ArticleFeedbackDTO> getFeedbackByArticle(UUID\
+    \ articleId, Pageable pageable) {\n        ManualArticle article = articleService.getArticleEntityById(articleId);\n\
+    \        return feedbackRepository.findByArticleOrderByPostedAtDesc(article, pageable)\n\
+    \                .map(ArticleFeedbackDTO::fromEntity);\n    }\n\n    @Transactional(readOnly\
+    \ = true)\n    public ArticleFeedback getFeedbackById(UUID id) {\n        return\
+    \ feedbackRepository.findById(id)\n                .orElseThrow(() -> new ResourceNotFoundException(\"\
+    Feedback não encontrado\"));\n    }\n\n    @Transactional\n    public void deleteFeedback(UUID\
+    \ id) {\n        ArticleFeedback feedback = getFeedbackById(id);\n        feedbackRepository.delete(feedback);\n\
+    \    }\n\n    @Transactional(readOnly = true)\n    public Map<String, Object>\
+    \ getFeedbackStats(UUID articleId) {\n        ManualArticle article = articleService.getArticleEntityById(articleId);\n\
+    \n        long helpfulCount = feedbackRepository.countByArticleAndIsHelpful(article,\
+    \ true);\n        long unhelpfulCount = feedbackRepository.countByArticleAndIsHelpful(article,\
+    \ false);\n        long totalCount = helpfulCount + unhelpfulCount;\n\n      \
+    \  double helpfulPercentage = totalCount > 0 ?\n                Math.round((helpfulCount\
+    \ * 100.0 / totalCount) * 100.0) / 100.0 : 0.0;\n\n        return Map.of(\n  \
+    \              \"total\", totalCount,\n                \"helpful\", helpfulCount,\n\
+    \                \"unhelpful\", unhelpfulCount,\n                \"helpfulPercentage\"\
+    , helpfulPercentage,\n                \"articleId\", articleId,\n            \
+    \    \"articleTitle\", article.getTitle()\n        );\n    }\n}"
+  info:
+    "size": "4309"
+    "last_modified": "2026-01-08T16:39:14.410946154"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/controller/privateController/UserController.java"
@@ -2167,7 +2929,29 @@ files:
     \    }\n}"
   info:
     "size": "1233"
-    "last_modified": "2026-01-07T16:01:24.755514874"
+    "last_modified": "2026-01-08T16:39:14.414110516"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/controller/privateController/ArticleFeedbackController.java"
+  content: "package com.caco.sitedocaco.controller.privateController;\n\nimport com.caco.sitedocaco.dto.request.manual.CreateArticleFeedbackDTO;\n\
+    import com.caco.sitedocaco.dto.response.manual.ArticleFeedbackDTO;\nimport com.caco.sitedocaco.service.ArticleFeedbackService;\n\
+    import com.caco.sitedocaco.service.ManualArticleService;\nimport com.caco.sitedocaco.service.UserService;\n\
+    import jakarta.validation.Valid;\nimport lombok.RequiredArgsConstructor;\nimport\
+    \ org.springframework.http.HttpStatus;\nimport org.springframework.http.ResponseEntity;\n\
+    import org.springframework.security.core.Authentication;\nimport org.springframework.web.bind.annotation.*;\n\
+    \nimport java.util.UUID;\n\n@RestController\n@RequestMapping(\"/api/article-feedback\"\
+    )\n@RequiredArgsConstructor\npublic class ArticleFeedbackController {\n    private\
+    \ final ManualArticleService articleService;\n    private final ArticleFeedbackService\
+    \ feedbackService;\n    private final UserService userService;\n\n    // ====================\
+    \ FEEDBACK (apenas criação) ====================\n\n    @PostMapping(\"/articles/{articleId}/feedback\"\
+    )\n    public ResponseEntity<ArticleFeedbackDTO> createFeedback(\n           \
+    \ @PathVariable UUID articleId,\n            @RequestBody @Valid CreateArticleFeedbackDTO\
+    \ dto) {\n\n        var feedback = feedbackService.createFeedback(articleId, dto,\
+    \ userService.getCurrentUser());\n\n        return ResponseEntity.status(HttpStatus.CREATED)\n\
+    \                .body(ArticleFeedbackDTO.fromEntity(feedback));\n    }\n}\n"
+  info:
+    "size": "1467"
+    "last_modified": "2026-01-08T16:39:14.416299497"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/controller/publicController/HomeController.java"
@@ -2192,7 +2976,7 @@ files:
     \        );\n\n        return ResponseEntity.ok(dashboard);\n    }\n}"
   info:
     "size": "1682"
-    "last_modified": "2026-01-07T16:01:24.762068159"
+    "last_modified": "2026-01-08T16:39:14.419459879"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/controller/publicController/ExamController.java"
@@ -2214,7 +2998,60 @@ files:
     \    }\n}"
   info:
     "size": "1346"
-    "last_modified": "2026-01-07T16:01:24.767609622"
+    "last_modified": "2026-01-08T16:39:14.422375858"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/controller/publicController/ManualController.java"
+  content: "package com.caco.sitedocaco.controller.publicController;\n\nimport com.caco.sitedocaco.dto.request.manual.CreateArticleFeedbackDTO;\n\
+    import com.caco.sitedocaco.dto.response.manual.*;\nimport com.caco.sitedocaco.service.ArticleFeedbackService;\n\
+    import com.caco.sitedocaco.service.ManualArticleService;\nimport com.caco.sitedocaco.service.ManualCategoryService;\n\
+    import com.caco.sitedocaco.service.ManualChapterService;\nimport com.caco.sitedocaco.service.UserService;\n\
+    import jakarta.validation.Valid;\nimport lombok.RequiredArgsConstructor;\nimport\
+    \ org.springframework.http.HttpStatus;\nimport org.springframework.http.ResponseEntity;\n\
+    import org.springframework.security.core.Authentication;\nimport org.springframework.web.bind.annotation.*;\n\
+    \nimport java.util.List;\nimport java.util.UUID;\n\n@RestController\n@RequestMapping(\"\
+    /api/public/manual\")\n@RequiredArgsConstructor\npublic class ManualController\
+    \ {\n\n    private final ManualCategoryService categoryService;\n    private final\
+    \ ManualChapterService chapterService;\n    private final ManualArticleService\
+    \ articleService;\n    private final ArticleFeedbackService feedbackService;\n\
+    \    private final UserService userService;\n\n    // ==================== CATEGORIAS\
+    \ ====================\n\n    @GetMapping(\"/categories\")\n    public ResponseEntity<List<ManualCategoryDTO>>\
+    \ getAllCategories() {\n        List<ManualCategoryDTO> categories = categoryService.getAllCategories();\n\
+    \        return ResponseEntity.ok(categories);\n    }\n\n    @GetMapping(\"/categories/{slug}\"\
+    )\n    public ResponseEntity<ManualCategoryDTO> getCategoryBySlug(@PathVariable\
+    \ String slug) {\n        return ResponseEntity.ok(ManualCategoryDTO.fromEntity(\n\
+    \                categoryService.getCategoryBySlug(slug),\n                null\n\
+    \        ));\n    }\n\n    // ==================== CAPÍTULOS ====================\n\
+    \n    @GetMapping(\"/chapters\")\n    public ResponseEntity<List<ManualChapterDTO>>\
+    \ getAllChapters() {\n        List<ManualChapterDTO> chapters = chapterService.getAllChapters();\n\
+    \        return ResponseEntity.ok(chapters);\n    }\n\n    @GetMapping(\"/chapters/category/{categoryId}\"\
+    )\n    public ResponseEntity<List<ManualChapterDTO>> getChaptersByCategory(@PathVariable\
+    \ UUID categoryId) {\n        List<ManualChapterDTO> chapters = chapterService.getChaptersByCategory(categoryId);\n\
+    \        return ResponseEntity.ok(chapters);\n    }\n\n    @GetMapping(\"/chapters/{slug}\"\
+    )\n    public ResponseEntity<ManualChapterDTO> getChapterBySlug(@PathVariable\
+    \ String slug) {\n        return ResponseEntity.ok(ManualChapterDTO.fromEntity(\n\
+    \                chapterService.getChapterBySlug(slug),\n                null\n\
+    \        ));\n    }\n\n    // ==================== ARTIGOS ====================\n\
+    \n    @GetMapping(\"/articles\")\n    public ResponseEntity<List<ManualArticleWithoutFeedbackCountDTO>>\
+    \ getAllArticles() {\n        List<ManualArticleWithoutFeedbackCountDTO> articles\
+    \ = articleService.getAllArticles().stream()\n                .map(ManualArticleWithoutFeedbackCountDTO::fromManualArticleDTO)\n\
+    \                .toList();\n        return ResponseEntity.ok(articles);\n   \
+    \ }\n\n    @GetMapping(\"/articles/chapter/{chapterId}\")\n    public ResponseEntity<List<ManualArticleWithoutFeedbackCountDTO>>\
+    \ getArticlesByChapter(@PathVariable UUID chapterId) {\n        List<ManualArticleWithoutFeedbackCountDTO>\
+    \ articles = articleService.getArticlesByChapter(chapterId).stream()\n       \
+    \         .map(ManualArticleWithoutFeedbackCountDTO::fromManualArticleDTO)\n \
+    \               .toList();\n        return ResponseEntity.ok(articles);\n    }\n\
+    \n    @GetMapping(\"/articles/{id}\")\n    public ResponseEntity<ManualArticleWithoutFeedbackCountDTO>\
+    \ getArticleById(@PathVariable UUID id) {\n        ManualArticleWithoutFeedbackCountDTO\
+    \ article = ManualArticleWithoutFeedbackCountDTO.fromManualArticleDTO( articleService.getArticleById(id));\n\
+    \        return ResponseEntity.ok(article);\n    }\n\n    @GetMapping(\"/articles/slug/{slug}\"\
+    )\n    public ResponseEntity<ManualArticleWithoutFeedbackCountDTO> getArticleBySlug(@PathVariable\
+    \ String slug) {\n        ManualArticleWithoutFeedbackCountDTO article = ManualArticleWithoutFeedbackCountDTO.fromManualArticleDTO(\
+    \ articleService.getArticleBySlug(slug));\n        return ResponseEntity.ok(article);\n\
+    \    }\n}"
+  info:
+    "size": "4194"
+    "last_modified": "2026-01-08T16:39:14.425293087"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/controller/admin/HomeAdminController.java"
@@ -2296,7 +3133,7 @@ files:
     \    }\n}"
   info:
     "size": "6446"
-    "last_modified": "2026-01-07T16:01:24.774311897"
+    "last_modified": "2026-01-08T16:39:14.428992176"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/controller/admin/ExamAdminController.java"
@@ -2344,7 +3181,7 @@ files:
     \    }\n}"
   info:
     "size": "3535"
-    "last_modified": "2026-01-07T16:01:24.780035531"
+    "last_modified": "2026-01-08T16:39:14.432211999"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/controller/admin/ImageAdminController.java"
@@ -2365,7 +3202,91 @@ files:
     \  }\n}"
   info:
     "size": "1243"
-    "last_modified": "2026-01-07T16:01:24.783658841"
+    "last_modified": "2026-01-08T16:39:14.434435773"
+    "mime_type": "text/x-java-source"
+    "extension": ".java"
+- path: "main/java/com/caco/sitedocaco/controller/admin/ManualAdminController.java"
+  content: "package com.caco.sitedocaco.controller.admin;\n\nimport com.caco.sitedocaco.dto.request.manual.*;\n\
+    import com.caco.sitedocaco.dto.response.manual.*;\nimport com.caco.sitedocaco.service.ArticleFeedbackService;\n\
+    import com.caco.sitedocaco.service.ManualArticleService;\nimport com.caco.sitedocaco.service.ManualCategoryService;\n\
+    import com.caco.sitedocaco.service.ManualChapterService;\nimport jakarta.validation.Valid;\n\
+    import lombok.RequiredArgsConstructor;\nimport org.springframework.data.domain.Page;\n\
+    import org.springframework.http.ResponseEntity;\nimport org.springframework.security.access.prepost.PreAuthorize;\n\
+    import org.springframework.web.bind.annotation.*;\n\nimport java.net.URI;\nimport\
+    \ java.util.Map;\nimport java.util.UUID;\n\n@RestController\n@RequestMapping(\"\
+    /api/admin/manual\")\n@RequiredArgsConstructor\n@PreAuthorize(\"hasRole('ADMIN')\"\
+    )\npublic class ManualAdminController {\n\n    private final ManualCategoryService\
+    \ categoryService;\n    private final ManualChapterService chapterService;\n \
+    \   private final ManualArticleService articleService;\n    private final ArticleFeedbackService\
+    \ feedbackService;\n\n    // ==================== CATEGORIAS ====================\n\
+    \n    @PostMapping(\"/categories\")\n    public ResponseEntity<ManualCategoryDTO>\
+    \ createCategory(@RequestBody @Valid CreateManualCategoryDTO dto) {\n        var\
+    \ created = categoryService.createCategory(dto);\n        var dtoResponse = ManualCategoryDTO.fromEntity(created,\
+    \ 0L); // 0 chapters inicialmente\n        return ResponseEntity\n           \
+    \     .created(URI.create(\"/api/public/manual/categories/\" + created.getSlug()))\n\
+    \                .body(dtoResponse);\n    }\n\n    @PutMapping(\"/categories/{id}\"\
+    )\n    public ResponseEntity<ManualCategoryDTO> updateCategory(\n            @PathVariable\
+    \ UUID id,\n            @RequestBody @Valid UpdateManualCategoryDTO dto) {\n \
+    \       var updated = categoryService.updateCategory(id, dto);\n        Long chapterCount\
+    \ = chapterService.countChaptersByCategory(id); // Contar capítulos\n        var\
+    \ dtoResponse = ManualCategoryDTO.fromEntity(updated, chapterCount);\n       \
+    \ return ResponseEntity.ok(dtoResponse);\n    }\n\n    @DeleteMapping(\"/categories/{id}\"\
+    )\n    public ResponseEntity<Void> deleteCategory(@PathVariable UUID id) {\n \
+    \       categoryService.deleteCategory(id);\n        return ResponseEntity.noContent().build();\n\
+    \    }\n\n    @PutMapping(\"/categories/r/reorder\")\n    public ResponseEntity<Void>\
+    \ reorderCategories(@RequestBody @Valid ReorderCategoriesDTO dto) {\n        categoryService.reorderCategories(dto.categoryIds());\n\
+    \        return ResponseEntity.noContent().build();\n    }\n\n    // ====================\
+    \ CAPÍTULOS ====================\n\n    @PostMapping(\"/chapters\")\n    public\
+    \ ResponseEntity<ManualChapterDTO> createChapter(@RequestBody @Valid CreateManualChapterDTO\
+    \ dto) {\n        var created = chapterService.createChapter(dto);\n        Long\
+    \ articleCount = articleService.countArticlesByChapter(created.getId()); // 0\
+    \ articles inicialmente\n        var dtoResponse = ManualChapterDTO.fromEntity(created,\
+    \ articleCount);\n        return ResponseEntity\n                .created(URI.create(\"\
+    /api/public/manual/chapters/\" + created.getSlug()))\n                .body(dtoResponse);\n\
+    \    }\n\n    @PutMapping(\"/chapters/{id}\")\n    public ResponseEntity<ManualChapterDTO>\
+    \ updateChapter(\n            @PathVariable UUID id,\n            @RequestBody\
+    \ @Valid UpdateManualChapterDTO dto) {\n        var updated = chapterService.updateChapter(id,\
+    \ dto);\n        Long articleCount = articleService.countArticlesByChapter(id);\n\
+    \        var dtoResponse = ManualChapterDTO.fromEntity(updated, articleCount);\n\
+    \        return ResponseEntity.ok(dtoResponse);\n    }\n\n    @DeleteMapping(\"\
+    /chapters/{id}\")\n    public ResponseEntity<Void> deleteChapter(@PathVariable\
+    \ UUID id) {\n        chapterService.deleteChapter(id);\n        return ResponseEntity.noContent().build();\n\
+    \    }\n\n    @PutMapping(\"/chapters/r/reorder\")\n    public ResponseEntity<Void>\
+    \ reorderChapters(@RequestBody @Valid ReorderChaptersDTO dto) {\n        chapterService.reorderChapters(dto.categoryId(),\
+    \ dto.chapterIds());\n        return ResponseEntity.noContent().build();\n   \
+    \ }\n\n    // ==================== ARTIGOS ====================\n\n    @PostMapping(\"\
+    /articles\")\n    public ResponseEntity<ManualArticleDTO> createArticle(@RequestBody\
+    \ @Valid CreateManualArticleDTO dto) {\n        var created = articleService.createArticle(dto);\n\
+    \        var dtoResponse = ManualArticleDTO.fromEntity(created, 0L, 0L); // 0\
+    \ feedbacks inicialmente\n        return ResponseEntity\n                .created(URI.create(\"\
+    /api/public/manual/articles/\" + created.getSlug()))\n                .body(dtoResponse);\n\
+    \    }\n\n    @PutMapping(\"/articles/{id}\")\n    public ResponseEntity<ManualArticleDTO>\
+    \ updateArticle(\n            @PathVariable UUID id,\n            @RequestBody\
+    \ @Valid UpdateManualArticleDTO dto) {\n        var updated = articleService.updateArticle(id,\
+    \ dto);\n        var dtoResponse = articleService.getArticleById(id); // Já inclui\
+    \ contagem de feedbacks\n        return ResponseEntity.ok(dtoResponse);\n    }\n\
+    \n    @DeleteMapping(\"/articles/{id}\")\n    public ResponseEntity<Void> deleteArticle(@PathVariable\
+    \ UUID id) {\n        articleService.deleteArticle(id);\n        return ResponseEntity.noContent().build();\n\
+    \    }\n\n    @PutMapping(\"/articles/r/reorder\")\n    public ResponseEntity<Void>\
+    \ reorderArticles(@RequestBody @Valid ReorderArticlesDTO dto) {\n        articleService.reorderArticles(dto.chapterId(),\
+    \ dto.articleIds());\n        return ResponseEntity.noContent().build();\n   \
+    \ }\n\n    // ==================== FEEDBACK (apenas visualização e deleção para\
+    \ admin) ====================\n\n    @GetMapping(\"/articles/{articleId}/feedback\"\
+    )\n    public ResponseEntity<Page<ArticleFeedbackDTO>> getArticleFeedback(\n \
+    \           @PathVariable UUID articleId,\n            @RequestParam(defaultValue\
+    \ = \"0\") int page,\n            @RequestParam(defaultValue = \"20\") int size)\
+    \ {\n\n        Page<ArticleFeedbackDTO> feedback = feedbackService.getFeedbackByArticle(articleId,\
+    \ page, size);\n        return ResponseEntity.ok(feedback);\n    }\n\n    @GetMapping(\"\
+    /articles/{articleId}/feedback/stats\")\n    public ResponseEntity<Map<String,\
+    \ Object>> getArticleFeedbackStats(@PathVariable UUID articleId) {\n        Map<String,\
+    \ Object> stats = feedbackService.getFeedbackStats(articleId);\n        return\
+    \ ResponseEntity.ok(stats);\n    }\n\n    @DeleteMapping(\"/feedback/{id}\")\n\
+    \    public ResponseEntity<Void> deleteFeedback(@PathVariable UUID id) {\n   \
+    \     feedbackService.deleteFeedback(id);\n        return ResponseEntity.noContent().build();\n\
+    \    }\n}"
+  info:
+    "size": "6548"
+    "last_modified": "2026-01-08T16:39:14.436832733"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/exception/GlobalExceptionHandler.java"
@@ -2415,7 +3336,7 @@ files:
     \        return ResponseEntity.status(status).body(error);\n    }\n}"
   info:
     "size": "3929"
-    "last_modified": "2026-01-07T16:01:24.789618299"
+    "last_modified": "2026-01-08T16:39:14.441439185"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/exception/ResourceNotFoundException.java"
@@ -2424,7 +3345,7 @@ files:
     \ {\n        super(message);\n    }\n}"
   info:
     "size": "192"
-    "last_modified": "2026-01-07T16:01:24.792796435"
+    "last_modified": "2026-01-08T16:39:14.443669997"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "main/java/com/caco/sitedocaco/exception/BusinessRuleException.java"
@@ -2433,7 +3354,7 @@ files:
     \ {\n        super(message);\n    }\n}\n"
   info:
     "size": "185"
-    "last_modified": "2026-01-07T16:01:24.795918104"
+    "last_modified": "2026-01-08T16:39:14.445692287"
     "mime_type": "text/x-java-source"
     "extension": ".java"
 - path: "test/java/com/caco/sitedocaco/SitedocacoApplicationTests.java"
@@ -2442,6 +3363,6 @@ files:
     \ SitedocacoApplicationTests {\n\n\t@Test\n\tvoid contextLoads() {\n\t}\n\n}\n"
   info:
     "size": "215"
-    "last_modified": "2026-01-07T16:01:24.807359346"
+    "last_modified": "2026-01-08T16:39:14.453176885"
     "mime_type": "text/x-java-source"
     "extension": ".java"
