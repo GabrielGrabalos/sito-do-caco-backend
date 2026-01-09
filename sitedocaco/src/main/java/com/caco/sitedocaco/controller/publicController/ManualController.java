@@ -1,20 +1,13 @@
 package com.caco.sitedocaco.controller.publicController;
 
-import com.caco.sitedocaco.dto.request.manual.CreateArticleFeedbackDTO;
-import com.caco.sitedocaco.dto.response.manual.ArticleFeedbackDTO;
-import com.caco.sitedocaco.dto.response.manual.ManualArticleDTO;
-import com.caco.sitedocaco.dto.response.manual.ManualCategoryDTO;
-import com.caco.sitedocaco.dto.response.manual.ManualChapterDTO;
+import com.caco.sitedocaco.dto.response.manual.*;
 import com.caco.sitedocaco.service.ArticleFeedbackService;
 import com.caco.sitedocaco.service.ManualArticleService;
 import com.caco.sitedocaco.service.ManualCategoryService;
 import com.caco.sitedocaco.service.ManualChapterService;
 import com.caco.sitedocaco.service.UserService;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -72,26 +65,30 @@ public class ManualController {
     // ==================== ARTIGOS ====================
 
     @GetMapping("/articles")
-    public ResponseEntity<List<ManualArticleDTO>> getAllArticles() {
-        List<ManualArticleDTO> articles = articleService.getAllArticles();
+    public ResponseEntity<List<ManualArticleWithoutFeedbackCountDTO>> getAllArticles() {
+        List<ManualArticleWithoutFeedbackCountDTO> articles = articleService.getAllArticles().stream()
+                .map(ManualArticleWithoutFeedbackCountDTO::fromManualArticleDTO)
+                .toList();
         return ResponseEntity.ok(articles);
     }
 
     @GetMapping("/articles/chapter/{chapterId}")
-    public ResponseEntity<List<ManualArticleDTO>> getArticlesByChapter(@PathVariable UUID chapterId) {
-        List<ManualArticleDTO> articles = articleService.getArticlesByChapter(chapterId);
+    public ResponseEntity<List<ManualArticleWithoutFeedbackCountDTO>> getArticlesByChapter(@PathVariable UUID chapterId) {
+        List<ManualArticleWithoutFeedbackCountDTO> articles = articleService.getArticlesByChapter(chapterId).stream()
+                .map(ManualArticleWithoutFeedbackCountDTO::fromManualArticleDTO)
+                .toList();
         return ResponseEntity.ok(articles);
     }
 
     @GetMapping("/articles/{id}")
-    public ResponseEntity<ManualArticleDTO> getArticleById(@PathVariable UUID id) {
-        ManualArticleDTO article = articleService.getArticleById(id);
+    public ResponseEntity<ManualArticleWithoutFeedbackCountDTO> getArticleById(@PathVariable UUID id) {
+        ManualArticleWithoutFeedbackCountDTO article = ManualArticleWithoutFeedbackCountDTO.fromManualArticleDTO( articleService.getArticleById(id));
         return ResponseEntity.ok(article);
     }
 
     @GetMapping("/articles/slug/{slug}")
-    public ResponseEntity<ManualArticleDTO> getArticleBySlug(@PathVariable String slug) {
-        ManualArticleDTO article = articleService.getArticleBySlug(slug);
+    public ResponseEntity<ManualArticleWithoutFeedbackCountDTO> getArticleBySlug(@PathVariable String slug) {
+        ManualArticleWithoutFeedbackCountDTO article = ManualArticleWithoutFeedbackCountDTO.fromManualArticleDTO( articleService.getArticleBySlug(slug));
         return ResponseEntity.ok(article);
     }
 }
