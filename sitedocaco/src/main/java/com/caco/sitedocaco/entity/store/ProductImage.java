@@ -1,16 +1,14 @@
-// main/java/com/caco/sitedocaco/entity/store/ProductVariation.java
 package com.caco.sitedocaco.entity.store;
 
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.math.BigDecimal;
 import java.util.UUID;
 
 @Entity
-@Table(name = "product_variation")
+@Table(name = "product_image")
 @Data
-public class ProductVariation {
+public class ProductImage {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
@@ -20,10 +18,8 @@ public class ProductVariation {
     private Product product;
 
     @Column(nullable = false)
-    private String name;
+    private String imageUrl;
 
-    @Column(precision = 10, scale = 2)
-    private BigDecimal additionalPrice;
-
-    private Integer stockQuantity;
+    @Column(nullable = false)
+    private Integer displayOrder;
 }

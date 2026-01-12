@@ -34,4 +34,4 @@ build/
 
 *.properties
 
-/structure_exports/
+/structure_exports/**

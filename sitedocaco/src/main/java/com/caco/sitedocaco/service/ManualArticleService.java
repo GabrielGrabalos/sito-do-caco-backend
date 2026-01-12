@@ -10,7 +10,6 @@ import com.caco.sitedocaco.exception.BusinessRuleException;
 import com.caco.sitedocaco.exception.ResourceNotFoundException;
 import com.caco.sitedocaco.repository.ArticleFeedbackRepository;
 import com.caco.sitedocaco.repository.ManualArticleRepository;
-import com.caco.sitedocaco.repository.ManualChapterRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -23,7 +22,6 @@ import java.util.UUID;
 public class ManualArticleService {
 
     private final ManualArticleRepository articleRepository;
-    private final ManualChapterRepository chapterRepository;
     private final ArticleFeedbackRepository feedbackRepository;
     private final ManualChapterService chapterService;
 

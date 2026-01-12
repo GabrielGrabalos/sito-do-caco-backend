@@ -3,30 +3,16 @@ package com.caco.sitedocaco.entity.store;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
-@Data
 @Entity
-@Table
+@Table(name = "product")
+@Data
 public class Product {
-    /*
-    1. **`Product`**
-        - `UUID id`
-        - `String name` (ex: "Moletom do Curso 2026")
-        - `String description` (Markdown)
-        - `Integer price` (em centavos, ex: 5999 para R$59,99)
-        - `String coverImage`
-        - `List<String> galleryImages` (ElementCollection ou tabela separada)
-        - `ProductStatus status` (Enum: `AVAILABLE`, `OUT_OF_STOCK`, `PRE_ORDER`)
-        - `ProductCategory category` (Enum ou Entidade: `ROUPAS`, `CANECAS`, `ADESIVOS_FISICOS`, `OUTROS`)
-    */
-
-    public enum ProductStatus {
-        AVAILABLE,
-        OUT_OF_STOCK,
-        PRE_ORDER
-    }
-
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
@@ -34,23 +20,48 @@ public class Product {
     @Column(nullable = false)
     private String name;
 
+    @Column(nullable = false, unique = true)
+    private String slug;
+
     @Column(columnDefinition = "TEXT")
     private String description;
 
+    @Column(nullable = false, precision = 10, scale = 2)
+    private BigDecimal price;
+
+    @Column(precision = 10, scale = 2)
+    private BigDecimal originalPrice;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "category_id")
+    private ProductCategory category;
+
+    private Boolean manageStock = true;
+
+    private Integer stockQuantity = 0;
+
+    private Boolean active = true;
+
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OrderBy("displayOrder ASC")
+    private List<ProductImage> images = new ArrayList<>();
+
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<ProductVariation> variations = new ArrayList<>();
+
     @Column(nullable = false)
-    private java.math.BigDecimal price;
+    private LocalDateTime createdAt;
 
-    private String coverImage;
+    private LocalDateTime updatedAt;
 
-    @ElementCollection
-    @CollectionTable(name = "product_gallery_images", joinColumns = @JoinColumn(name = "product_id"))
-    @Column(name = "image_url")
-    private java.util.List<String> galleryImages;
+    @PrePersist
+    protected void onCreate() {
+        createdAt = LocalDateTime.now();
+        updatedAt = LocalDateTime.now();
+    }
 
-    @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
-    private ProductStatus status;
-
-    @Column(nullable = false)
-    private String category;
+    @PreUpdate
+    protected void onUpdate() {
+        updatedAt = LocalDateTime.now();
+    }
 }
