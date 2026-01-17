@@ -2,18 +2,14 @@ package com.caco.sitedocaco.service;
 
 import com.caco.sitedocaco.dto.request.store.CreateProductDTO;
 import com.caco.sitedocaco.dto.request.store.UpdateProductDTO;
-import com.caco.sitedocaco.dto.response.store.ProductDetailAdminDTO;
-import com.caco.sitedocaco.dto.response.store.ProductDetailDTO;
-import com.caco.sitedocaco.dto.response.store.ProductOverviewDTO;
-import com.caco.sitedocaco.dto.response.store.ProductVariationDTO;
+import com.caco.sitedocaco.dto.response.store.*;
 import com.caco.sitedocaco.entity.enums.ImageType;
 import com.caco.sitedocaco.entity.store.Product;
 import com.caco.sitedocaco.entity.store.ProductCategory;
 import com.caco.sitedocaco.entity.store.ProductImage;
-import com.caco.sitedocaco.entity.store.ProductVariation;
 import com.caco.sitedocaco.exception.BusinessRuleException;
 import com.caco.sitedocaco.exception.ResourceNotFoundException;
-import com.caco.sitedocaco.repository.OrderRepository;
+import com.caco.sitedocaco.repository.ProductImageRepository;
 import com.caco.sitedocaco.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -21,7 +17,6 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.UUID;
@@ -33,7 +28,7 @@ public class ProductService {
 
     private final ProductRepository productRepository;
     private final ProductCategoryService categoryService;
-    private final OrderRepository orderRepository;
+    private final ProductImageRepository productImageRepository;
     private final ImgBBService imgBBService;
 
     // Admin: todos os produtos
@@ -51,8 +46,8 @@ public class ProductService {
     }
 
     // Público: produtos ativos por categoria (ordenados por popularidade)
-    public List<ProductOverviewDTO> getActiveProductsByCategory(UUID categoryId) {
-        List<Product> products = productRepository.findActiveProductsByCategoryOrderByPopularity(categoryId);
+    public List<ProductOverviewDTO> getActiveProductsByCategory(String categorySlug) {
+        List<Product> products = productRepository.findActiveProductsByCategoryOrderByPopularity(categorySlug);
         return products.stream()
                 .map(this::toOverviewDTO)
                 .toList();
@@ -96,7 +91,7 @@ public class ProductService {
         return toDetailAdminDTO(product);
     }
 
-    public ProductDetailAdminDTO createProduct(CreateProductDTO dto) throws IOException {
+    public ProductDetailAdminDTO createProduct(CreateProductDTO dto) {
         if (productRepository.existsBySlug(dto.slug())) {
             throw new BusinessRuleException("Já existe um produto com este slug");
         }
@@ -111,30 +106,64 @@ public class ProductService {
         product.setManageStock(dto.manageStock() != null ? dto.manageStock() : true);
         product.setStockQuantity(dto.stockQuantity() != null ? dto.stockQuantity() : 0);
 
-        if (dto.categoryId() != null) {
-            ProductCategory category = categoryService.getCategoryEntityById(dto.categoryId());
-            product.setCategory(category);
-        }
-
-        // Upload de imagens
-        if (dto.images() != null && !dto.images().isEmpty()) {
-            List<ProductImage> images = new ArrayList<>();
-            for (int i = 0; i < dto.images().size(); i++) {
-                MultipartFile file = dto.images().get(i);
-                if (!file.isEmpty()) {
-                    String imageUrl = imgBBService.uploadImage(file, ImageType.PRODUCT_GALLERY);
-                    ProductImage productImage = new ProductImage();
-                    productImage.setProduct(product);
-                    productImage.setImageUrl(imageUrl);
-                    productImage.setDisplayOrder(i);
-                    images.add(productImage);
-                }
-            }
-            product.setImages(images);
-        }
+        ProductCategory category = categoryService.getCategoryEntityById(dto.categoryId());
+        product.setCategory(category);
 
         Product savedProduct = productRepository.save(product);
         return toDetailAdminDTO(savedProduct);
+    }
+
+    @Transactional
+    public List<ProductImageResponseDTO> getProductImages(UUID productId) {
+        List<ProductImage> images = productImageRepository.findByProductIdOrderByDisplayOrderAsc(productId);
+
+        return images.stream()
+                .map(img -> new ProductImageResponseDTO(
+                        img.getId(),
+                        img.getImageUrl(),
+                        img.getDisplayOrder(),
+                        productId
+                ))
+                .toList();
+    }
+
+    @Transactional
+    public ProductImageResponseDTO addProductImage(UUID productId, MultipartFile imageFile) throws IOException {
+        // 1. Buscar produto
+        Product product = productRepository.findById(productId)
+                .orElseThrow(() -> new ResourceNotFoundException("Produto não encontrado"));
+
+        // 2. Fazer upload da imagem
+        String imageUrl = imgBBService.uploadImage(imageFile, ImageType.PRODUCT_GALLERY);
+
+        // 3. Criar entidade ProductImage
+        ProductImage productImage = new ProductImage();
+        productImage.setProduct(product);
+        productImage.setImageUrl(imageUrl);
+
+        // 4. Definir ordem (última posição)
+        List<ProductImage> existingImages = productImageRepository.findByProductIdOrderByDisplayOrderAsc(productId);
+        int newOrder = existingImages.isEmpty() ? 0 : existingImages.getLast().getDisplayOrder() + 1;
+        productImage.setDisplayOrder(newOrder);
+
+        // 5. Salvar
+        ProductImage savedImage = productImageRepository.save(productImage);
+
+        // 6. Retornar DTO
+        return new ProductImageResponseDTO(
+                savedImage.getId(),
+                savedImage.getImageUrl(),
+                savedImage.getDisplayOrder(),
+                productId
+        );
+    }
+
+    @Transactional
+    public void deleteProductImage(UUID imageId) {
+        ProductImage image = productImageRepository.findById(imageId)
+                .orElseThrow(() -> new ResourceNotFoundException("Imagem não encontrada"));
+
+        productImageRepository.delete(image);
     }
 
     public ProductDetailAdminDTO updateProduct(UUID id, UpdateProductDTO dto) throws IOException {
@@ -240,7 +269,7 @@ public class ProductService {
 
     private ProductOverviewDTO toOverviewDTO(Product product) {
         String coverImage = product.getImages().isEmpty() ?
-                null : product.getImages().get(0).getImageUrl();
+                null : product.getImages().getFirst().getImageUrl();
 
         boolean outOfStock = product.getManageStock() && product.getStockQuantity() <= 0;
 
@@ -249,7 +278,6 @@ public class ProductService {
                 product.getName(),
                 product.getSlug(),
                 product.getPrice(),
-                product.getOriginalPrice(),
                 coverImage,
                 outOfStock,
                 product.getCategory() != null ? product.getCategory().getId() : null,

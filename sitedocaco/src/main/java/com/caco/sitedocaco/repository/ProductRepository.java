@@ -18,8 +18,8 @@ public interface ProductRepository extends JpaRepository<Product, UUID> {
     List<Product> findAllByOrderByCreatedAtDesc();
 
     // Público: produtos ativos por categoria ordenados por popularidade
-    @Query("SELECT p FROM Product p WHERE p.active = true AND p.category.id = :categoryId ORDER BY (SELECT COUNT(o.id) FROM Order o WHERE o.product = p) DESC")
-    List<Product> findActiveProductsByCategoryOrderByPopularity(UUID categoryId);
+    @Query("SELECT p FROM Product p WHERE p.active = true AND p.category.slug = :categorySlug ORDER BY (SELECT COUNT(o.id) FROM Order o WHERE o.product = p) DESC")
+    List<Product> findActiveProductsByCategoryOrderByPopularity(String categorySlug);
 
     // Admin: produtos por categoria
     List<Product> findByCategoryIdOrderByCreatedAtDesc(UUID categoryId);

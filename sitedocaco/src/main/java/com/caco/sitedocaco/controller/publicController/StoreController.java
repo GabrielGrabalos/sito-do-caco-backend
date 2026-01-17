@@ -25,9 +25,9 @@ public class StoreController {
         return ResponseEntity.ok(categoryService.getCategoriesWithActiveProducts());
     }
 
-    @GetMapping("/categories/{categoryId}/products")
-    public ResponseEntity<List<ProductOverviewDTO>> getActiveProductsByCategory(@PathVariable UUID categoryId) {
-        return ResponseEntity.ok(productService.getActiveProductsByCategory(categoryId));
+    @GetMapping("/categories/{categorySlug}/products")
+    public ResponseEntity<List<ProductOverviewDTO>> getActiveProductsByCategory(@PathVariable String categorySlug) {
+        return ResponseEntity.ok(productService.getActiveProductsByCategory(categorySlug));
     }
 
     @GetMapping("/products/{id}")

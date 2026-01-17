@@ -8,6 +8,7 @@ import com.caco.sitedocaco.dto.request.store.UpdateProductDTO;
 import com.caco.sitedocaco.dto.request.store.UpdateProductVariationDTO;
 import com.caco.sitedocaco.dto.response.store.ProductCategoryDTO;
 import com.caco.sitedocaco.dto.response.store.ProductDetailAdminDTO;
+import com.caco.sitedocaco.dto.response.store.ProductImageResponseDTO;
 import com.caco.sitedocaco.dto.response.store.ProductVariationDTO;
 import com.caco.sitedocaco.service.ProductCategoryService;
 import com.caco.sitedocaco.service.ProductService;
@@ -17,7 +18,9 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.util.List;
@@ -26,6 +29,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/api/admin/store")
 @RequiredArgsConstructor
+@PreAuthorize("hasRole('ADMIN')")
 public class StoreAdminController {
 
     private final ProductCategoryService categoryService;
@@ -91,17 +95,17 @@ public class StoreAdminController {
         return ResponseEntity.ok(productService.getProductBySlug(slug));
     }
 
-    @PostMapping(value = "/products", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    @PostMapping("/products")
     public ResponseEntity<ProductDetailAdminDTO> createProduct(
-            @ModelAttribute @Valid CreateProductDTO dto) throws IOException {
+            @RequestBody @Valid CreateProductDTO dto) {
         ProductDetailAdminDTO created = productService.createProduct(dto);
         return ResponseEntity.status(HttpStatus.CREATED).body(created);
     }
 
-    @PutMapping(value = "/products/{id}", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    @PutMapping("/products/{id}")
     public ResponseEntity<ProductDetailAdminDTO> updateProduct(
             @PathVariable UUID id,
-            @ModelAttribute @Valid UpdateProductDTO dto) throws IOException {
+            @RequestBody @Valid UpdateProductDTO dto) throws IOException {
         return ResponseEntity.ok(productService.updateProduct(id, dto));
     }
 
@@ -118,6 +122,28 @@ public class StoreAdminController {
         productService.reorderProductImages(productId, imageIds);
         return ResponseEntity.ok().build();
     }
+
+    @GetMapping("/products/{productId}/images")
+    public ResponseEntity<List<ProductImageResponseDTO>> getProductImages(@PathVariable UUID productId) {
+        return ResponseEntity.ok(productService.getProductImages(productId));
+    }
+
+    @PostMapping("/products/{productId}/images")
+    public ResponseEntity<ProductImageResponseDTO> uploadProductImage(
+            @PathVariable UUID productId,
+            @RequestParam("image") MultipartFile imageFile) throws IOException {
+
+        ProductImageResponseDTO response = productService.addProductImage(productId, imageFile);
+        return ResponseEntity.ok(response);
+    }
+
+    // Deletar uma imagem específica
+    @DeleteMapping("/images/{imageId}")
+    public ResponseEntity<Void> deleteProductImage(@PathVariable UUID imageId) {
+        productService.deleteProductImage(imageId);
+        return ResponseEntity.noContent().build();
+    }
+
 
     // ========== VARIAÇÕES ==========
 

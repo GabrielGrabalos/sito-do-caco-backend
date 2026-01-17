@@ -9,7 +9,6 @@ public record ProductOverviewDTO(
         String name,
         String slug,
         BigDecimal price,
-        BigDecimal originalPrice,
         String coverImage,
         boolean outOfStock,
         UUID categoryId,

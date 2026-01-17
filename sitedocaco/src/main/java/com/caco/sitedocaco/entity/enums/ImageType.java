@@ -8,7 +8,7 @@ public enum ImageType {
     BANNER_IMAGE("banner", 21, 9, 1920, 822, 8 * 1024 * 1024), // 8MB max
     EVENT_COVER("event", 4, 3, 1200, 900, 8 * 1024 * 1024), // 8MB max
     NEWS_COVER("news", 3, 2, 1200, 800, 5 * 1024 * 1024), // 5MB max
-    PRODUCT_GALLERY("product", 1, 1, 2000, 2000, 10 * 1024 * 1024); // 10MB max
+    PRODUCT_GALLERY("product", 1, 1, 4000, 4000, 10 * 1024 * 1024); // 10MB max
 
     private final String folderName;
     private final int aspectRatioWidth;

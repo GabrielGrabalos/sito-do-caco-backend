@@ -54,5 +54,5 @@ public class JwtService {
     // 4. Expiration Time in Millis
     public long getExpirationInMillis() {
         return expiration;
-        }
+    }
 }

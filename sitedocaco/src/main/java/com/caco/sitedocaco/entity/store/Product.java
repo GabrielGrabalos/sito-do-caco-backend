@@ -33,7 +33,7 @@ public class Product {
     private BigDecimal originalPrice;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "category_id")
+    @JoinColumn(name = "category_id", nullable = false)
     private ProductCategory category;
 
     private Boolean manageStock = true;

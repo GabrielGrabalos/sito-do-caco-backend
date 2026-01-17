@@ -18,9 +18,8 @@ public record CreateProductDTO(
         String description,
         @NotNull @Positive BigDecimal price,
         BigDecimal originalPrice,
-        UUID categoryId,
+        @NotNull UUID categoryId,
         Boolean manageStock,
         @Min(0) Integer stockQuantity,
-        Boolean active,
-        List<MultipartFile> images
+        Boolean active
 ) {}
