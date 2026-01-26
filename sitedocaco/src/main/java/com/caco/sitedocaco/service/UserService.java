@@ -103,4 +103,13 @@ public class UserService {
         user.setAvatarUrl(null);
         userRepository.save(user);
     }
+
+    /**
+     * Pegar usuário por ID (usado em outros serviços)
+     */
+    @Transactional(readOnly = true)
+    public User getUserById(java.util.UUID userId) {
+        return userRepository.findById(userId)
+                .orElseThrow(() -> new ResourceNotFoundException("Usuário não encontrado"));
+    }
 }

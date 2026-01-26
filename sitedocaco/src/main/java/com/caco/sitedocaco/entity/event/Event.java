@@ -3,6 +3,8 @@ package com.caco.sitedocaco.entity.event;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -46,8 +48,10 @@ public class Event {
     private UUID id;
 
     private String title;
+
     @Lob
     private String description;
+
     private java.time.LocalDateTime startDate;
     private java.time.LocalDateTime endDate;
     private String location;
@@ -61,4 +65,17 @@ public class Event {
 
     @Enumerated(EnumType.STRING)
     private EventStatus status;
+
+    // Adicionar relacionamento com galeria
+    @OneToMany(mappedBy = "event", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @OrderBy("id ASC")
+    private List<EventGalleryItem> galleryItems = new ArrayList<>();
+
+    // Método helper para obter URLs das imagens da galeria
+    public List<String> getGalleryImageUrls() {
+        return galleryItems.stream()
+                .filter(item -> item.getType() == EventGalleryItem.MediaType.IMAGE)
+                .map(EventGalleryItem::getMediaUrl)
+                .toList();
+    }
 }

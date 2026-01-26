@@ -1,0 +1,32 @@
+package com.caco.sitedocaco.dto.response.event;
+
+import com.caco.sitedocaco.entity.event.Event;
+
+import java.time.LocalDateTime;
+import java.util.UUID;
+
+public record EventSummaryDTO(
+        UUID id,
+        String title,
+        LocalDateTime startDate,
+        LocalDateTime endDate,
+        String location,
+        String coverImage,
+        Event.EventType type,
+        Event.EventImportance importance,
+        Event.EventStatus status
+) {
+    public static EventSummaryDTO fromEntity(Event event) {
+        return new EventSummaryDTO(
+                event.getId(),
+                event.getTitle(),
+                event.getStartDate(),
+                event.getEndDate(),
+                event.getLocation(),
+                event.getCoverImage(),
+                event.getType(),
+                event.getImportance(),
+                event.getStatus()
+        );
+    }
+}
