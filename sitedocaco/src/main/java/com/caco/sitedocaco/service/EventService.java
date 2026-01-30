@@ -20,6 +20,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.*;
 
@@ -32,6 +33,7 @@ public class EventService {
     private final EventGalleryItemRepository galleryItemRepository;
     private final UserEventRepository userEventRepository;
     private final UserService userService;
+    private final ImgBBService imgBBService;
 
     // ========== MÉTODOS PÚBLICOS ==========
 
@@ -142,7 +144,7 @@ public class EventService {
     // ========== MÉTODOS ADMIN ==========
 
     @Transactional
-    public Event createEvent(CreateEventDTO dto) {
+    public Event createEvent(CreateEventDTO dto) throws IOException {
         validateEventDates(dto.startDate(), dto.endDate());
 
         Event event = new Event();
@@ -151,24 +153,15 @@ public class EventService {
         event.setStartDate(dto.startDate());
         event.setEndDate(dto.endDate());
         event.setLocation(dto.location());
-        event.setCoverImage(dto.coverImage());
+
+        String coverImageUrl = imgBBService.uploadImage(dto.coverImage());
+
+        event.setCoverImage(coverImageUrl);
         event.setType(dto.type());
         event.setImportance(dto.importance());
         event.setStatus(Event.EventStatus.SCHEDULED);
 
-        Event savedEvent = eventRepository.save(event);
-
-        if (dto.galleryImages() != null) {
-            for (String imageUrl : dto.galleryImages()) {
-                EventGalleryItem galleryItem = new EventGalleryItem();
-                galleryItem.setEvent(savedEvent);
-                galleryItem.setMediaUrl(imageUrl);
-                galleryItem.setType(EventGalleryItem.MediaType.IMAGE);
-                galleryItemRepository.save(galleryItem);
-            }
-        }
-
-        return savedEvent;
+        return eventRepository.save(event);
     }
 
     @Transactional

@@ -3,9 +3,9 @@ package com.caco.sitedocaco.dto.request.event;
 import com.caco.sitedocaco.entity.event.Event;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 public record CreateEventDTO(
         @NotBlank(message = "O título é obrigatório")
@@ -22,13 +22,12 @@ public record CreateEventDTO(
 
         String location,
 
-        String coverImage,
+        @NotNull(message = "A imagem de capa é obrigatória")
+        MultipartFile coverImage,
 
         @NotNull(message = "O tipo é obrigatório")
         Event.EventType type,
 
         @NotNull(message = "A importância é obrigatória")
-        Event.EventImportance importance,
-
-        List<String> galleryImages
+        Event.EventImportance importance
 ) {}
