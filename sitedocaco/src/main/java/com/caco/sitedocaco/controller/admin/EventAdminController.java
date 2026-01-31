@@ -33,10 +33,10 @@ public class EventAdminController {
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 
-    @PutMapping("/{eventId}")
+    @PutMapping(value = "/{eventId}", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<EventResponseDTO> updateEvent(
             @PathVariable UUID eventId,
-            @Valid @RequestBody UpdateEventDTO dto) {
+            @ModelAttribute @Valid UpdateEventDTO dto) throws IOException {
         Event event = eventService.updateEvent(eventId, dto);
         EventResponseDTO response = eventService.getEventById(event.getId(), null);
         return ResponseEntity.ok(response);

@@ -154,7 +154,9 @@ public class EventService {
         event.setEndDate(dto.endDate());
         event.setLocation(dto.location());
 
-        String coverImageUrl = imgBBService.uploadImage(dto.coverImage());
+        String coverImageUrl = null;
+        if( dto.coverImage() != null)
+            coverImageUrl = imgBBService.uploadImage(dto.coverImage());
 
         event.setCoverImage(coverImageUrl);
         event.setType(dto.type());
@@ -165,7 +167,7 @@ public class EventService {
     }
 
     @Transactional
-    public Event updateEvent(UUID eventId, UpdateEventDTO dto) {
+    public Event updateEvent(UUID eventId, UpdateEventDTO dto) throws IOException {
         Event event = eventRepository.findById(eventId)
                 .orElseThrow(() -> new ResourceNotFoundException("Evento não encontrado"));
 
@@ -174,11 +176,16 @@ public class EventService {
         }
 
         if (dto.title() != null) event.setTitle(dto.title());
+        if (dto.slug() != null) event.setSlug(dto.slug());
         if (dto.description() != null) event.setDescription(dto.description());
         if (dto.startDate() != null) event.setStartDate(dto.startDate());
         if (dto.endDate() != null) event.setEndDate(dto.endDate());
         if (dto.location() != null) event.setLocation(dto.location());
-        if (dto.coverImage() != null) event.setCoverImage(dto.coverImage());
+        if (dto.removeCoverImage() != null && dto.removeCoverImage()) event.setCoverImage(null);
+        if (dto.coverImage() != null) {
+            String coverImageUrl = imgBBService.uploadImage(dto.coverImage());
+            event.setCoverImage(coverImageUrl);
+        }
         if (dto.type() != null) event.setType(dto.type());
         if (dto.importance() != null) event.setImportance(dto.importance());
         if (dto.status() != null) event.setStatus(dto.status());
@@ -237,5 +244,28 @@ public class EventService {
         } else {
             return Event.EventStatus.ENDED;
         }
+    }
+
+    public EventResponseDTO getEventBySlug(String slug, UUID userId) {
+        Event event = eventRepository.findBySlug(slug)
+                .orElseThrow(() -> new ResourceNotFoundException("Evento não encontrado"));
+
+        // Buscar status do usuário, se autenticado
+        UserEvent.ParticipationStatus userStatus = null;
+        if (userId != null) {
+            Optional<UserEvent> userEvent = userEventRepository.findByUserAndEvent(
+                    userService.getUserById(userId),
+                    event
+            );
+            userStatus = userEvent.map(UserEvent::getStatus).orElse(null);
+        }
+
+        // Buscar galeria
+        List<EventGalleryItem> galleryItems = galleryItemRepository.findByEventIdOrderByIdAsc(event.getId());
+        List<EventGalleryItemDTO> gallery = galleryItems.stream()
+                .map(EventGalleryItemDTO::fromEntity)
+                .toList();
+
+        return EventResponseDTO.fromEntity(event, gallery, userStatus);
     }
 }

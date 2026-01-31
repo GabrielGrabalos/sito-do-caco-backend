@@ -41,4 +41,12 @@ public class EventController {
         EventResponseDTO event = eventService.getEventById(eventId, userId);
         return ResponseEntity.ok(event);
     }
+
+    @GetMapping("/slug/{slug}")
+    public ResponseEntity<EventResponseDTO> getEventBySlug(
+            @PathVariable String slug,
+            @RequestAttribute(value = "userId", required = false) UUID userId) {
+        EventResponseDTO event = eventService.getEventBySlug(slug, userId);
+        return ResponseEntity.ok(event);
+    }
 }

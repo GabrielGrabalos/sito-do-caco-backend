@@ -15,10 +15,12 @@ public class Event {
     1. **`Event`**
         - `UUID id`
         - `String title`
+        - `String slug` (único)
         - `String description` (Markdown)
         - `LocalDateTime startDate`
         - `LocalDateTime endDate`
         - `String location`
+        - `String locationUrl` (URL para o mapa da localização)
         - `String coverImage`
         - `EventType type` (Enum: `CACO`, `IC`, `FERIADO`)
         - `EventImportance importance` (Enum: `MAJOR`, `MINOR`)
@@ -49,12 +51,16 @@ public class Event {
 
     private String title;
 
+    @Column(unique = true, nullable = false)
+    private String slug;
+
     @Lob
     private String description;
 
     private java.time.LocalDateTime startDate;
     private java.time.LocalDateTime endDate;
     private String location;
+    private String locationUrl; // URL para o mapa da localização
     private String coverImage;
 
     @Enumerated(EnumType.STRING)

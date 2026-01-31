@@ -8,6 +8,7 @@ import java.util.UUID;
 public record EventSummaryDTO(
         UUID id,
         String title,
+        String slug,
         LocalDateTime startDate,
         LocalDateTime endDate,
         String location,
@@ -20,6 +21,7 @@ public record EventSummaryDTO(
         return new EventSummaryDTO(
                 event.getId(),
                 event.getTitle(),
+                event.getSlug(),
                 event.getStartDate(),
                 event.getEndDate(),
                 event.getLocation(),

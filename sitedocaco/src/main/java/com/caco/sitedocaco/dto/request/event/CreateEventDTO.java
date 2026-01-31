@@ -11,6 +11,9 @@ public record CreateEventDTO(
         @NotBlank(message = "O título é obrigatório")
         String title,
 
+        @NotBlank(message = "O slug é obrigatório")
+        String slug,
+
         @NotBlank(message = "A descrição é obrigatória")
         String description,
 
@@ -21,8 +24,7 @@ public record CreateEventDTO(
         LocalDateTime endDate,
 
         String location,
-
-        @NotNull(message = "A imagem de capa é obrigatória")
+        String locationUrl,
         MultipartFile coverImage,
 
         @NotNull(message = "O tipo é obrigatório")

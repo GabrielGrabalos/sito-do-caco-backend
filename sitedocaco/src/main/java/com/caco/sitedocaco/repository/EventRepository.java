@@ -9,10 +9,12 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDateTime;
+import java.util.Optional;
 import java.util.UUID;
 
 @Repository
 public interface EventRepository extends JpaRepository<Event, UUID> {
+    Optional<Event> findBySlug(String slug);
 
     // Eventos futuros e em andamento (ordenados por mais próximo)
     @Query("SELECT e FROM Event e WHERE e.endDate >= :now ORDER BY e.startDate ASC")
