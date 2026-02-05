@@ -60,6 +60,7 @@ public class Event {
     private java.time.LocalDateTime startDate;
     private java.time.LocalDateTime endDate;
     private String location;
+    @Column(length = 1000)
     private String locationUrl; // URL para o mapa da localização
     private String coverImage;
 

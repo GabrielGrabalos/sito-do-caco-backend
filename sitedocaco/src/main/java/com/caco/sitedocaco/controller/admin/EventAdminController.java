@@ -24,7 +24,6 @@ public class EventAdminController {
 
     private final EventService eventService;
 
-
     @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<EventResponseDTO> createEvent(
             @Valid @ModelAttribute CreateEventDTO dto) throws IOException {
