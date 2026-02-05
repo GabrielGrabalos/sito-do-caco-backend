@@ -21,7 +21,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.io.IOException;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.YearMonth;
 import java.util.*;
 
 @Slf4j
@@ -75,6 +77,31 @@ public class EventService {
         return EventResponseDTO.fromEntity(event, gallery, userStatus);
     }
 
+    @Transactional(readOnly = true)
+    public Page<EventSummaryDTO> getEventsByMonthWithMargin(int year, int month, Pageable pageable) {
+        // Cria YearMonth para o mês especificado
+        YearMonth yearMonth = YearMonth.of(year, month);
+
+        // Primeiro dia do mês
+        LocalDate firstDayOfMonth = yearMonth.atDay(1);
+
+        // Último dia do mês
+        LocalDate lastDayOfMonth = yearMonth.atEndOfMonth();
+
+        // Calcula as datas com margem (7 dias antes e depois)
+        LocalDateTime startDateWithMargin = firstDayOfMonth.minusDays(7).atStartOfDay();
+        LocalDateTime endDateWithMargin = lastDayOfMonth.plusDays(7).atTime(23, 59, 59);
+
+        // Busca eventos que ocorrem dentro deste intervalo
+        Page<Event> events = eventRepository.findEventsByDateRange(
+                startDateWithMargin,
+                endDateWithMargin,
+                pageable
+        );
+
+        return events.map(EventSummaryDTO::fromEntity);
+    }
+
     // ========== MÉTODOS PRIVADOS ==========
 
     @Transactional(readOnly = true)
@@ -106,17 +133,17 @@ public class EventService {
 
         Optional<UserEvent> existing = userEventRepository.findByUserAndEvent(user, event);
 
+        UserEvent userEvent;
         if (existing.isPresent()) {
-            UserEvent userEvent = existing.get();
-            userEvent.setStatus(status);
-            userEventRepository.save(userEvent);
+            userEvent = existing.get();
         } else {
-            UserEvent userEvent = new UserEvent();
+            userEvent = new UserEvent();
             userEvent.setUser(user);
             userEvent.setEvent(event);
-            userEvent.setStatus(status);
-            userEventRepository.save(userEvent);
         }
+
+        userEvent.setStatus(status);
+        userEventRepository.save(userEvent);
     }
 
     @Transactional
@@ -149,6 +176,7 @@ public class EventService {
 
         Event event = new Event();
         event.setTitle(dto.title());
+        event.setSlug(dto.slug());
         event.setDescription(dto.description());
         event.setStartDate(dto.startDate());
         event.setEndDate(dto.endDate());
@@ -181,6 +209,7 @@ public class EventService {
         if (dto.startDate() != null) event.setStartDate(dto.startDate());
         if (dto.endDate() != null) event.setEndDate(dto.endDate());
         if (dto.location() != null) event.setLocation(dto.location());
+        if (dto.locationUrl() != null) event.setLocationUrl(dto.locationUrl());
         if (dto.removeCoverImage() != null && dto.removeCoverImage()) event.setCoverImage(null);
         if (dto.coverImage() != null) {
             String coverImageUrl = imgBBService.uploadImage(dto.coverImage());
@@ -221,7 +250,7 @@ public class EventService {
         }
     }
 
-    @Scheduled(cron = "0 0 * * * *")
+    @Scheduled(cron = "0 0 * * * *") // Executa todo início de hora
     @Transactional
     public void updateEventStatuses() {
         LocalDateTime now = LocalDateTime.now();

@@ -23,4 +23,15 @@ public interface EventRepository extends JpaRepository<Event, UUID> {
     // Eventos passados (ordenados por mais recente)
     @Query("SELECT e FROM Event e WHERE e.endDate < :now ORDER BY e.startDate DESC")
     Page<Event> findPastEvents(@Param("now") LocalDateTime now, Pageable pageable);
+
+    // Eventos dentro de um intervalo de datas com margem
+    @Query("SELECT e FROM Event e WHERE " +
+            "(e.startDate BETWEEN :startDate AND :endDate) OR " +
+            "(e.endDate BETWEEN :startDate AND :endDate) OR " +
+            "(e.startDate <= :startDate AND e.endDate >= :endDate) " +
+            "ORDER BY e.startDate ASC")
+    Page<Event> findEventsByDateRange(
+            @Param("startDate") LocalDateTime startDate,
+            @Param("endDate") LocalDateTime endDate,
+            Pageable pageable);
 }
