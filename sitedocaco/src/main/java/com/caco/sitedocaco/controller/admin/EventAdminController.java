@@ -1,7 +1,10 @@
 package com.caco.sitedocaco.controller.admin;
 
 import com.caco.sitedocaco.dto.request.event.CreateEventDTO;
+import com.caco.sitedocaco.dto.request.event.CreateGalleryItemDTO;
 import com.caco.sitedocaco.dto.request.event.UpdateEventDTO;
+import com.caco.sitedocaco.dto.request.event.UpdateGalleryItemDTO;
+import com.caco.sitedocaco.dto.response.event.EventGalleryItemDTO;
 import com.caco.sitedocaco.dto.response.event.EventResponseDTO;
 import com.caco.sitedocaco.entity.event.Event;
 import com.caco.sitedocaco.service.EventService;
@@ -45,5 +48,32 @@ public class EventAdminController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteEvent(@PathVariable UUID eventId) {
         eventService.deleteEvent(eventId);
+    }
+
+    // ========== GALLERY MANAGEMENT ==========
+
+    @PostMapping(value = "/{eventId}/gallery", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public ResponseEntity<EventGalleryItemDTO> addGalleryItem(
+            @PathVariable UUID eventId,
+            @Valid @ModelAttribute CreateGalleryItemDTO dto) throws IOException {
+        EventGalleryItemDTO item = eventService.createGalleryItem(eventId, dto);
+        return ResponseEntity.status(HttpStatus.CREATED).body(item);
+    }
+
+    @PutMapping("/{eventId}/gallery/{itemId}")
+    public ResponseEntity<EventGalleryItemDTO> updateGalleryItem(
+            @PathVariable UUID eventId,
+            @PathVariable UUID itemId,
+            @Valid @RequestBody UpdateGalleryItemDTO dto) {
+        EventGalleryItemDTO item = eventService.updateGalleryItem(eventId, itemId, dto);
+        return ResponseEntity.ok(item);
+    }
+
+    @DeleteMapping("/{eventId}/gallery/{itemId}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteGalleryItem(
+            @PathVariable UUID eventId,
+            @PathVariable UUID itemId) {
+        eventService.deleteGalleryItem(eventId, itemId);
     }
 }

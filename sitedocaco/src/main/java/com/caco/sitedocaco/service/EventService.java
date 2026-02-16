@@ -1,7 +1,9 @@
 package com.caco.sitedocaco.service;
 
 import com.caco.sitedocaco.dto.request.event.CreateEventDTO;
+import com.caco.sitedocaco.dto.request.event.CreateGalleryItemDTO;
 import com.caco.sitedocaco.dto.request.event.UpdateEventDTO;
+import com.caco.sitedocaco.dto.request.event.UpdateGalleryItemDTO;
 import com.caco.sitedocaco.dto.response.event.*;
 import com.caco.sitedocaco.entity.User;
 import com.caco.sitedocaco.entity.event.Event;
@@ -219,16 +221,6 @@ public class EventService {
         if (dto.importance() != null) event.setImportance(dto.importance());
         if (dto.status() != null) event.setStatus(dto.status());
 
-        if (dto.galleryImages() != null) {
-            galleryItemRepository.deleteByEventId(eventId);
-            for (String imageUrl : dto.galleryImages()) {
-                EventGalleryItem galleryItem = new EventGalleryItem();
-                galleryItem.setEvent(event);
-                galleryItem.setMediaUrl(imageUrl);
-                galleryItem.setType(EventGalleryItem.MediaType.IMAGE);
-                galleryItemRepository.save(galleryItem);
-            }
-        }
 
         return eventRepository.save(event);
     }
@@ -240,6 +232,79 @@ public class EventService {
         }
 
         eventRepository.deleteById(eventId);
+    }
+
+    // ========== GALLERY MANAGEMENT ==========
+
+    @Transactional
+    public EventGalleryItemDTO createGalleryItem(UUID eventId, CreateGalleryItemDTO dto) throws IOException {
+        // Validar DTO
+        dto.validate();
+
+        // Verificar se o evento existe
+        Event event = eventRepository.findById(eventId)
+                .orElseThrow(() -> new ResourceNotFoundException("Evento não encontrado"));
+
+        EventGalleryItem galleryItem = new EventGalleryItem();
+        galleryItem.setEvent(event);
+        galleryItem.setType(dto.type());
+        galleryItem.setCaption(dto.caption());
+
+        // Se recebeu multipart, fazer upload da imagem
+        if (dto.image() != null) {
+            String uploadedUrl = imgBBService.uploadImage(dto.image());
+            galleryItem.setMediaUrl(uploadedUrl);
+        } else {
+            // Se recebeu URL direta
+            galleryItem.setMediaUrl(dto.mediaUrl());
+        }
+
+        EventGalleryItem saved = galleryItemRepository.save(galleryItem);
+        return EventGalleryItemDTO.fromEntity(saved);
+    }
+
+    @Transactional
+    public EventGalleryItemDTO updateGalleryItem(UUID eventId, UUID itemId, UpdateGalleryItemDTO dto) {
+        // Verificar se o evento existe
+        if (!eventRepository.existsById(eventId)) {
+            throw new ResourceNotFoundException("Evento não encontrado");
+        }
+
+        // Buscar item da galeria
+        EventGalleryItem galleryItem = galleryItemRepository.findById(itemId)
+                .orElseThrow(() -> new ResourceNotFoundException("Item da galeria não encontrado"));
+
+        // Verificar se o item pertence ao evento
+        if (!galleryItem.getEvent().getId().equals(eventId)) {
+            throw new BusinessRuleException("Item da galeria não pertence ao evento especificado");
+        }
+
+        // Atualizar apenas a legenda
+        if (dto.caption() != null) {
+            galleryItem.setCaption(dto.caption());
+        }
+
+        EventGalleryItem saved = galleryItemRepository.save(galleryItem);
+        return EventGalleryItemDTO.fromEntity(saved);
+    }
+
+    @Transactional
+    public void deleteGalleryItem(UUID eventId, UUID itemId) {
+        // Verificar se o evento existe
+        if (!eventRepository.existsById(eventId)) {
+            throw new ResourceNotFoundException("Evento não encontrado");
+        }
+
+        // Buscar item da galeria
+        EventGalleryItem galleryItem = galleryItemRepository.findById(itemId)
+                .orElseThrow(() -> new ResourceNotFoundException("Item da galeria não encontrado"));
+
+        // Verificar se o item pertence ao evento
+        if (!galleryItem.getEvent().getId().equals(eventId)) {
+            throw new BusinessRuleException("Item da galeria não pertence ao evento especificado");
+        }
+
+        galleryItemRepository.delete(galleryItem);
     }
 
     // ========== MÉTODOS AUXILIARES ==========

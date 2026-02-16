@@ -19,8 +19,8 @@ import java.io.IOException;
 @RequiredArgsConstructor
 public class OAuth2LoginSuccessHandler extends SimpleUrlAuthenticationSuccessHandler {
 
-    private final JwtService jwtService;
     private final UserRepository userRepository;
+    private final JwtService jwtService;
 
     @Value("${app.frontend.url}")
     private String frontendUrl;

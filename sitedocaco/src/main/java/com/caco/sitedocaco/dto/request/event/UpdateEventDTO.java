@@ -18,6 +18,5 @@ public record UpdateEventDTO(
         Boolean removeCoverImage,
         Event.EventType type,
         Event.EventImportance importance,
-        Event.EventStatus status,
-        List<String> galleryImages
+        Event.EventStatus status
 ) {}

@@ -51,9 +51,10 @@ public class EventController {
     public ResponseEntity<EventResponseDTO> getEventBySlug(
             @PathVariable String slug) {
         UUID userId = null;
-        if (userService.getCurrentUser() != null) {
+        try{
             userId = userService.getCurrentUser().getId();
-        }
+        } catch (Exception e){} // Se não tiver usuário autenticado, userId permanece null
+
         EventResponseDTO event = eventService.getEventBySlug(slug, userId);
         return ResponseEntity.ok(event);
     }

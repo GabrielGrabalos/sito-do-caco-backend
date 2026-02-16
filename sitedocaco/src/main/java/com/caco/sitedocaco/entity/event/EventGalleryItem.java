@@ -33,4 +33,7 @@ public class EventGalleryItem {
 
     @Enumerated(EnumType.STRING)
     private MediaType type;
+
+    @Column(columnDefinition = "TEXT")
+    private String caption;
 }
