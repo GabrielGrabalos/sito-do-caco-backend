@@ -4,6 +4,7 @@ import com.caco.sitedocaco.entity.event.Event;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
@@ -16,7 +17,8 @@ public class Sticker {
         - `String name`
         - `String description`
         - `String imageUrl`
-        - `Event originEvent` (OneToOne Nullable)
+        - `Event originEvent` (ManyToOne Nullable)
+        - `LocalDateTime createdAt`
     */
 
     @Id
@@ -33,5 +35,16 @@ public class Sticker {
     private String imageUrl;
 
     @ManyToOne
+    @JoinColumn(name = "origin_event_id")
     private Event originEvent;
+
+    @Column(nullable = false)
+    private LocalDateTime createdAt;
+
+    @PrePersist
+    public void prePersist() {
+        if (createdAt == null) {
+            createdAt = LocalDateTime.now();
+        }
+    }
 }

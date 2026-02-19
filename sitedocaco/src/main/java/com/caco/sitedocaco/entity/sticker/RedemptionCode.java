@@ -16,16 +16,38 @@ public class RedemptionCode {
     - `Boolean isOneTimeUse`
     - `Boolean isUsed`
     - `LocalDateTime expiresAt` (Nullable)
+    - `LocalDateTime createdAt`
+    - `LocalDateTime usedAt` (Nullable)
     */
 
     @Id
     @Column(length = 12)
     private String code;
 
-    @ManyToOne
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "sticker_id", nullable = false)
     private Sticker sticker;
 
+    @Column(nullable = false)
     private Boolean isOneTimeUse;
+
+    @Column(nullable = false)
     private Boolean isUsed;
+
     private LocalDateTime expiresAt;
+
+    @Column(nullable = false)
+    private LocalDateTime createdAt;
+
+    private LocalDateTime usedAt;
+
+    @Version
+    private Long version;
+
+    @PrePersist
+    public void prePersist() {
+        if (createdAt == null) createdAt = LocalDateTime.now();
+        if (isOneTimeUse == null) isOneTimeUse = true;
+        if (isUsed == null) isUsed = false;
+    }
 }
