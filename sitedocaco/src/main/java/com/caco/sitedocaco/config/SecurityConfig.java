@@ -1,5 +1,6 @@
 package com.caco.sitedocaco.config;
 
+import com.caco.sitedocaco.security.filter.FormRequiredFilter;
 import com.caco.sitedocaco.security.jwt.JwtAuthenticationFilter;
 import com.caco.sitedocaco.security.oauth2.CustomOAuth2UserService;
 import com.caco.sitedocaco.security.oauth2.OAuth2LoginFailureHandler;
@@ -31,6 +32,7 @@ public class SecurityConfig {
     private final OAuth2LoginSuccessHandler oAuth2LoginSuccessHandler;
     private final OAuth2LoginFailureHandler oAuth2LoginFailureHandler;
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
+    private final FormRequiredFilter formRequiredFilter;
 
     // Frontend URL from application.properties:
     @Value("${app.frontend.url}")
@@ -75,7 +77,10 @@ public class SecurityConfig {
                 )
 
                 // 6. Adiciona o filtro JWT antes do filtro padrão do Spring
-                .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
+                .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
+
+                // 7. Middleware que exige o formulário de perfil preenchido para rotas protegidas
+                .addFilterAfter(formRequiredFilter, JwtAuthenticationFilter.class);
 
         return http.build();
     }
