@@ -4,15 +4,20 @@ import com.caco.sitedocaco.dto.request.UpdateProfileDTO;
 import com.caco.sitedocaco.dto.response.UserResponseDTO;
 import com.caco.sitedocaco.entity.User;
 import com.caco.sitedocaco.entity.enums.ImageType;
+import com.caco.sitedocaco.entity.enums.Role;
+import com.caco.sitedocaco.exception.BusinessRuleException;
 import com.caco.sitedocaco.exception.ResourceNotFoundException;
 import com.caco.sitedocaco.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
@@ -35,12 +40,7 @@ public class UserService {
     }
 
     /**
-     * Atualiza dados básicos do perfil
-     */
-    /**
      * Atualiza dados do perfil do usuário logado
-     * @param request DTO com campos opcionais (nome e/ou avatar)
-     * @return DTO do usuário atualizado
      */
     @Transactional
     public UserResponseDTO updateProfile(UpdateProfileDTO request) throws IOException {
@@ -48,42 +48,27 @@ public class UserService {
         User user = userRepository.findByEmail(email)
                 .orElseThrow(() -> new ResourceNotFoundException("Usuário não encontrado"));
 
-
-        // Atualizar nome se fornecido
         if (request.name() != null && !request.name().isBlank()) {
             user.setUsername(request.name());
         }
 
-        // Processar avatar se fornecido
         if (request.avatar() != null && !request.avatar().isEmpty()) {
             String newAvatarUrl = uploadAvatarImage(request.avatar());
             user.setAvatarUrl(newAvatarUrl);
         }
 
-        // Salvar alterações
         User savedUser = userRepository.save(user);
-
         return UserResponseDTO.fromEntity(savedUser);
     }
 
-    /**
-     * Faz upload da imagem do avatar para o ImgBB
-     */
     private String uploadAvatarImage(MultipartFile avatarFile) throws IOException {
         try {
-            // Usar o serviço ImgBB para fazer upload
-            String imageUrl = imgBBService.uploadImage(avatarFile, ImageType.PROFILE_AVATAR);
-
-            return imageUrl;
-
+            return imgBBService.uploadImage(avatarFile, ImageType.PROFILE_AVATAR);
         } catch (IOException e) {
             throw new IOException("Não foi possível fazer upload da imagem do perfil", e);
         }
     }
 
-    /**
-     * Método auxiliar para obter o usuário atual
-     */
     @Transactional(readOnly = true)
     public User getCurrentUser() {
         String email = SecurityContextHolder.getContext().getAuthentication().getName();
@@ -91,25 +76,97 @@ public class UserService {
                 .orElseThrow(() -> new ResourceNotFoundException("Usuário não encontrado"));
     }
 
-    /**
-     * Método para deletar avatar (opcional)
-     */
     @Transactional
     public void removeAvatar() {
         User user = getCurrentUser();
-
-        // Aqui você poderia deletar a imagem do ImgBB se necessário
-        // Por enquanto, apenas setamos como null
         user.setAvatarUrl(null);
         userRepository.save(user);
     }
 
-    /**
-     * Pegar usuário por ID (usado em outros serviços)
-     */
     @Transactional(readOnly = true)
-    public User getUserById(java.util.UUID userId) {
+    public User getUserById(UUID userId) {
         return userRepository.findById(userId)
                 .orElseThrow(() -> new ResourceNotFoundException("Usuário não encontrado"));
+    }
+
+    // ── Super Admin methods ───────────────────────────────────────────────────
+
+    /**
+     * Lista todos os usuários com paginação (apenas Super Admin).
+     */
+    @Transactional(readOnly = true)
+    public Page<UserResponseDTO> listAllUsers(Pageable pageable) {
+        return userRepository.findAll(pageable)
+                .map(UserResponseDTO::fromEntity);
+    }
+
+    /**
+     * Retorna as informações completas de um usuário pelo ID (apenas Super Admin).
+     */
+    @Transactional(readOnly = true)
+    public UserResponseDTO getUserDetails(UUID userId) {
+        User user = userRepository.findById(userId)
+                .orElseThrow(() -> new ResourceNotFoundException("Usuário não encontrado"));
+        return UserResponseDTO.fromEntity(user);
+    }
+
+    /**
+     * Promove ou demove um usuário para o Role informado (apenas Super Admin).
+     * O Super Admin não pode alterar o próprio role nem promover alguém a SUPER_ADMIN.
+     */
+    @Transactional
+    public UserResponseDTO changeUserRole(UUID userId, Role newRole) {
+        String currentEmail = SecurityContextHolder.getContext().getAuthentication().getName();
+        User target = userRepository.findById(userId)
+                .orElseThrow(() -> new ResourceNotFoundException("Usuário não encontrado"));
+
+        if (target.getEmail().equals(currentEmail)) {
+            throw new BusinessRuleException("O Super Admin não pode alterar o próprio role.");
+        }
+        if (newRole == Role.SUPER_ADMIN) {
+            throw new BusinessRuleException("Não é permitido promover usuários para Super Admin via API.");
+        }
+
+        target.setRole(newRole);
+        return UserResponseDTO.fromEntity(userRepository.save(target));
+    }
+
+    /**
+     * Suspende a conta de um usuário (apenas Super Admin).
+     */
+    @Transactional
+    public UserResponseDTO suspendUser(UUID userId) {
+        String currentEmail = SecurityContextHolder.getContext().getAuthentication().getName();
+        User target = userRepository.findById(userId)
+                .orElseThrow(() -> new ResourceNotFoundException("Usuário não encontrado"));
+
+        if (target.getEmail().equals(currentEmail)) {
+            throw new BusinessRuleException("O Super Admin não pode suspender a própria conta.");
+        }
+        if (target.getRole() == Role.SUPER_ADMIN) {
+            throw new BusinessRuleException("Não é possível suspender outro Super Admin.");
+        }
+        if (target.isSuspended()) {
+            throw new BusinessRuleException("A conta deste usuário já está suspensa.");
+        }
+
+        target.setSuspended(true);
+        return UserResponseDTO.fromEntity(userRepository.save(target));
+    }
+
+    /**
+     * Libera/reativa a conta de um usuário suspenso (apenas Super Admin).
+     */
+    @Transactional
+    public UserResponseDTO unsuspendUser(UUID userId) {
+        User target = userRepository.findById(userId)
+                .orElseThrow(() -> new ResourceNotFoundException("Usuário não encontrado"));
+
+        if (!target.isSuspended()) {
+            throw new BusinessRuleException("A conta deste usuário não está suspensa.");
+        }
+
+        target.setSuspended(false);
+        return UserResponseDTO.fromEntity(userRepository.save(target));
     }
 }

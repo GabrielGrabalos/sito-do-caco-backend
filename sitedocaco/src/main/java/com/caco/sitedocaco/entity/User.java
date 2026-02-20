@@ -6,7 +6,6 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
-import org.springframework.aot.generate.GeneratedMethod;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -39,6 +38,9 @@ public class User {
 
     @Enumerated(EnumType.STRING)
     private Role role = Role.STUDENT;
+
+    @Column(nullable = false)
+    private boolean suspended = false;
 
     @CreationTimestamp
     @Column(updatable = false)

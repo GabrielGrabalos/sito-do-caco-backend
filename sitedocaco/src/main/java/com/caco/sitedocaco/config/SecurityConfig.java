@@ -54,8 +54,12 @@ public class SecurityConfig {
                         .requestMatchers("/api/public/**").permitAll()
                         .requestMatchers("/swagger-ui/**", "/v3/api-docs/**").permitAll() // Docs
 
-                        // Rotas Admin
-                        .requestMatchers("/api/admin/**").hasRole("ADMIN")
+                        // Rotas Admin (Super Admin também tem acesso)
+                        .requestMatchers("/api/admin/**").hasAnyRole("ADMIN", "SUPER_ADMIN")
+
+                        // Rotas Super Admin
+                        .requestMatchers("/api/super-admin/**").hasRole("SUPER_ADMIN")
+
                         .anyRequest().authenticated()
                 )
 

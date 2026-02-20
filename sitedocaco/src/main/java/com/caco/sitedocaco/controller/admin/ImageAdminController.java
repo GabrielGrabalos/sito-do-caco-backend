@@ -17,7 +17,7 @@ import java.io.IOException;
 @RestController
 @RequestMapping("/api/admin/images")
 @RequiredArgsConstructor
-@PreAuthorize("hasRole('ADMIN')")
+@PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
 public class ImageAdminController {
 
     private final ImgBBService imgBBService;

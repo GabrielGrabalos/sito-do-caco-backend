@@ -34,6 +34,15 @@ public class OAuth2LoginSuccessHandler extends SimpleUrlAuthenticationSuccessHan
         User user = userRepository.findByEmail(email)
                 .orElseThrow(() -> new RuntimeException("Usuário não encontrado pós-login"));
 
+        // Bloqueia login de contas suspensas
+        if (user.isSuspended()) {
+            String targetUrl = UriComponentsBuilder.fromUriString(frontendUrl + "/login")
+                    .queryParam("error", "account_suspended")
+                    .build().toUriString();
+            getRedirectStrategy().sendRedirect(request, response, targetUrl);
+            return;
+        }
+
         // Gera o token JWT
         String token = jwtService.generateToken(user);
 

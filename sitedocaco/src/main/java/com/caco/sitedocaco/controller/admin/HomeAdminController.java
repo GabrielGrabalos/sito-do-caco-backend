@@ -43,20 +43,21 @@ public class HomeAdminController {
 
     private boolean isAdmin(Authentication auth) {
         return auth.getAuthorities().stream()
-                .anyMatch(a -> Objects.equals(a.getAuthority(), "ROLE_ADMIN"));
+                .anyMatch(a -> Objects.equals(a.getAuthority(), "ROLE_ADMIN")
+                            || Objects.equals(a.getAuthority(), "ROLE_SUPER_ADMIN"));
     }
 
     // ==================== NEWS (ADMIN + EDITOR) ====================
 
     @PostMapping("/news")
-    @PreAuthorize("hasAnyRole('ADMIN', 'EDITOR')")
+    @PreAuthorize("hasAnyRole('ADMIN', 'EDITOR', 'SUPER_ADMIN')")
     public ResponseEntity<News> createNews(@RequestBody @Valid CreateNewsDTO dto, Authentication auth) {
         News created = newsService.createNews(dto, getUserId(auth));
         return ResponseEntity.created(URI.create("/api/public/news/" + created.getSlug())).body(created);
     }
 
     @PutMapping("/news/{id}")
-    @PreAuthorize("hasAnyRole('ADMIN', 'EDITOR')")
+    @PreAuthorize("hasAnyRole('ADMIN', 'EDITOR', 'SUPER_ADMIN')")
     public ResponseEntity<News> updateNews(@PathVariable UUID id,
                                            @RequestBody @Valid UpdateNewsDTO dto,
                                            Authentication auth) throws AccessDeniedException {
@@ -65,7 +66,7 @@ public class HomeAdminController {
     }
 
     @DeleteMapping("/news/{id}")
-    @PreAuthorize("hasAnyRole('ADMIN', 'EDITOR')")
+    @PreAuthorize("hasAnyRole('ADMIN', 'EDITOR', 'SUPER_ADMIN')")
     public ResponseEntity<Void> deleteNews(@PathVariable UUID id, Authentication auth) throws AccessDeniedException {
         newsService.deleteNews(id, getUserId(auth), isAdmin(auth));
         return ResponseEntity.noContent().build();
@@ -74,25 +75,25 @@ public class HomeAdminController {
     // ==================== BANNERS (ADMIN ONLY) ====================
 
     @GetMapping("/banners/active")
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
     public ResponseEntity<List<BannerDTO>> getActiveBanners() {
         return ResponseEntity.ok(bannerService.getActiveBanners());
     }
 
     @GetMapping("/banners/inactive")
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
     public ResponseEntity<List<BannerDTO>> getInactiveBanners() {
         return ResponseEntity.ok(bannerService.getInactiveBanners());
     }
 
     @PostMapping(value = "/banners", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
     public ResponseEntity<Banner> createBanner(@ModelAttribute @Valid CreateBannerDTO dto) throws IOException {
         return ResponseEntity.ok(bannerService.createBanner(dto));
     }
 
     @PutMapping(value = "/banners/{id}", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
     public ResponseEntity<Banner> updateBanner(
             @PathVariable UUID id,
             @ModelAttribute @Valid UpdateBannerDTO dto) throws IOException {
@@ -102,20 +103,20 @@ public class HomeAdminController {
     }
 
     @PutMapping("/banners/{id}/toggle")
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
     public ResponseEntity<Banner> toggleBannerActive(@PathVariable UUID id) {
         return ResponseEntity.ok(bannerService.toggleActive(id));
     }
 
     @PutMapping("/banners/reorder")
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
     public ResponseEntity<Void> reorderBanners(@RequestBody @Valid ReorderBannersDTO dto) {
         bannerService.reorderBanners(dto.bannerIds());
         return ResponseEntity.noContent().build();
     }
 
     @DeleteMapping("/banners/{id}")
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
     public ResponseEntity<Void> deleteBanner(@PathVariable UUID id) {
         bannerService.deleteBanner(id);
         return ResponseEntity.noContent().build();
@@ -125,32 +126,32 @@ public class HomeAdminController {
     // Editors geralmente não postam alertas de infra, apenas notícias
 
     @GetMapping("/warnings")
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
     public ResponseEntity<List<WarningDTO>> getAllWarnings() {
         return ResponseEntity.ok(warningService.getAllWarnings());
     }
 
     @PostMapping("/warnings")
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
     public ResponseEntity<Warning> createWarning(@RequestBody @Valid CreateWarningDTO dto) {
         return ResponseEntity.ok(warningService.createWarning(dto));
     }
 
     @PutMapping("/warnings/{id}")
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
     public ResponseEntity<Warning> updateWarning(@PathVariable UUID id, @RequestBody @Valid UpdateWarningDTO dto) {
         return ResponseEntity.ok(warningService.updateWarning(id, dto));
     }
 
     @PutMapping("/warnings/{id}/expire")
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
     public ResponseEntity<Void> expireWarning(@PathVariable UUID id) {
         warningService.expireWarningNow(id);
         return ResponseEntity.noContent().build();
     }
 
     @DeleteMapping("/warnings/{id}")
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
     public ResponseEntity<Void> deleteWarning(@PathVariable UUID id) {
         warningService.deleteWarning(id);
         return ResponseEntity.noContent().build();

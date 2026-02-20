@@ -28,9 +28,14 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         SimpleGrantedAuthority authority = new SimpleGrantedAuthority("ROLE_" + user.getRole().name());
 
         // Retorna o objeto User padrão do Spring Security
+        // enabled=false se a conta estiver suspensa
         return new org.springframework.security.core.userdetails.User(
                 user.getEmail(),
                 "", // Senha vazia (pois usamos OAuth2/JWT, não senha local)
+                !user.isSuspended(), // enabled
+                true,                // accountNonExpired
+                true,                // credentialsNonExpired
+                true,                // accountNonLocked
                 Collections.singletonList(authority)
         );
     }
