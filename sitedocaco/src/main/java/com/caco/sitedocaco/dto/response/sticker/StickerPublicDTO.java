@@ -1,5 +1,6 @@
 package com.caco.sitedocaco.dto.response.sticker;
 
+import com.caco.sitedocaco.dto.response.event.EventSummaryDTO;
 import com.caco.sitedocaco.entity.sticker.Sticker;
 
 import java.time.LocalDateTime;
@@ -10,7 +11,7 @@ public record StickerPublicDTO(
         String name,
         String description,
         String imageUrl,
-        UUID originEventId,
+        EventSummaryDTO originEvent,
         LocalDateTime createdAt
 ) {
     public static StickerPublicDTO fromEntity(Sticker sticker) {
@@ -19,7 +20,7 @@ public record StickerPublicDTO(
                 sticker.getName(),
                 sticker.getDescription(),
                 sticker.getImageUrl(),
-                sticker.getOriginEvent() != null ? sticker.getOriginEvent().getId() : null,
+                sticker.getOriginEvent() != null ? EventSummaryDTO.fromEntity(sticker.getOriginEvent()) : null,
                 sticker.getCreatedAt()
         );
     }

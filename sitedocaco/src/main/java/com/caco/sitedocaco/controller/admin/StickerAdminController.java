@@ -2,7 +2,9 @@ package com.caco.sitedocaco.controller.admin;
 
 import com.caco.sitedocaco.dto.request.sticker.CreateStickerDTO;
 import com.caco.sitedocaco.dto.request.sticker.GenerateRedemptionCodesDTO;
+import com.caco.sitedocaco.dto.request.sticker.UpdateStickerDTO;
 import com.caco.sitedocaco.dto.response.sticker.RedemptionCodeBatchResponseDTO;
+import com.caco.sitedocaco.dto.response.sticker.RedemptionCodeDTO;
 import com.caco.sitedocaco.dto.response.sticker.StickerAdminDTO;
 import com.caco.sitedocaco.service.RedemptionCodeService;
 import com.caco.sitedocaco.service.StickerService;
@@ -13,9 +15,9 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.UUID;
 
 @RestController
@@ -29,11 +31,19 @@ public class StickerAdminController {
 
     @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<StickerAdminDTO> create(
-            @RequestPart("dto") @Valid CreateStickerDTO dto,
-            @RequestPart("image") @Valid MultipartFile imageFile
+            @ModelAttribute @Valid CreateStickerDTO dto
     ) throws IOException {
-        StickerAdminDTO created = stickerService.createSticker(dto, imageFile);
+        StickerAdminDTO created = stickerService.createSticker(dto);
         return ResponseEntity.status(HttpStatus.CREATED).body(created);
+    }
+
+    @PutMapping("/{stickerId}")
+    public ResponseEntity<StickerAdminDTO> update(
+            @PathVariable UUID stickerId,
+            @ModelAttribute @Valid UpdateStickerDTO dto
+    ) throws IOException {
+        StickerAdminDTO updated = stickerService.updateSticker(stickerId, dto);
+        return ResponseEntity.ok(updated);
     }
 
     @PostMapping("/{stickerId}/codes")
@@ -43,5 +53,13 @@ public class StickerAdminController {
     ) {
         RedemptionCodeBatchResponseDTO resp = redemptionCodeService.generateBatch(stickerId, dto);
         return ResponseEntity.status(HttpStatus.CREATED).body(resp);
+    }
+
+    @GetMapping("/{stickerId}/codes")
+    public ResponseEntity<List<RedemptionCodeDTO>> getCodesForSticker(
+            @PathVariable UUID stickerId
+    ) {
+        List<RedemptionCodeDTO> codes = redemptionCodeService.getCodesByStickerId(stickerId);
+        return ResponseEntity.ok(codes);
     }
 }

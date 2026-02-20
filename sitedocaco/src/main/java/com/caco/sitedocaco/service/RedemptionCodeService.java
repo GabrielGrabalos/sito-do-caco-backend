@@ -2,6 +2,7 @@ package com.caco.sitedocaco.service;
 
 import com.caco.sitedocaco.dto.request.sticker.GenerateRedemptionCodesDTO;
 import com.caco.sitedocaco.dto.response.sticker.RedemptionCodeBatchResponseDTO;
+import com.caco.sitedocaco.dto.response.sticker.RedemptionCodeDTO;
 import com.caco.sitedocaco.entity.sticker.RedemptionCode;
 import com.caco.sitedocaco.entity.sticker.Sticker;
 import com.caco.sitedocaco.exception.BusinessRuleException;
@@ -13,6 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.security.SecureRandom;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -72,6 +74,17 @@ public class RedemptionCodeService {
         return new RedemptionCodeBatchResponseDTO(quantity, new ArrayList<>(codes));
     }
 
+    @Transactional(readOnly = true)
+    public List<RedemptionCodeDTO> getCodesByStickerId(UUID stickerId) {
+        // valida existência do sticker e evita retornar lista para um id inválido
+        stickerService.getStickerEntity(stickerId);
+
+        return redemptionCodeRepository.findBySticker_Id(stickerId).stream()
+                .sorted(Comparator.comparing(RedemptionCode::getCode))
+                .map(RedemptionCodeDTO::fromEntity)
+                .toList();
+    }
+
     private String randomCode() {
         StringBuilder sb = new StringBuilder(RedemptionCodeService.DEFAULT_CODE_LEN);
         for (int i = 0; i < RedemptionCodeService.DEFAULT_CODE_LEN; i++) {
@@ -80,4 +93,3 @@ public class RedemptionCodeService {
         return sb.toString();
     }
 }
-
