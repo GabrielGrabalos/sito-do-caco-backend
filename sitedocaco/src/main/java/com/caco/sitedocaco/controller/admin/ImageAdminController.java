@@ -2,6 +2,7 @@ package com.caco.sitedocaco.controller.admin;
 
 import com.caco.sitedocaco.dto.response.ImageUploadResponseDTO;
 import com.caco.sitedocaco.entity.enums.ImageType;
+import com.caco.sitedocaco.security.ratelimit.RateLimit;
 import com.caco.sitedocaco.service.ImgBBService;
 import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
@@ -18,6 +19,8 @@ import java.io.IOException;
 @RequestMapping("/api/admin/images")
 @RequiredArgsConstructor
 @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
+// Upload de imagem: consome bandwidth real do ImgBB — limite bastante conservador
+@RateLimit(capacity = 10, refillTokens = 10)
 public class ImageAdminController {
 
     private final ImgBBService imgBBService;

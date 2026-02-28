@@ -4,6 +4,7 @@ import com.caco.sitedocaco.dto.response.store.UserOrderDTO;
 import com.caco.sitedocaco.dto.response.store.UserOrderDetailDTO;
 import com.caco.sitedocaco.entity.User;
 import com.caco.sitedocaco.entity.enums.OrderStatus;
+import com.caco.sitedocaco.security.ratelimit.RateLimit;
 import com.caco.sitedocaco.service.OrderService;
 import com.caco.sitedocaco.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -17,6 +18,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/api/user/orders")
 @RequiredArgsConstructor
+@RateLimit
 public class OrderController {
 
     private final OrderService orderService;
@@ -60,6 +62,7 @@ public class OrderController {
      * Cria um novo pedido (adiciona ao carrinho)
      * Status inicial: PENDING_PAYMENT
      */
+    @RateLimit(capacity = 10, refillTokens = 10, refillPeriod = 1)
     @PostMapping
     public ResponseEntity<UserOrderDTO> createOrder(
             @RequestParam UUID productId,

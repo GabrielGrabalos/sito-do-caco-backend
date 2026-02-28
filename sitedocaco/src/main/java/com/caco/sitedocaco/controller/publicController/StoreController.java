@@ -3,6 +3,7 @@ package com.caco.sitedocaco.controller.publicController;
 import com.caco.sitedocaco.dto.response.store.ProductCategoryDTO;
 import com.caco.sitedocaco.dto.response.store.ProductDetailDTO;
 import com.caco.sitedocaco.dto.response.store.ProductOverviewDTO;
+import com.caco.sitedocaco.security.ratelimit.RateLimit;
 import com.caco.sitedocaco.service.ProductCategoryService;
 import com.caco.sitedocaco.service.ProductService;
 import lombok.RequiredArgsConstructor;
@@ -15,6 +16,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/api/public/store")
 @RequiredArgsConstructor
+@RateLimit
 public class StoreController {
 
     private final ProductCategoryService categoryService;

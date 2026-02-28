@@ -3,6 +3,7 @@ package com.caco.sitedocaco.controller.publicController;
 import com.caco.sitedocaco.dto.response.ExamWithoutSubjectDTO;
 import com.caco.sitedocaco.entity.exam.Exam;
 import com.caco.sitedocaco.entity.exam.Subject;
+import com.caco.sitedocaco.security.ratelimit.RateLimit;
 import com.caco.sitedocaco.service.ExamService;
 import com.caco.sitedocaco.service.SubjectService;
 import lombok.RequiredArgsConstructor;
@@ -14,6 +15,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/public/exams")
 @RequiredArgsConstructor
+@RateLimit(capacity = 30, refillTokens = 30, refillPeriod = 1)
 public class ExamController {
 
     private final SubjectService subjectService;

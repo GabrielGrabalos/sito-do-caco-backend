@@ -2,6 +2,7 @@ package com.caco.sitedocaco.controller.admin;
 
 import com.caco.sitedocaco.dto.request.ChangeUserRoleDTO;
 import com.caco.sitedocaco.dto.response.UserResponseDTO;
+import com.caco.sitedocaco.security.ratelimit.RateLimit;
 import com.caco.sitedocaco.service.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -19,6 +20,7 @@ import java.util.UUID;
 @RequestMapping("/api/super-admin/users")
 @RequiredArgsConstructor
 @PreAuthorize("hasRole('SUPER_ADMIN')")
+@RateLimit(capacity = 30, refillTokens = 30)
 public class SuperAdminController {
 
     private final UserService userService;

@@ -3,6 +3,7 @@ package com.caco.sitedocaco.controller.admin;
 import com.caco.sitedocaco.dto.response.store.OrderCsvDTO;
 import com.caco.sitedocaco.entity.enums.OrderStatus;
 import com.caco.sitedocaco.entity.store.Order;
+import com.caco.sitedocaco.security.ratelimit.RateLimit;
 import com.caco.sitedocaco.service.OrderService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpHeaders;
@@ -16,6 +17,7 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/api/admin/orders")
 @RequiredArgsConstructor
+@RateLimit(capacity = 30, refillTokens = 30)
 public class OrderAdminController {
 
     private final OrderService orderService;

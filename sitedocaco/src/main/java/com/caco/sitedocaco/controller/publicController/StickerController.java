@@ -1,6 +1,7 @@
 package com.caco.sitedocaco.controller.publicController;
 
 import com.caco.sitedocaco.dto.response.sticker.StickerPublicDTO;
+import com.caco.sitedocaco.security.ratelimit.RateLimit;
 import com.caco.sitedocaco.service.StickerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/public/stickers")
 @RequiredArgsConstructor
+@RateLimit
 public class StickerController {
 
     private final StickerService stickerService;

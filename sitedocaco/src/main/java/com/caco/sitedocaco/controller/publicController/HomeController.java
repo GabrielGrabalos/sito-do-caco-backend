@@ -4,6 +4,7 @@ import com.caco.sitedocaco.dto.response.BannerDTO;
 import com.caco.sitedocaco.dto.response.DashboardDTO;
 import com.caco.sitedocaco.dto.response.NewsSummaryDTO;
 import com.caco.sitedocaco.dto.response.WarningDTO;
+import com.caco.sitedocaco.security.ratelimit.RateLimit;
 import com.caco.sitedocaco.service.BannerService;
 import com.caco.sitedocaco.service.NewsService;
 import com.caco.sitedocaco.service.WarningService;
@@ -18,6 +19,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/public/home")
 @RequiredArgsConstructor
+@RateLimit
 public class HomeController {
 
     private final BannerService bannerService;

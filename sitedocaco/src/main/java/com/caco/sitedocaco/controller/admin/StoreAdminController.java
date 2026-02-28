@@ -22,6 +22,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.caco.sitedocaco.security.ratelimit.RateLimit;
 import java.io.IOException;
 import java.util.List;
 import java.util.UUID;
@@ -30,6 +31,7 @@ import java.util.UUID;
 @RequestMapping("/api/admin/store")
 @RequiredArgsConstructor
 @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
+@RateLimit(capacity = 30, refillTokens = 30)
 public class StoreAdminController {
 
     private final ProductCategoryService categoryService;

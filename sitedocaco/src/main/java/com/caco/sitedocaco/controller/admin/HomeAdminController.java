@@ -6,6 +6,7 @@ import com.caco.sitedocaco.dto.response.WarningDTO;
 import com.caco.sitedocaco.entity.home.Banner;
 import com.caco.sitedocaco.entity.home.News;
 import com.caco.sitedocaco.entity.home.Warning;
+import com.caco.sitedocaco.security.ratelimit.RateLimit;
 import com.caco.sitedocaco.service.BannerService;
 import com.caco.sitedocaco.service.NewsService;
 import com.caco.sitedocaco.service.WarningService;
@@ -27,6 +28,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/api/admin")
 @RequiredArgsConstructor
+@RateLimit(capacity = 30, refillTokens = 30)
 public class HomeAdminController {
 
     private final NewsService newsService;

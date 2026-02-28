@@ -6,6 +6,7 @@ import com.caco.sitedocaco.dto.request.UpdateExamDTO;
 import com.caco.sitedocaco.dto.response.ExamWithoutSubjectDTO;
 import com.caco.sitedocaco.entity.exam.Exam;
 import com.caco.sitedocaco.entity.exam.Subject;
+import com.caco.sitedocaco.security.ratelimit.RateLimit;
 import com.caco.sitedocaco.service.ExamService;
 import com.caco.sitedocaco.service.SubjectService;
 import jakarta.validation.Valid;
@@ -23,6 +24,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/api/admin/exams")
 @RequiredArgsConstructor
+@RateLimit(capacity = 30, refillTokens = 30)
 @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
 public class ExamAdminController {
 

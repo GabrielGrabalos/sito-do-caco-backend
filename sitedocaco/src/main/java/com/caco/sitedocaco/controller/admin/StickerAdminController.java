@@ -6,6 +6,7 @@ import com.caco.sitedocaco.dto.request.sticker.UpdateStickerDTO;
 import com.caco.sitedocaco.dto.response.sticker.RedemptionCodeBatchResponseDTO;
 import com.caco.sitedocaco.dto.response.sticker.RedemptionCodeDTO;
 import com.caco.sitedocaco.dto.response.sticker.StickerAdminDTO;
+import com.caco.sitedocaco.security.ratelimit.RateLimit;
 import com.caco.sitedocaco.service.RedemptionCodeService;
 import com.caco.sitedocaco.service.StickerService;
 import jakarta.validation.Valid;
@@ -24,6 +25,7 @@ import java.util.UUID;
 @RequestMapping("/api/admin/stickers")
 @RequiredArgsConstructor
 @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
+@RateLimit(capacity = 30, refillTokens = 30)
 public class StickerAdminController {
 
     private final StickerService stickerService;

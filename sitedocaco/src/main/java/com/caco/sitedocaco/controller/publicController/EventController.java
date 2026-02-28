@@ -2,6 +2,7 @@ package com.caco.sitedocaco.controller.publicController;
 
 import com.caco.sitedocaco.dto.response.event.EventResponseDTO;
 import com.caco.sitedocaco.dto.response.event.EventSummaryDTO;
+import com.caco.sitedocaco.security.ratelimit.RateLimit;
 import com.caco.sitedocaco.service.EventService;
 import com.caco.sitedocaco.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -20,6 +21,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/api/public/events")
 @RequiredArgsConstructor
+@RateLimit
 public class EventController {
 
     private final EventService eventService;

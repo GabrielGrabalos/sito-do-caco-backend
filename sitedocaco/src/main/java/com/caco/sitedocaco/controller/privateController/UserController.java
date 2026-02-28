@@ -2,6 +2,7 @@ package com.caco.sitedocaco.controller.privateController;
 
 import com.caco.sitedocaco.dto.request.UpdateProfileDTO;
 import com.caco.sitedocaco.dto.response.UserResponseDTO;
+import com.caco.sitedocaco.security.ratelimit.RateLimit;
 import com.caco.sitedocaco.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.MediaType;
@@ -14,6 +15,7 @@ import java.io.IOException;
 @RestController
 @RequestMapping("/api/user")
 @RequiredArgsConstructor
+@RateLimit
 public class UserController {
 
     private final UserService userService;
@@ -23,6 +25,8 @@ public class UserController {
         return ResponseEntity.ok(userService.getMe());
     }
 
+    // Upload de avatar: limite mais conservador para evitar abuso de bandwidth
+    @RateLimit(capacity = 5, refillTokens = 5)
     @PutMapping(value = "/me", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<UserResponseDTO> updateMyProfile(
             @RequestPart(value = "name", required = false) String name,

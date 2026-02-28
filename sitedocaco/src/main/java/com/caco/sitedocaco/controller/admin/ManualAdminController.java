@@ -2,6 +2,7 @@ package com.caco.sitedocaco.controller.admin;
 
 import com.caco.sitedocaco.dto.request.manual.*;
 import com.caco.sitedocaco.dto.response.manual.*;
+import com.caco.sitedocaco.security.ratelimit.RateLimit;
 import com.caco.sitedocaco.service.ArticleFeedbackService;
 import com.caco.sitedocaco.service.ManualArticleService;
 import com.caco.sitedocaco.service.ManualCategoryService;
@@ -21,6 +22,7 @@ import java.util.UUID;
 @RequestMapping("/api/admin/manual")
 @RequiredArgsConstructor
 @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
+@RateLimit(capacity = 30, refillTokens = 30, refillPeriod = 1)
 public class ManualAdminController {
 
     private final ManualCategoryService categoryService;

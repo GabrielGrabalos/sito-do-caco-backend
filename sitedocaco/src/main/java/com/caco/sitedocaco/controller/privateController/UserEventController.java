@@ -3,6 +3,7 @@ package com.caco.sitedocaco.controller.privateController;
 import com.caco.sitedocaco.dto.request.event.SaveEventRequestDTO;
 import com.caco.sitedocaco.dto.response.event.EventSummaryDTO;
 import com.caco.sitedocaco.entity.event.UserEvent;
+import com.caco.sitedocaco.security.ratelimit.RateLimit;
 import com.caco.sitedocaco.service.EventService;
 import com.caco.sitedocaco.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -20,6 +21,7 @@ import java.util.UUID;
 @RequestMapping("/api/private/user/events")
 @RequiredArgsConstructor
 @PreAuthorize("isAuthenticated()")
+@RateLimit
 public class UserEventController {
 
     private final EventService eventService;

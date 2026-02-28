@@ -1,6 +1,7 @@
 package com.caco.sitedocaco.controller.publicController;
 
 import com.caco.sitedocaco.dto.response.manual.*;
+import com.caco.sitedocaco.security.ratelimit.RateLimit;
 import com.caco.sitedocaco.service.ArticleFeedbackService;
 import com.caco.sitedocaco.service.ManualArticleService;
 import com.caco.sitedocaco.service.ManualCategoryService;
@@ -16,6 +17,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/api/public/manual")
 @RequiredArgsConstructor
+@RateLimit
 public class ManualController {
 
     private final ManualCategoryService categoryService;

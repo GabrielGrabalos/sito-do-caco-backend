@@ -3,6 +3,7 @@ package com.caco.sitedocaco.controller.privateController;
 import com.caco.sitedocaco.dto.request.sticker.ClaimStickerDTO;
 import com.caco.sitedocaco.dto.response.sticker.ClaimStickerResponseDTO;
 import com.caco.sitedocaco.dto.response.sticker.MyStickerDTO;
+import com.caco.sitedocaco.security.ratelimit.RateLimit;
 import com.caco.sitedocaco.service.UserStickerService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -15,10 +16,13 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/user/stickers")
 @RequiredArgsConstructor
+@RateLimit
 public class UserStickerController {
 
     private final UserStickerService userStickerService;
 
+    // Resgate de sticker por código: limite estrito para evitar brute-force de códigos
+    @RateLimit(capacity = 5, refillTokens = 5, refillPeriod = 1)
     @PostMapping("/claim")
     public ResponseEntity<ClaimStickerResponseDTO> claim(@RequestBody @Valid ClaimStickerDTO dto) {
         return ResponseEntity.ok(userStickerService.claim(dto.code()));

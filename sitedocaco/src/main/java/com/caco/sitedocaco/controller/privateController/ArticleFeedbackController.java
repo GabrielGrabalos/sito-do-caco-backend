@@ -2,6 +2,7 @@ package com.caco.sitedocaco.controller.privateController;
 
 import com.caco.sitedocaco.dto.request.manual.CreateArticleFeedbackDTO;
 import com.caco.sitedocaco.dto.response.manual.ArticleFeedbackDTO;
+import com.caco.sitedocaco.security.ratelimit.RateLimit;
 import com.caco.sitedocaco.service.ArticleFeedbackService;
 import com.caco.sitedocaco.service.ManualArticleService;
 import com.caco.sitedocaco.service.UserService;
@@ -24,6 +25,8 @@ public class ArticleFeedbackController {
 
     // ==================== FEEDBACK (apenas criação) ====================
 
+    // Feedback: 10 envios por minuto por usuário é mais que suficiente
+    @RateLimit(capacity = 10, refillTokens = 10)
     @PostMapping("/articles/{articleId}/feedback")
     public ResponseEntity<ArticleFeedbackDTO> createFeedback(
             @PathVariable UUID articleId,

@@ -7,6 +7,7 @@ import com.caco.sitedocaco.dto.request.event.UpdateGalleryItemDTO;
 import com.caco.sitedocaco.dto.response.event.EventGalleryItemDTO;
 import com.caco.sitedocaco.dto.response.event.EventResponseDTO;
 import com.caco.sitedocaco.entity.event.Event;
+import com.caco.sitedocaco.security.ratelimit.RateLimit;
 import com.caco.sitedocaco.service.EventService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -23,6 +24,7 @@ import java.util.UUID;
 @RequestMapping("/api/admin/events")
 @RequiredArgsConstructor
 @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
+@RateLimit(capacity = 30, refillTokens = 30)
 public class EventAdminController {
 
     private final EventService eventService;
