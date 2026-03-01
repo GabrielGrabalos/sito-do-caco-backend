@@ -20,16 +20,15 @@ public interface NewsRepository extends JpaRepository<News, UUID> {
 
     boolean existsBySlug(String slug);
 
-    // Optimized Query: Returns DTOs directly, skipping the heavy 'content' field
+    // Optimized Query: Returns DTOs directly, skipping the heavy 'content' field and author data
     @Query("SELECT new com.caco.sitedocaco.dto.response.NewsSummaryDTO(" +
-            "n.id, n.title, n.slug, n.summary, n.coverImage, n.publishDate, n.author.username) " +
+            "n.id, n.title, n.slug, n.summary, n.coverImage, n.publishDate) " +
             "FROM News n ORDER BY n.publishDate DESC")
     Page<NewsSummaryDTO> findAllSummaries(Pageable pageable);
 
-    // Full news detail by slug (includes content + author avatar)
+    // Full news detail by slug (includes content, without author data)
     @Query("SELECT new com.caco.sitedocaco.dto.response.NewsDetailDTO(" +
-            "n.id, n.title, n.slug, n.summary, n.content, n.coverImage, n.publishDate, " +
-            "n.author.username, n.author.avatarUrl) " +
+            "n.id, n.title, n.slug, n.summary, n.content, n.coverImage, n.publishDate) " +
             "FROM News n WHERE n.slug = :slug")
     Optional<NewsDetailDTO> findDetailBySlug(@Param("slug") String slug);
 }

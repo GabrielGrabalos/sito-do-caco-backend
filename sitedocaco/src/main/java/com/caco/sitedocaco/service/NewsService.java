@@ -19,10 +19,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.io.IOException;
-import java.text.Normalizer;
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Locale;
 import java.util.UUID;
 
 @Service
@@ -54,13 +52,18 @@ public class NewsService {
         User author = userRepository.findById(authorId)
                 .orElseThrow(() -> new ResourceNotFoundException("Autor não encontrado"));
 
+        // Valida unicidade do slug
+        if (newsRepository.existsBySlug(dto.slug())) {
+            throw new IllegalArgumentException("Já existe uma notícia com este slug: " + dto.slug());
+        }
+
         News news = new News();
         news.setTitle(dto.title());
+        news.setSlug(dto.slug());
         news.setSummary(dto.summary());
         news.setContent(dto.content());
         news.setAuthor(author);
         news.setPublishDate(LocalDateTime.now());
-        news.setSlug(generateUniqueSlug(dto.title()));
 
         if (dto.coverImage() != null && !dto.coverImage().isEmpty()) {
             String url = imgBBService.uploadImage(dto.coverImage(), ImageType.NEWS_COVER);
@@ -79,8 +82,16 @@ public class NewsService {
 
         if (dto.title() != null && !dto.title().isBlank()) {
             news.setTitle(dto.title());
-            news.setSlug(generateUniqueSlug(dto.title()));
         }
+
+        if (dto.slug() != null && !dto.slug().isBlank()) {
+            // Se o slug está sendo alterado, valida unicidade
+            if (!dto.slug().equals(news.getSlug()) && newsRepository.existsBySlug(dto.slug())) {
+                throw new IllegalArgumentException("Já existe uma notícia com este slug: " + dto.slug());
+            }
+            news.setSlug(dto.slug());
+        }
+
         if (dto.summary() != null) news.setSummary(dto.summary());
         if (dto.content() != null) news.setContent(dto.content());
 
@@ -122,28 +133,8 @@ public class NewsService {
                 news.getSummary(),
                 news.getContent(),
                 news.getCoverImage(),
-                news.getPublishDate(),
-                news.getAuthor().getUsername(),
-                news.getAuthor().getAvatarUrl()
+                news.getPublishDate()
         );
-    }
-
-    private String generateUniqueSlug(String title) {
-        String baseSlug = Normalizer.normalize(title, Normalizer.Form.NFD)
-                .replaceAll("[\\p{InCombiningDiacriticalMarks}]", "")
-                .toLowerCase(Locale.ROOT)
-                .replaceAll("[^a-z0-9\\s-]", "")
-                .trim()
-                .replaceAll("\\s+", "-");
-
-        String uniqueSlug = baseSlug;
-        int counter = 1;
-
-        while (newsRepository.existsBySlug(uniqueSlug)) {
-            uniqueSlug = baseSlug + "-" + counter;
-            counter++;
-        }
-        return uniqueSlug;
     }
 }
 

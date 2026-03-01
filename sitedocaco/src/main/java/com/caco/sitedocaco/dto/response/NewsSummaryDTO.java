@@ -9,6 +9,5 @@ public record NewsSummaryDTO(
         String slug,
         String summary,
         String coverImage,
-        LocalDateTime publishDate,
-        String authorName
+        LocalDateTime publishDate
 ) {}

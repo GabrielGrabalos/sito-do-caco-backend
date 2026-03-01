@@ -10,8 +10,6 @@ public record NewsDetailDTO(
         String summary,
         String content,
         String coverImage,
-        LocalDateTime publishDate,
-        String authorName,
-        String authorAvatarUrl
+        LocalDateTime publishDate
 ) {}
 
