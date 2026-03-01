@@ -59,6 +59,9 @@ public class SecurityConfig {
                         // Rotas Admin (Super Admin também tem acesso)
                         .requestMatchers("/api/admin/**").hasAnyRole("ADMIN", "SUPER_ADMIN")
 
+                        // Rotas Editor (também acessíveis por Admin e Super Admin)
+                        .requestMatchers("/api/editor/**").hasAnyRole("EDITOR", "ADMIN", "SUPER_ADMIN")
+
                         // Rotas Super Admin
                         .requestMatchers("/api/super-admin/**").hasRole("SUPER_ADMIN")
 

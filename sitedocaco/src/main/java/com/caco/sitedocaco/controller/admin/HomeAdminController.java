@@ -4,25 +4,19 @@ import com.caco.sitedocaco.dto.request.*;
 import com.caco.sitedocaco.dto.response.BannerDTO;
 import com.caco.sitedocaco.dto.response.WarningDTO;
 import com.caco.sitedocaco.entity.home.Banner;
-import com.caco.sitedocaco.entity.home.News;
 import com.caco.sitedocaco.entity.home.Warning;
 import com.caco.sitedocaco.security.ratelimit.RateLimit;
 import com.caco.sitedocaco.service.BannerService;
-import com.caco.sitedocaco.service.NewsService;
 import com.caco.sitedocaco.service.WarningService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
-import java.net.URI;
-import java.nio.file.AccessDeniedException;
 import java.util.List;
-import java.util.Objects;
 import java.util.UUID;
 
 @RestController
@@ -31,48 +25,8 @@ import java.util.UUID;
 @RateLimit(capacity = 30, refillTokens = 30)
 public class HomeAdminController {
 
-    private final NewsService newsService;
     private final BannerService bannerService;
     private final WarningService warningService;
-
-    // Helper para pegar ID e Role (depende da sua config de security, assumindo Oauth2 padrão)
-    private UUID getUserId(Authentication auth) {
-        // Exemplo: Se o Principal for customizado ou extraído do Token JWT
-        // return UUID.fromString(auth.getName()); // ou lógica específica
-        // Para fins deste exemplo, assumimos que o ID venha no Principal
-        return UUID.fromString(auth.getName());
-    }
-
-    private boolean isAdmin(Authentication auth) {
-        return auth.getAuthorities().stream()
-                .anyMatch(a -> Objects.equals(a.getAuthority(), "ROLE_ADMIN")
-                            || Objects.equals(a.getAuthority(), "ROLE_SUPER_ADMIN"));
-    }
-
-    // ==================== NEWS (ADMIN + EDITOR) ====================
-
-    @PostMapping("/news")
-    @PreAuthorize("hasAnyRole('ADMIN', 'EDITOR', 'SUPER_ADMIN')")
-    public ResponseEntity<News> createNews(@RequestBody @Valid CreateNewsDTO dto, Authentication auth) {
-        News created = newsService.createNews(dto, getUserId(auth));
-        return ResponseEntity.created(URI.create("/api/public/news/" + created.getSlug())).body(created);
-    }
-
-    @PutMapping("/news/{id}")
-    @PreAuthorize("hasAnyRole('ADMIN', 'EDITOR', 'SUPER_ADMIN')")
-    public ResponseEntity<News> updateNews(@PathVariable UUID id,
-                                           @RequestBody @Valid UpdateNewsDTO dto,
-                                           Authentication auth) throws AccessDeniedException {
-        // Passamos o ID e a flag isAdmin para o service validar a regra de "Editor Owns News"
-        return ResponseEntity.ok(newsService.updateNews(id, dto, getUserId(auth), isAdmin(auth)));
-    }
-
-    @DeleteMapping("/news/{id}")
-    @PreAuthorize("hasAnyRole('ADMIN', 'EDITOR', 'SUPER_ADMIN')")
-    public ResponseEntity<Void> deleteNews(@PathVariable UUID id, Authentication auth) throws AccessDeniedException {
-        newsService.deleteNews(id, getUserId(auth), isAdmin(auth));
-        return ResponseEntity.noContent().build();
-    }
 
     // ==================== BANNERS (ADMIN ONLY) ====================
 
@@ -125,7 +79,6 @@ public class HomeAdminController {
     }
 
     // ==================== WARNINGS (ADMIN ONLY) ====================
-    // Editors geralmente não postam alertas de infra, apenas notícias
 
     @GetMapping("/warnings")
     @PreAuthorize("hasAnyRole('ADMIN', 'SUPER_ADMIN')")
