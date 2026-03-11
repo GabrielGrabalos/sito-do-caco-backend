@@ -33,22 +33,22 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
         String avatarUrl = oAuth2User.getAttribute("picture");
 
         // REGRA DE NEGÓCIO: Validação de Domínio
-//        assert email != null;
-//        if (!email.endsWith("@dac.unicamp.br")) {
-//            OAuth2Error oauth2Error = new OAuth2Error(
-//                    "invalid_domain",
-//                    "O e-mail não pertence ao domínio institucional permitido (@dac.unicamp.br).",
-//                    null
-//            );
-//
-//            throw new OAuth2AuthenticationException(oauth2Error, oauth2Error.toString());
-//        }
+        assert email != null;
+        if (!email.endsWith("@dac.unicamp.br")) {
+            OAuth2Error oauth2Error = new OAuth2Error(
+                    "invalid_domain",
+                    "O e-mail não pertence ao domínio institucional permitido (@dac.unicamp.br).",
+                    null
+            );
+
+            throw new OAuth2AuthenticationException(oauth2Error, oauth2Error.toString());
+        }
 
         // Salva ou atualiza o usuário
         Optional<User> userOptional = userRepository.findByEmail(email);
 
         // Atualiza se existir, senão cria novo
-        if (!userOptional.isPresent()) {
+        if (userOptional.isEmpty()) {
             User user = new User();
             user.setEmail(email);
             user.setUsername(name);
