@@ -5,14 +5,12 @@ import com.caco.sitedocaco.dto.request.UpdateExamDTO;
 import com.caco.sitedocaco.dto.response.ExamWithoutSubjectDTO;
 import com.caco.sitedocaco.entity.exam.Exam;
 import com.caco.sitedocaco.entity.exam.Subject;
-import com.caco.sitedocaco.exception.BusinessRuleException;
 import com.caco.sitedocaco.exception.ResourceNotFoundException;
 import com.caco.sitedocaco.repository.ExamRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.UUID;
 
@@ -27,16 +25,6 @@ public class ExamService {
     public Exam createExam(CreateExamDTO dto) {
         Subject subject = subjectService.getSubjectByCode(dto.subjectCode());
 
-        boolean exists = examRepository.existsBySubjectSubjectCodeAndYearAndType(
-                dto.subjectCode(), dto.year(), dto.type()
-        );
-
-        if (exists) {
-            throw new BusinessRuleException(
-                    String.format("Já existe uma prova do tipo %s para %s no ano %d",
-                            dto.type(), subject.getName(), dto.year())
-            );
-        }
 
         Exam exam = new Exam();
         exam.setSubject(subject);

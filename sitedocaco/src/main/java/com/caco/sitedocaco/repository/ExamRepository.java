@@ -20,7 +20,6 @@ public interface ExamRepository extends JpaRepository<Exam, UUID> {
     List<Exam> findByYear(Integer year);
     List<Exam> findByType(ExamType type);
     List<Exam> findBySubject(Subject subject);
-    boolean existsBySubjectSubjectCodeAndYearAndType(String subjectCode, Integer year, ExamType type);
     @Transactional
     @Modifying
     @Query("DELETE FROM Exam e WHERE e.subject.subjectCode = :subjectCode")
