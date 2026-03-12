@@ -75,7 +75,7 @@ public class ExamService {
             exam.setSubject(newSubject);
         }
 
-        if (dto.removeProfessor()) {
+        if (Boolean.TRUE.equals(dto.removeProfessor())) {
             exam.setProfessor(null);
         } else if (dto.professorId() != null) {
             Professor professor = professorService.getProfessorById(dto.professorId());
