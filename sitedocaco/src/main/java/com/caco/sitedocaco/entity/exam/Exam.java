@@ -27,6 +27,10 @@ public class Exam {
     @JoinColumn(name = "subject_code", nullable = false)
     private Subject subject;
 
+    @ManyToOne
+    @JoinColumn(name = "professor_id", nullable = true)
+    private Professor professor;
+
     private Integer year;
     @Enumerated(EnumType.STRING)
     private ExamType type;

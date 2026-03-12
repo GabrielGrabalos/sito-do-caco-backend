@@ -4,9 +4,13 @@ package com.caco.sitedocaco.dto.request;
 import com.caco.sitedocaco.entity.enums.ExamType;
 import jakarta.validation.constraints.NotNull;
 
+import java.util.UUID;
+
 public record CreateExamDTO(
         @NotNull(message = "A disciplina é obrigatória")
         String subjectCode,
+
+        UUID professorId,
 
         @NotNull(message = "O ano é obrigatório")
         Integer year,

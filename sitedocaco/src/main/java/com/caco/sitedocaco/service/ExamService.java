@@ -4,6 +4,7 @@ import com.caco.sitedocaco.dto.request.CreateExamDTO;
 import com.caco.sitedocaco.dto.request.UpdateExamDTO;
 import com.caco.sitedocaco.dto.response.ExamWithoutSubjectDTO;
 import com.caco.sitedocaco.entity.exam.Exam;
+import com.caco.sitedocaco.entity.exam.Professor;
 import com.caco.sitedocaco.entity.exam.Subject;
 import com.caco.sitedocaco.exception.ResourceNotFoundException;
 import com.caco.sitedocaco.repository.ExamRepository;
@@ -20,17 +21,22 @@ public class ExamService {
 
     private final ExamRepository examRepository;
     private final SubjectService subjectService;
+    private final ProfessorService professorService;
 
     @Transactional
     public Exam createExam(CreateExamDTO dto) {
         Subject subject = subjectService.getSubjectByCode(dto.subjectCode());
-
 
         Exam exam = new Exam();
         exam.setSubject(subject);
         exam.setYear(dto.year());
         exam.setType(dto.type());
         exam.setFileUrl(dto.fileUrl());
+
+        if (dto.professorId() != null) {
+            Professor professor = professorService.getProfessorById(dto.professorId());
+            exam.setProfessor(professor);
+        }
 
         return examRepository.save(exam);
     }
@@ -67,6 +73,13 @@ public class ExamService {
         if (dto.subjectCode() != null) {
             Subject newSubject = subjectService.getSubjectByCode(dto.subjectCode());
             exam.setSubject(newSubject);
+        }
+
+        if (dto.removeProfessor()) {
+            exam.setProfessor(null);
+        } else if (dto.professorId() != null) {
+            Professor professor = professorService.getProfessorById(dto.professorId());
+            exam.setProfessor(professor);
         }
 
         if (dto.year() != null) {
