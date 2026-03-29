@@ -37,7 +37,6 @@ public class SecurityConfig {
     // Frontend URL from application.properties:
     @Value("${app.frontend.url}")
     private String frontendUrl;
-
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) {
         http
@@ -67,7 +66,6 @@ public class SecurityConfig {
 
                         .anyRequest().authenticated()
                 )
-
                 // 5. Configuração do Login com Google (OAuth2)
                 .oauth2Login(oauth2 -> oauth2
                         // Serviço que processa o usuário vindo do Google
