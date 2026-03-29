@@ -57,13 +57,13 @@ public class SecurityConfig {
                         .requestMatchers("/swagger-ui/**", "/v3/api-docs/**").permitAll() // Docs
 
                         // Rotas Admin (Super Admin também tem acesso)
-                        .requestMatchers("/admin/**").hasAnyRole("ADMIN", "SUPER_ADMIN")
+                        .requestMatchers("/api/admin/**").hasAnyRole("ADMIN", "SUPER_ADMIN")
 
                         // Rotas Editor (também acessíveis por Admin e Super Admin)
-                        .requestMatchers("/editor/**").hasAnyRole("EDITOR", "ADMIN", "SUPER_ADMIN")
+                        .requestMatchers("/api/editor/**").hasAnyRole("EDITOR", "ADMIN", "SUPER_ADMIN")
 
                         // Rotas Super Admin
-                        .requestMatchers("/super-admin/**").hasRole("SUPER_ADMIN")
+                        .requestMatchers("/api/super-admin/**").hasRole("SUPER_ADMIN")
 
                         .anyRequest().authenticated()
                 )
