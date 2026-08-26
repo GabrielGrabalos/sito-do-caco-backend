@@ -1,7 +1,5 @@
-package com.caco.sitedocaco.controller.entity.caco;
+package com.caco.sitedocaco.entity.caco;
 
-import caco.sitedocaco.entity.caco.CacoManagement;
-import caco.sitedocaco.entity.caco.CacoManagementRole;
 import jakarta.persistence.*;
 import lombok.Data;
 import java.util.UUID;

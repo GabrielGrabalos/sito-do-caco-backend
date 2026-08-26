@@ -7,7 +7,7 @@ import java.util.UUID;
 @Entity
 @Table(name = "caco_management_role")
 @Data
-public class CacoManagementMemberRole {
+public class CacoManagementRole {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)

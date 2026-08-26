@@ -1,12 +1,10 @@
 package com.caco.sitedocaco.entity.caco;
 
-
-import caco.sitedocaco.entity.Caco.CacoManagementMember;
 import jakarta.persistence.*;
 import lombok.Data;
 import java.time.LocalDate;
 import java.util.UUID;
-import java.util.List
+import java.util.List;
 
 @Entity
 @Table(name = "caco_management")
@@ -23,7 +21,7 @@ public class CacoManagement {
     @Column(nullable = false)
     private LocalDate startDate;
     
-    @Column(nullable = true)
+    @Column
     private LocalDate endDate;
 
     @OneToMany(mappedBy = "cacoManagement", cascade = CascadeType.ALL, orphanRemoval = true)

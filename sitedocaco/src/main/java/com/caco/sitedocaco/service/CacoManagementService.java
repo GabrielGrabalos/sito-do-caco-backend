@@ -1,28 +1,41 @@
 package com.caco.sitedocaco.service;
 
-import com.sitedocaco.entity.caco.CacoManagement;
-import com.sitedocaco.repository.CacoManagementRepository;
-import com.sitedocaco.dto.request.CreateCacoManagementDTO;
+import com.caco.sitedocaco.entity.caco.CacoManagement;
+import com.caco.sitedocaco.repository.CacoManagementRepository;
+import com.caco.sitedocaco.dto.request.caco.CreateCacoManagementDTO;
+import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
+import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
-public class CacoManagementService{
+public class CacoManagementService {
 
     private final CacoManagementRepository repository;
 
-    public List<CacoManagement> findAll(){
-        return repository.findAllCacoManagements();
+    @Transactional(readOnly = true)
+    public Page<CacoManagement> findAll(Pageable pageable) {
+        return repository.findAllByOrderByStartDateDesc(pageable);
     }
 
-    public CacoManagement createManagement(CreateCacoManagementDTO dto){
-        repository.save
+
+    @Transactional
+    public CacoManagement createManagement(CreateCacoManagementDTO dto) {
+        CacoManagement cacoManagement = new CacoManagement();
+
+        cacoManagement.setName(dto.name());
+        cacoManagement.setStartDate(dto.startDate());
+        cacoManagement.setEndDate(dto.endDate());
+
+        return repository.save(cacoManagement);
     }
 
-    public void deleteManagement(){
-
+    @Transactional
+    public void deleteManagement(UUID id) {
+        repository.deleteById(id);
     }
 }
