@@ -1,7 +1,7 @@
 package com.caco.sitedocaco.controller.entity.caco;
 
 import caco.sitedocaco.entity.caco.CacoManagement;
-import caco.sitedocaco.entity.caco.CacoManagementMemberRole;
+import caco.sitedocaco.entity.caco.CacoManagementRole;
 import jakarta.persistence.*;
 import lombok.Data;
 import java.util.UUID;
@@ -26,5 +26,5 @@ public class CacoManagementMember {
 
     @ManyToOne
     @JoinColumn(name = "member_role_id", nullable = false)
-    private CacoManagementMemberRole memberRole;
+    private CacoManagementRole memberRole;
 }

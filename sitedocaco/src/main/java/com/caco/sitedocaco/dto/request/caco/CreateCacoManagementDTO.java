@@ -4,13 +4,15 @@ import com.caco.sitedocaco.entity.caco.cacoManagement;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.NotBlank;
 
+import java.time.LocalDate;
+
 public record CreateCacoManagementDTO(
 
     @NotBlank(message="O nome da gestão é obrigatório.")
-    String name;
+    String name,
 
     @NotNull(message="A data de inicio é obrigatória.")
-    LocalDate startDate;
+    LocalDate startDate,
 
-    LocalDate endDate;
+    LocalDate endDate,
 ){}

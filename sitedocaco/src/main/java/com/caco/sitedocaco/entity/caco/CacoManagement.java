@@ -1,10 +1,12 @@
-package com.caco.sitedocaco.controller.entity.caco;
+package com.caco.sitedocaco.entity.caco;
 
 
 import caco.sitedocaco.entity.Caco.CacoManagementMember;
 import jakarta.persistence.*;
 import lombok.Data;
-
+import java.time.LocalDate;
+import java.util.UUID;
+import java.util.List
 
 @Entity
 @Table(name = "caco_management")
@@ -15,14 +17,14 @@ public class CacoManagement {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    @column(nullable = false)
+    @Column(nullable = false)
     private String name;
 
     @Column(nullable = false)
-    private String Start_Date;
+    private LocalDate startDate;
     
-    @column(nullable = false)
-    private String End_Date;
+    @Column(nullable = true)
+    private LocalDate endDate;
 
     @OneToMany(mappedBy = "cacoManagement", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<CacoManagementMember> members;
